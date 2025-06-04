@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<style>
+
+    .signup a
+    {
+       color: white;
+        width: 70px;
+        background-color:deepskyblue;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .headsection h1
+    {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 110%;
+    text-align: center;
+    margin-top: 85px;
+    }
+
+    .headsection img
+    {
+        position: absolute;
+        margin-top: -33px;
+        margin-left: 760px;
+    }
+
+    .search
+    {
+        position: absolute;
+        background-color: white;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 380px;
+        width:1200px;
+        padding: 35px;
+    }
+    .keywordsearch
+    {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 15px;
+        width: 400px;
+        border: 0;
+        border-bottom: 1px solid #747474;
+    }
+    .locationsearch
+    {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 485px;
+        width: 400px;
+        border: 0;
+        border-bottom: 1px solid #747474;
+    }
+    .locationimg
+    {
+        position: absolute;
+        margin-left: 455px;
+        margin-top: 3px;
+    }
+
+    .SearchButton a
+    {
+        background-color: deepskyblue;
+        padding: 10px;
+        position: absolute; 
+        margin-top: -35px; 
+        margin-left: 1000px; 
+        font-family: Bahnschrift;
+        width: 100px;
+        text-align: center;
+        color: white;
+    }
+
+    .divider1
+    {
+        position: absolute;
+        margin-left:1275px; 
+        margin-top: 20px;
+    }
+
+
+    .divider2
+    {
+        position: absolute;
+        margin-left: 435px; 
+        margin-top: -5px;
+    }
+
+    .Popular
+    {
+        position: absolute;
+        margin-left: 155px;
+        margin-top: 470px; 
+        font-family: Bahnschrift;
+        color: lightgray;
+    }
+    .side input
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightside
+    {
+        margin-left: 450px;
+        margin-top: 620px;
+        position: absolute; 
+    }
+
+    .rightside h1
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        width: 159px;
+        line-height: 110%;
+        text-align: center;
+        margin-left: 25px;
+        margin-top: 0px;
+        position: absolute;
+    }
+
+    .rightside h5
+    {
+        margin-left: 40px;
+        margin-top: 45px;
+        position: absolute;
+        font-family:Bahnschrift;
+        width: 159px;
+        color: gray;
+        font-weight: lighter;
+    }
+
+   .jobs
+    {
+        border: 2px solid gray;
+        height: 150px;
+        width: 995px;
+        position: absolute;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        margin-left: 450px;
+        
+    }
+
+    #SocialMediaAssistant
+    {
+        margin-top: 710px;
+    }
+
+    #BrandDesigner
+    {
+        margin-top: 890px;
+    }
+
+    #InteractiveDeveloper
+    {
+        margin-top: 1070px;
+    }
+
+    #EmailMarketing
+    {
+        margin-top: 1250px;
+    }
+
+    #LeadEngineer
+    {
+        margin-top: 1430px;
+    }
+
+    #ProductDesigner
+    {
+        margin-top: 1610px;
+    }
+
+    #CustomerManager
+    {
+        margin-top: 1790px;
+    }
+
+
+    .jobs img
+    {
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .jobs h4
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .jobs p
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 55px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .secondfooter
+    {
+        background-image: url("images/Decoration.png");
+        background-position:center top; ;
+        background-color: #5cb4f4;
+        position: absolute;
+        height: 400px;
+        width: 100%;
+
+        text-align: center;
+        margin-top: 2100px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        color: white;
+    }
+
+    .secondfooter h2
+    {
+        margin-top: 80px;
+        font-style: normal;
+        font-size: 36px;
+        font-weight: 500;
+        
+    }
+
+    .subscribe input
+    {
+        border: 0;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -250px;
+    }
+
+    .footer
+    {
+        position: absolute;
+        margin-top: 2450px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding: 100px;
+        /* font-size: 36px;
+        font-weight: 500; */
+    }
+
+    .footer h3
+    {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 60px;
+    }
+
+    .footer p
+    {
+        position: absolute;
+        margin-top: 20px;
+        width: 450px;
+        word-spacing: 2px;
+        line-height: 25px;
+        color: grey;
+    }
+    
+   
+   
+
+</style>
+
+<body>
+
+<div class="navigation" >
+<h2 style="position: absolute; margin-top: 25px; margin-left: 40px; font-family: Bahnschrift;">HireMe Now!</h2>
+<a href="#FindJobs" style="position: absolute; margin-top: 25px; margin-left: 250px; font-family: Bahnschrift; color: deepskyblue;">Find Jobs</a>
+<a href="#browse" style="position: absolute; margin-top: 25px; margin-left: 400px; font-family: Bahnschrift; color: deepskyblue;">Browse Companies</a>
+<a href="#login" style="position: absolute; margin-top: 25px; margin-left: 1200px; font-family: Bahnschrift; color: deepskyblue;">Login</a>
+<img class="divider1" src="images/Rectangle 2752.png">
+<div class="signup"><a href="#signup" style="position: absolute; margin-top: 15px; margin-left: 1300px; font-family: Bahnschrift;">Sign Up</a></div>
+
+<div class="headsection" style="position: absolute; background-color: #f8f8fd; height: 500px; width: 100%; margin-top: 80px; margin-left: -10px;">
+    <h1>Find your <span style="color: deepskyblue;">dream job</span></h1>
+    <img src="images/Group.png">
+    <h3 style=" text-align: center; margin-top: 55px; font-family: Bahnschrift light;">Find your next career at companies like HubSpot, Nike and Dropbox</h3>
+</div>
+
+<div class="search">
+<img src="images/Icon (2).png"><input class="keywordsearch" type="search" placeholder="Job title or keyword">
+<img class="divider2" src="images/Rectangle 2752.png">
+<img class="locationimg" src="images/Icon (3).png"><input class="locationsearch" type="search" placeholder="Location">
+<img src="images/Arrow - Down 2 (2).png" style="margin-left: 860px; margin-top: 5px; position: absolute;">
+<div class="SearchButton"><a href="#apply">Search</a></div>
+</div>
+
+<div class="Popular">
+    <h4>Popular : UI Designer, UX Researcher, Android, Admin</h4>
+</div>
+
+    <div class="side" style="position: absolute; margin-top: 600px; margin-left: 160px; font-family: Bahnschrift;">
+        <div class="TypeofEmployment">
+            <h4>Type of Employment</h4>
+            <img src="images/Arrow - Down 2.png" style="position: absolute; margin-left: 190px; margin-top: -35px;">
+            <form action="/action_page.php">
+                <input type="checkbox" id="Full-Time" name="Full-Time" value="Full-Time">
+                <label for="Full-Time" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Full-Time (3)</label><br><br>
+                <input type="checkbox" id="Part-Time" name="Part-Time" value="Part-Time">
+                <label for="Part-Time" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Part-Time (5)</label><br><br>
+                <input type="checkbox" id="Remote" name="Remote" value="Remote">
+                <label for="Remote" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Remote (2)</label><br><br>
+                <input type="checkbox" id="Internship" name="Internship" value="Internship">
+                <label for="Internship" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Internship (24)</label><br><br>
+                <input type="checkbox" id="Contract" name="Contract" value="Contract">
+                <label for="Contract" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Contract (3)</label><br><br>
+            </form>
+        </div>
+
+        <div class="categories">
+            <h4>Categories</h4>
+            <img src="images/Arrow - Down 2.png" style="position: absolute; margin-left: 190px; margin-top: -35px;">
+            <form action="/action_page.php">
+                <input type="checkbox" id="Design" name="Design" value="Design">
+                <label for="Design" style="position: absolute; margin-top: 7px; margin-left: 3px;">Design (24)</label><br><br>
+                <input type="checkbox" id="Sales" name="Sales" value="Sales">
+                <label for="Sales" style="position: absolute; margin-top: 7px; margin-left: 3px;">Sales (3)</label><br><br>
+                <input type="checkbox" id="Marketing" name="Marketing" value="Marketing">
+                <label for="Marketing" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Marketing (3)</label><br><br>
+                <input type="checkbox" id="Business" name="Business" value="Business" checked>
+                <label for="Business" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Business (3)</label><br><br>
+                <input type="checkbox" id="HumanResource" name="HumanResource" value="HumanResource">
+                <label for="HumanResource" style="position: absolute; margin-top: 7px; margin-left: 3px; width:159px;"> Human Resource (6)</label><br><br>
+                <input type="checkbox" id="Finance" name="Finance" value="Finance">
+                <label for="Finance" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Financee (4)</label><br><br>
+                <input type="checkbox" id="Engineering" name="Engineering" value="Engineering">
+                <label for="Engineering" style="position: absolute; margin-top: 7px; margin-left: 3px;width:159px;">Engineering (4)</label><br><br>
+                <input type="checkbox" id="Technology" name="Technology" value="Technology" checked>
+                <label for="Technology" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Technology (5)</label><br><br>
+            </form>
+        </div>
+
+        <div class="JobLevel">
+            <form action="/action_page.php">
+            <h4>Job Level</h4>
+            <img src="images/Arrow - Down 2.png" style="position: absolute; margin-left: 190px; margin-top: -35px;">
+            <input type="checkbox" id="Entry Level" name="Entry Level" value="Entry Level">
+            <label for="Entry Level" style="position: absolute; margin-top: 7px; margin-left: 3px;width:159px;"> Entry Level (57)</label><br><br>
+            <input type="checkbox" id="Mid Level" name="Mid Level" value="Mid Level">
+            <label for="Mid Level" style="position: absolute; margin-top: 7px; margin-left: 3px;"> Mid Level (3)</label><br><br>
+            <input type="checkbox" id="Senior Level" name="Senior Level" value="Senior Level">
+            <label for="Senior Level" style="position: absolute; margin-top: 7px; margin-left: 3px; width:159px;"> Senior Level (5)</label><br><br>
+            <input type="checkbox" id="Director" name="Director" value="Director" checked>
+            <label for="Director" style="position: absolute; margin-top: 7px; margin-left: 3px;">Director (12)</label><br><br>
+            <input type="checkbox" id="VP or Above" name="VP or Above" value="VP or Above">
+            <label for="VP or Above" style="position: absolute; margin-top: 7px; margin-left: 3px; width:159px;"> VP or Above (8)</label><br><br>
+        </form>
+        </div>
+
+        <div class="SalaryRange">
+            <h4>Salary Range</h4>
+            
+            <input type="checkbox" id="$700-$1000" name="$700-$1000" value="$700-$1000">
+            <label for="$700-$1000" style="position: absolute; margin-top: 7px; margin-left: 3px;"> $700-$1000 (4)</label><br><br>
+            <input type="checkbox" id="$100-$1500" name="$100-$1500" value="$100-$1500">
+            <label for="$100-$1500" style="position: absolute; margin-top: 7px; margin-left: 3px;"> $100-$1500 (6)</label><br><br>
+            <input type="checkbox" id="$1500-$2000" name="$1500-$2000" value="$1500-$2000">
+            <label for="$1500-$2000" style="position: absolute; margin-top: 7px; margin-left: 3px;width:159px;"> $1500-$2000 (10)</label><br><br>
+            <input type="checkbox" id="$3000 or above" name="$3000 or above" value="$3000 or above" checked>
+            <label for="$3000 or above" style="position: absolute; margin-top: 7px; margin-left: 3px;  width:159px;">$3000 or above (4)</label><br><br>
+        </div>
+
+    </div>
+
+    <div class="rightside">
+        <h1>All Jobs</h1>
+        <h5>Showing 73 results</h5>
+    </div>
+
+    <div>
+
+        <div id="SocialMediaAssistant" class="jobs">
+            <img src="images/Company Logo (2).png">
+            <h4>Social Media Assistant</h4>
+            <p>Agency <span>&bull;</span> Paris,France</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 50%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">5 applied of 10 capacity</p>
+        </div>
+
+        <!-- Note : &bull; is used to bring dot symbol or bullet -->
+
+        <div id="BrandDesigner" class="jobs">
+            <img src="images/Logo.png">
+            <h4>Brand Designer</h4>
+            <p>Agency <span>&bull;</span> San Fransisco, USA</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 20%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">2 applied of 10 capacity</p>
+        </div>
+
+        <div id="InteractiveDeveloper"  class="jobs">
+            <img src="images/Company Logo.png">
+            <h4>Interactive Developer</h4>
+            <p>Agency <span>&bull;</span> Hamburg, Germany</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 66.66%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">8 applied of 12 capacity</p>
+        </div>
+
+        <div id="EmailMarketing"  class="jobs">
+            <img src="images/Logo 7.png">
+            <h4>Email Marketing</h4>
+            <p>Agency <span>&bull;</span> Madrid, Spain</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 0%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">0 applied of 10 capacity</p>
+        </div>
+
+        <div id="LeadEngineer"  class="jobs">
+            <img src="images/Company Logo (3).png">
+            <h4>Lead Engineer</h4>
+            <p>Agency <span>&bull;</span> Ankara, Turkey</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 50%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">5 applied of 10 capacity</p>
+        </div>
+
+        <div id="ProductDesigner"  class="jobs">
+            <img src="images/Company Logo (4).png">
+            <h4>Product Designer</h4>
+            <p>Agency <span>&bull;</span> Berlin, Germany</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 50%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">5 applied of 10 capacity</p>
+        </div>
+
+        <div id="CustomerManager"  class="jobs">
+            <img src="images/Logo 27.png">
+            <h4>Customer Manager</h4>
+            <p>Agency <span>&bull;</span> Berlin, Germany</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 120px; background-color: #eefaf6; color: #57c3b3; padding: 7px; text-align: center; width: 75px; border-radius: 25px;  font-size: 15px; font-weight: 500;">Full-Time</p>
+            <img style=" position: absolute; margin-top: 95px; margin-left: 216px;" src="images/Rectangle 2752.png">
+            <p style=" position: absolute; margin-top: 95px; margin-left: 225px; color: #ffb836; border: 2px solid #ffb836; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Marketing</p>
+            <p style=" position: absolute; margin-top: 95px; margin-left: 320px; color: #4640de; border: 2px solid #4640de; padding: 5px; text-align: center; width: 75px; border-radius: 25px;font-size: 15px; font-weight: 500;">Design</p>
+            <a href="#apply" style=" position: absolute; margin-top: 25px; margin-left: 825px; background-color: #159eec; color: white; padding: 13px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Apply</a>
+            <div style="position: absolute; margin-top: 85px; margin-left: 825px; background-color: #d6ddeb; width: 146px; height: 8px;"><div style=" position: absolute;  background-color: #56cdad; height: 8px; width: 50%; "></div></div>
+            <p  style="position: absolute; margin-top: 105px; margin-left: 825px;  font-size: 14px; font-weight: 500; ">5 applied of 10 capacity</p>
+        </div>
+
+
+   
+    </div>
+
+    <div class="pagenumber" style="position:absolute; margin-left: 550px; margin-top: 1500px; font-family: Bahnschrift;">
+        <img src="images/Vector.png" style="position:absolute; margin-top: 500px;margin-left: 150px;" >
+        <p style="position:absolute; text-align: center; padding: 10px; width: 20px; background-color: #159eec; border-radius: 7.5px; margin-top: 490px;margin-left: 180px;">1</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 230px;" >2</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 260px;" >3</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 290px;" >4</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 320px;" >5</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 350px;" >...</p>
+        <p style="position:absolute; margin-top: 500px;margin-left: 380px;" >33</p>
+        <img src="images/Icon.png" style="position:absolute; margin-top: 495px;margin-left: 410px;" >
+    </div>
+
+
+    <div class="secondfooter">
+        <h2>Get Notified Every Job Now</h2>
+        <p style="word-spacing: 3px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br> Velit officia consequat duis enim velit mollit.</p>
+
+            <div class="subscribe" style="background-color: white; border-radius: 5px;width: 550px; height: 45px; margin-left: 480px; margin-top: 25px;">
+                <input type="email" placeholder="Type Your Email Address">
+                <a href="#subs" style=" position: absolute; margin-top: 7px; margin-left: 130px; background-color: #159eec; color: white; border-radius: 5px; padding: 6px; width: 120px; text-align: center;  font-size: 15px; font-weight: 500;">Subscribe</a>
+            </div>
+    </div>
+
+   
+
+</div>
+
+</div>
+    
+</body>
+</html>
