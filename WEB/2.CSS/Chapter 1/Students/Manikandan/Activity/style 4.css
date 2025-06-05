@@ -1,0 +1,16 @@
+.head{
+    text-decoration: underline;
+    font-size: 24px;
+}
+.yo{
+    text-decoration: line-through;
+    font-size: 24px;
+}
+.ok{
+    font-weight: bold;
+    font-size: 24px;
+}
+.oo{
+    font-style: italic;
+    font-size: 24px;
+}
