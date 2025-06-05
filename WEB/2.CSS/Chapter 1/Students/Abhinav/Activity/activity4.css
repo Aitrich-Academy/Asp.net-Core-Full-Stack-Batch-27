@@ -1,0 +1,23 @@
+#a
+{
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+#b
+{
+    font-weight: bold;
+}
+
+#c
+{
+
+     text-decoration:  line-through;
+    font-family: sans-serif;
+    
+}
+#d
+{
+    
+    font-style: italic;
+}
