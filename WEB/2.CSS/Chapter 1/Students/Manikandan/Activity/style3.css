@@ -1,0 +1,22 @@
+body
+{
+    background-image: url(image/beach-5526592.jpg);
+    width: 20%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 20em;
+    align-items: left;
+    background-position: left;
+    background-color: gray;
+}
+
+#a
+{
+    background-color: aqua;
+    width: 100px;
+    padding: 50px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    right: 2%;
+}
