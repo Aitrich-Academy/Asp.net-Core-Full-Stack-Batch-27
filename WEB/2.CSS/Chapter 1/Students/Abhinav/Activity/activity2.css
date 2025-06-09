@@ -1,0 +1,21 @@
+body
+{
+    background-image: url(images/bg.jpg);
+    background-size:50em 50em;
+    background-repeat: repeat-x;
+    text-align: center;
+
+}
+h1
+{
+    color: black;
+    position: absolute;
+    left: 62%;
+}
+p
+{
+    color: red;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}

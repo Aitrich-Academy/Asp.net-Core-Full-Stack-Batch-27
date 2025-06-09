@@ -1,0 +1,58 @@
+.table1
+{
+    background-color: steelblue;
+    width: 12%;
+    height: 45em;
+}
+#a
+{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    color: steelblue;
+}
+#b
+{
+    background-color: steelblue;
+    border-style: solid;
+    border-color:navy ;
+    border-width: thin;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 13%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+}
+.c
+{
+    width: 87%;
+    height: 45em;
+    background-color: gray;
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+
+}
+#d
+{
+    border-style: solid;
+    border-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 150px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    position: absolute;
+    left: 40%;
+    top: 2%;
+}
