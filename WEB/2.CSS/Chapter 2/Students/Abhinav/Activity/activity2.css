@@ -1,0 +1,237 @@
+.main
+{
+    border: 2px solid;
+    height: 490px;
+    width: 1000px;
+}
+h1
+{
+    color: steelblue;
+    margin: 40px;
+    position: absolute;
+    margin-left: 140px;
+}
+.img
+{
+    width: 70px;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 20px;
+  
+}
+.agency
+{
+    margin: 140px;
+    position: absolute;
+    margin-top: 100px;
+}
+.agency1
+{
+    margin: 140px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 202px;
+}
+.fulltime
+{
+    border: 2px solid green;
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+}
+.marketing
+{
+    border: 2px solid  rgb(228, 228, 76);
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-left: 250px;
+    color: rgb(155, 155, 36);
+    font-weight: 600;
+}
+.designing
+{
+    border: 2px solid steelblue;
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-left: 360px;
+    color:  steelblue;
+    font-weight: 600;
+}
+a.apply1
+{
+    color: steelblue;
+    border: 1.5px solid steelblue;
+    margin: 100px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    width:150px;
+    height: 35px;
+    align-content: center;
+    margin-left: 800px;
+    font-size: 24px;
+    
+}
+.brandh1
+{
+    color: steelblue;
+    margin: 190px;
+    position: absolute;
+    margin-left: 140px;
+}
+.img1
+{
+    width: 65px;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 20px;
+  
+}
+.agency2
+{
+    margin: 140px;
+    position: absolute;
+    margin-top: 250px;
+}
+.agency3
+{
+    margin: 140px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 203px;
+}
+.fulltime2
+{
+    border: 2px solid green;
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-top: 290px;
+}
+.marketing2
+{
+    border: 2px solid  rgb(228, 228, 76);
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-left: 250px;
+    color: rgb(155, 155, 36);
+    font-weight: 600;
+    margin-top: 290px;
+}
+a.apply2
+{
+    color: steelblue;
+    border: 1.5px solid steelblue;
+    margin: 100px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    width:150px;
+    height: 35px;
+    align-content: center;
+    margin-left: 800px;
+    font-size: 24px;
+    margin-top: 250px;
+    
+}
+.interactiveh1
+{
+    color: steelblue;
+    margin: 350px;
+    position: absolute;
+    margin-left: 140px;
+}
+.img2
+{
+    width: 65px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 20px;
+  
+}
+.agency4
+{
+    margin: 140px;
+    position: absolute;
+    margin-top: 400px;
+}
+.agency5
+{
+    margin: 130px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 204px;
+}
+.fulltime3
+{
+    border: 2px solid green;
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-top: 440px;
+}
+.marketing3
+{
+    border: 2px solid  rgb(228, 228, 76);
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-left: 250px;
+    color: rgb(155, 155, 36);
+    font-weight: 600;
+    margin-top: 440px;
+}
+.designing3
+{
+    border: 2px solid steelblue;
+    text-align: center;
+    width: 90px;
+    border-radius: 40px;
+    padding: 4px;
+    position: absolute;
+    margin: 140px;
+    margin-left: 360px;
+    color:  steelblue;
+    font-weight: 600;
+    margin-top: 440px;
+}
+a.apply3
+{
+    color: steelblue;
+    border: 1.5px solid steelblue;
+    margin: 100px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    width:150px;
+    height: 35px;
+    align-content: center;
+    margin-left: 800px;
+    font-size: 24px;
+    margin-top: 390px;
+    
+}
