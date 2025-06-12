@@ -1,0 +1,60 @@
+.Aa
+{
+    border: 2px solid;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+table
+{
+    border:1.5px;
+}
+
+#head
+{
+color:blue;
+}
+th{
+    background-color: rgb(219, 219, 219);
+    border-radius: 8px;
+}
+
+table
+{
+    position: absolute;
+    left: 50px;
+}
+
+td
+{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    
+}
+
+#headA
+{
+    color: blue;
+     border-bottom: 3px solid rgb(58, 58, 233);
+   
+}
+
+#bordera
+{
+     border-bottom: 3px solid rgb(58, 58, 233);
+    
+}
+
+#borderb
+{
+     border-bottom: 3px solid rgb(58, 58, 233);
+    
+}
+
+#borderc
+{
+     border-bottom: 3px solid rgb(58, 58, 233);
+    
+}
+

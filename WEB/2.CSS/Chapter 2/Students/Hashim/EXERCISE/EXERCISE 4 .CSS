@@ -1,0 +1,45 @@
+#leftbox
+{
+    margin-left: 880px;
+    margin-top: -490px;
+}
+
+#A
+{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#inputemail
+{
+    width: 300px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+#inputpass
+{
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#forgot
+{
+    color: rgb(128, 127, 127);
+    margin-left: 190px;
+    margin-top: 15px;
+}
+
+
+#button
+{
+    width: 300px;
+    color: white;
+    background-color: rgb(15, 0, 178);
+    height: 25px;
+    margin-left:5px ;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+

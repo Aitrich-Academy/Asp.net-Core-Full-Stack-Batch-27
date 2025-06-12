@@ -1,0 +1,174 @@
+.bluebox
+{
+    width: 300px;
+    height: 700px;
+    background-color: blue;
+    float: left;
+}
+
+
+#AA
+{
+    color: white;
+    margin-left: 20px;
+    margin-top: 60px;  
+}
+
+
+#A
+{
+    margin-top: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#B
+{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+#a
+{
+    margin-top: 60px ;
+    margin-left: 50px;
+    font-size: x-large;
+}
+
+
+#b
+{
+    margin-top: 60px;
+      margin-left: 50px;
+    font-size: x-large;
+}
+
+#c
+{
+     margin-top: 60px;
+      margin-left: 50px;
+    font-size: x-large;
+}
+
+
+#d
+{
+     margin-top: 60px;
+      margin-left: 50px;
+    font-size: x-large;
+}
+
+
+#e
+{
+     margin-top: 60px;
+      margin-left: 50px;
+    font-size: x-large;
+}
+
+#h
+{
+    margin-top: -442px;
+    margin-left: -20px;
+}
+
+#i
+{
+    margin-top: 55px;
+    margin-left: -20px;
+}
+
+#j
+{
+    margin-top: 60px;
+    margin-left: -20px;   
+}
+
+#k
+{
+    margin-top: 55px;
+    margin-left: -20px;   
+}
+
+#l
+{
+    margin-top: 55px;
+    margin-left: -20px; 
+}
+
+#D
+{
+    margin-top: -550px;
+    margin-left: 600px;
+}
+
+#m
+{
+    margin-left:500px;
+    width: 400px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#n
+{
+    margin-left: 630px;
+    color: rgb(127, 125, 125);
+    width: 150px;
+
+}
+
+#E
+{
+    margin-left: 500px;
+    margin-top: 80px;
+
+}
+
+#p
+{
+    margin-left: 550px;
+    margin-top: -25px;
+    color: lightslategray;
+}
+
+#F
+{
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+#q
+{
+     margin-left: 550px;
+    margin-top: -25px;
+    color: lightslategray;
+}
+
+
+#G
+{
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+#r
+{
+     margin-left: 550px;
+    margin-top: -25px;
+    color: lightslategray;
+}
+
+#H
+{
+    margin-left: 850px;
+    margin-top: -200px;
+}
+
+.main
+{
+    border: 2px solid;
+    width: 950px;
+    position: absolute;
+}
