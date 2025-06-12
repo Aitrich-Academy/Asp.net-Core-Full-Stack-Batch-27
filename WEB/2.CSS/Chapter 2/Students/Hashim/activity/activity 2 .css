@@ -1,0 +1,37 @@
+.Aa
+{
+    width: 40%;
+  
+    border: 2px solid;
+    height: 100px;
+}
+
+h2
+{
+    text-align: start;
+    margin-top: 5px;
+}
+
+a
+{
+    text-decoration: none;
+    color: blue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Ac
+{
+    width: 40%;
+    border: 2px solid;
+    height: 100px;
+    margin-left: 650px;
+    margin-top: -120px;
+}
+
+#ae
+{
+    background-color: rgba(172, 172, 3, 0.627);
+    padding: 5px;
+    margin:5px;
+}
