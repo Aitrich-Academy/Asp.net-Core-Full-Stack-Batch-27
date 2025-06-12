@@ -1,0 +1,132 @@
+body{
+    position: relative;
+    overflow: hidden;
+}
+.main-left{
+    position: absolute;
+width: 629px;
+height: 747px;
+left: -8px;
+top: -8px;
+
+background: #e5e6ea;
+}
+.main-left img{
+    float: left;
+    position: absolute;
+    width: 527px;
+height: 545px;
+left: 102px;
+top: 100px;
+border-radius: 81px 0px 4px 81px;
+}
+.main-right{
+    position: absolute;
+    width:907px;
+    height: 745px;
+    margin-left: 621px;
+    margin-top: -7px;
+    background-color: #64b7f5;
+}
+.registration{
+    position: absolute;
+    float: left;
+width: 700px;
+height: 542px;
+left: 0px;
+top: 99px;
+
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 58px rgba(0, 0, 0, 0.25);
+border-radius: 0px 81px 81px 0px;
+/* transform: rotate(-180deg); */
+}
+.header h1{
+    position: absolute;
+width: 332px;
+height: 37px;
+margin-left: -50px;
+margin-top: 15px;
+float: left;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+text-align: center;
+
+color: #000000;
+}
+.line{
+    position: absolute;
+width: 70px;
+height: 5px;
+margin-left: 40px;
+margin-top: 70px;
+float: left;
+background: #64B7F5;
+border-radius: 76px;
+}
+tr{
+    line-height: 30px;
+}
+table{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 75px;
+    width: 600px;
+}
+table .inp1{
+    font: 1em sans-serif;
+    width:230px;
+    height: 35px;
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.31);
+}
+table .radio{
+    display: flex;
+    column-gap: 25px;
+}
+table label{
+    width: 200px;
+    height: 1px;
+    left: 1px;
+    top: 265px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #49A1D3  ;
+}
+table .btn{
+width: 350px;
+height: 45px;
+color: white;
+font: 1em sans-serif;
+background: #64B7F5;
+border: 1px solid rgba(0, 0, 0, 0.31);
+animation-name: example;
+}
+@keyframes example {
+    0%   {margin-left:90px;}
+        50%  {margin-left:110px;}
+    100% {margin-left:90px;}
+}
+@media screen and (max-width:320px) {
+    .main-left{
+        width: 100%;
+    }
+    .main-right{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <style>
+
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #e5e5e5;
+    }
+    .leftside
+    {
+        
+    position: absolute;
+    width: 284px;
+    height: 1049px;
+    left: -14px;
+    top: -13px;
+    background: #117EBD;
+
+    }
+
+    .bgimg
+    {
+    position: absolute;
+    width: 1006px;
+    height: 431px;
+    left: 384px;
+    top: 497px;
+    background: url("images/smiling.png");
+    }
+
+   .menu
+    {
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    li
+    {
+        background-repeat: no-repeat;
+        font-size: 18px;
+        margin-top: 13px;
+        margin-left: 10px;
+        line-height: 35px;
+        padding-left: 35px;
+        
+    }
+
+    a
+    {
+        color: white;
+        text-decoration: none;
+    }
+
+    .profile
+    {
+        margin-top: -10px;
+        height: 100px;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .olivia
+    {
+        position: absolute;
+        color: white;
+        text-align: center;
+        line-height: 5px;
+        font-size: smaller;
+        margin-top: 78px;
+        margin-left: 75px;
+    }
+
+    .circle
+    {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 90px;
+    }
+
+    .circle img:hover
+    {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -32px;
+    }
+
+    .circle img
+    {
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -30px;
+    }
+
+    .addnew
+    {
+        position: absolute;
+        margin-top: 580px;
+        margin-left: 77px;
+    }
+
+    .addnew h3
+    {
+        position: absolute;
+        margin-top: -5px;
+        width: 150px;
+        color: white;
+        margin-left: -5px;
+    }
+
+    .header
+    {
+        position: absolute;
+       padding: 10px;
+        width: 1228px;
+        height: 80px;
+        margin-left: 262px;
+        margin-top: -10px;
+        background-color: white;
+    }
+
+    .header img
+    {
+       float: right;
+    }
+
+    .bell-icon
+    {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 1050px;
+    }
+
+    .findjobseeker h2
+    {
+        position: absolute;
+        margin-top: 120px;
+        margin-left:450px ;
+        color: #117EBD;
+    }
+
+    .search
+    {
+        position: absolute;
+        border-radius: 15px;
+        padding: 15px;
+        width: 870px;
+        margin-top: 180px;
+        margin-left: 480px;
+        height: 15px;
+        background-color: white;
+        border: 1px solid lightskyblue;
+    }
+
+    .search img
+    {
+        position: absolute;
+        margin-top: -3px;
+    }
+
+    .search input
+    {
+        border: none;
+        position: absolute;
+        margin-left: 50px;
+        width: 500px;
+    }
+
+    .filterimg
+    {
+        position: absolute;
+        margin-left: 750px;
+        
+    }
+
+    .selected h3
+    {
+        padding: 10px 0px 1px 0px;
+        border-radius: 15px;
+        border: 1px solid lightskyblue;
+        background-color: #7db4d4;
+        /* background-color: red; */
+        width: 180px;
+        height: 30px;
+        position: absolute;
+        margin-top: 250px;
+        text-align: center;
+        font-weight: 400;
+        color: slategray;
+    }
+
+    .selected h3:hover
+    {
+        padding: 10px 0px 1px 0px;
+        border-radius: 15px;
+        border: 2.5px solid rgb(0, 255, 136);
+        background-color: #00a2ff;
+        /* background-color: red; */
+        width: 180px;
+        height: 30px;
+        position: absolute;
+        margin-top: 250px;
+        text-align: center;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+
+    #location
+    {
+        position: absolute;
+        margin-left: 500px;
+    }
+
+    #experience
+    {
+        position: absolute;
+        margin-left: 700px;
+    }
+
+    #category
+    {
+        position: absolute;
+        margin-left: 900px;
+    }
+
+    #skills
+    {
+        position: absolute;
+        margin-left: 1100px;
+    }
+
+    .selected2 h3
+    {
+        padding: 10px 0px 1px 80px;
+        border-radius: 15px;
+        background-color: #117EBD;
+        /* background-color: red; */
+        width: 175px;
+        height: 60px;
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 500px;
+        
+        font-weight: 400;
+        color: white;
+        
+    }
+
+    /* #Interviews
+    {
+        position: absolute;
+        
+    } */
+
+    #Application
+    {
+        position: absolute;
+        margin-left: 270px;
+    }
+
+    #Total
+    {
+        position: absolute;
+        margin-left: 540px;
+    }
+
+    .selected2 img{
+        position: absolute;
+        margin-top: 370px;
+        margin-left: 510px;
+        z-index: 1;
+    }
+
+    .selected2 h4
+    {
+        position: absolute;
+        margin-top: 365px;
+        margin-left: 690px;
+        z-index: 1;
+        color: white;
+        font-size: 28px;
+    }
+
+  
+    .new:hover
+    {
+        background-color: rgb(231, 118, 5);
+        padding: 10px 0px 20px 10px;
+        width: 87px;
+        border-radius: 50px;
+    }
+
+    @keyframes shake 
+    {
+        
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    #Interviews.selected2:hover{
+     animation: shake 3s;
+     animation-iteration-count: infinite;   
+    }
+    #Application.selected2:hover{
+        animation: shake 3s;
+        animation-iteration-count: infinite;
+    }
+    #Total.selected2:hover{
+     animation: shake 3s;
+     animation-iteration-count: infinite;   
+    }
+
+   </style>
+</head>
+<body>
+    <div class="leftside">
+        <div class="profile">
+            <div class="circle"><img src="images/cheerful.png"></div>
+        </div>
+        <div class="olivia">
+            <p class="p1">Olivia</p>
+            <p class="p2">olivia@mail.com</p>
+        </div>
+        
+        
+        <div class="menu">
+            <ul type="none">
+                <div class="listdiv"><li style="background-image: url('images/dashboard 1.png');"><a href="#">Dash Board</a></li></div>
+                <div class="listdiv"><li style="background-image: url('images/suitcase 2.png');"><a href="#">Jobs</a></li></div>
+                    <div class="listdiv"><li style="background-image: url('images/application (1) 1.png');"><a href="#">Applications</a></li></div>
+                        <div class="listdiv"><li style="background-image: url('images/question (1) 1.png');"><a href="#">Interviews</a></li></div>
+                            <div class="listdiv"><li style="background-image: url('images/message 1.png');"><a href="#">Messages</a></li></div>
+                                <div class="listdiv"><li style="background-image: url('images/settings 1.png');"><a href="#">Settings</a></li></div>
+            </ul>
+        </div>
+
+        <div class="addnew">
+            <img src="images/add-group (1) 1.png">
+            <div class="new"><a><h3>Add New</h3></a></div>
+        </div>
+
+    </div>
+
+    <div class="header">
+        <img src="images/Group 33999.png">
+        <img src="images/notification-bing.png" class="bell-icon">
+       
+    </div>
+
+    <div class="findjobseeker"> <h2>Find Jobseeker</h2></div>
+
+    <div class="search">
+        <img src="images/search copy 2.png"><input class="keywordsearch" type="search" placeholder="Search by Job Title, Qualification, Industry">
+        <img class="filterimg" src="images/icon filter.png">
+    </div>
+
+    <div class="select">
+        <div id="location" class="selected"><h3>Location</h3></div>
+        <div id="experience" class="selected"><h3>Experience</h3></div>
+        <div id="category" class="selected"><h3>Category</h3></div>
+        <div id="skills" class="selected"><h3>Skills</h3></div>
+    </div>
+
+    <div class="select2">
+        <div id="Interviews" class="selected2"><img src="images/Group 33988.png"><h3>Interviews<br> Scheduled</h3><h4>8</h4></div>
+        <div id="Application" class="selected2"><img src="images/icon.png"><h3>Application<br> Recieved</h3><h4>127</h4></div>
+        <div id="Total" class="selected2"><img src="images/icon (1).png"><h3>Total Jobs<br> Posted</h3><h4>49</h4></div>
+    </div>
+   
+    <div class="bgimg"></div>
+
+</body>
+</html>
