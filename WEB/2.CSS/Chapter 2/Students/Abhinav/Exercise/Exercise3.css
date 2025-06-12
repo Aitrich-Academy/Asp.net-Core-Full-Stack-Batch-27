@@ -1,0 +1,356 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.main
+{
+    background-color:  #40189D;
+    height: 151%;
+    width: 360px;
+    position: absolute;
+}
+.jimg
+{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.jobimg
+{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+ul
+{
+    list-style-type: none;
+    margin-top: 150px;
+}
+li 
+{
+      margin-left: 10px;
+      margin: 20px;
+      margin-top: 55px;
+      cursor: pointer;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.left
+{
+    padding: 10px 10px 10px 20px;
+    font-size: 20px;
+}
+li:hover
+{
+    background-color: bisque;
+    padding: 10px 0px 10px 10px;
+    border-radius: 25px 0px 0px 25px;
+}
+.right 
+{
+    position: absolute;
+    width: 1305px;
+    height: 1100px;
+    left: 313px;
+    top: 0px;
+    border-radius: 38px 0px 0px 38px;
+    background-color: rgb(196, 196, 196);
+}
+
+.icmenu
+{
+    position: absolute;
+    top: 50px;
+    left: 30px ;
+}
+.dash
+{
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search
+{
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: -450px;
+}
+.searchbar
+{
+    background-color:  rgb(222, 214, 214);
+    position: absolute;
+    width: 200px;
+    top: 49px;
+    left: 900px;
+    width: 380px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid  rgb(222, 214, 214);
+    cursor: pointer;
+}
+::placeholder
+{
+    position: absolute;
+    left: 50px;
+}
+.searchicon
+{
+    position: absolute;
+    top: 53px;
+    left: 760px;
+    width: 25px;
+}
+.notification
+{
+    position: absolute;
+    top: 20px;
+    left: 950px;
+    width: 203px;
+    cursor: pointer;
+}
+.name
+{
+    position: absolute;
+    top: 11px;
+    width: 50px;
+    left: 1220px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.admin
+{
+    position: absolute;
+    top: 49px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: 12px;
+}
+.greenbox
+{
+    position: absolute;
+    background-color: rgb(65, 211, 147);
+    top: 160px;
+    left: 120px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.greenbox:hover
+{
+    background-color: green;
+}
+.img1
+{
+    position: absolute;
+    width: 45px;
+    margin: 45px;
+    top: 20px;
+}
+.p1
+{
+    position: absolute;
+    left: 110px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n1
+{
+    position: absolute;
+    left: 118px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
+.bluebox
+{
+    position: absolute;
+    background-color: rgb(69, 179, 227);
+    top: 160px;
+    left: 490px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.bluebox:hover
+{
+    background-color:  rgb(4, 61, 85);
+}
+.img2
+{
+    position: absolute;
+    width: 65px;
+    margin: 45px;
+    top: 20px;
+}
+.p2
+{
+    position: absolute;
+    left: 110px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n2
+{
+    position: absolute;
+    left: 118px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
+.purplebox
+{
+    position: absolute;
+    background-color: rgb(75, 24, 169);
+    top: 160px;
+    left: 870px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.purplebox:hover
+{
+    background-color: rgb(95, 52, 174);
+}
+.img3
+{
+    position: absolute;
+    width: 50px;
+    margin: 45px;
+    top: 20px;
+}
+.p3
+{
+    position: absolute;
+    left: 130px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n3
+{
+    position: absolute;
+    left: 145px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
+.purplebox2
+{
+    position: absolute;
+    background-color: rgb(75, 24, 169);
+    top: 460px;
+    left: 120px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.purplebox2:hover
+{
+    background-color: rgb(95, 52, 174);
+}
+.img4
+{
+    position: absolute;
+    width: 85px;
+    margin: 45px;
+    top: 20px;
+}
+.p4
+{
+    position: absolute;
+    left: 130px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n4
+{
+    position: absolute;
+    left: 145px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
+.bluebox2
+{
+    position: absolute;
+    background-color: rgb(69, 179, 227);
+    top: 460px;
+    left: 490px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.bluebox2:hover
+{
+    background-color:  rgb(4, 61, 85);
+}
+.img5
+{
+    position: absolute;
+    width: 85px;
+    margin: 45px;
+    top: 20px;
+}
+.p5
+{
+    position: absolute;
+    left: 130px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n5
+{
+    position: absolute;
+    left: 145px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
+.greenbox2
+{
+    position: absolute;
+    background-color: rgb(102, 230, 102);
+    top: 460px;
+    left: 870px;
+    width: 300px;
+    height: 180px;
+    cursor: grab;
+}
+.greenbox2:hover
+{
+    background-color:  rgb(20, 164, 20);
+}
+.img6
+{
+    position: absolute;
+    width: 85px;
+    margin: 45px;
+    top: 20px;
+}
+.p6
+{
+    position: absolute;
+    left: 130px;
+    color: white;
+    top: 55px;
+    font-size: medium;
+}
+.n6
+{
+    position: absolute;
+    left: 145px;
+    top: 65px;
+    color: white;
+    font-size: 34px;
+}
