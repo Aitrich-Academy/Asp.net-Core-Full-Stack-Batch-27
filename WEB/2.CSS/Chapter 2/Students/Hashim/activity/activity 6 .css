@@ -1,0 +1,38 @@
+.AA
+{
+    background-color:white;
+    height: 150px;
+    width: 550px;
+    border: 2px solid;
+}
+
+#AB
+{
+    background-color:white;
+    position: absolute;
+    height: 120px;
+    width: 500px;
+    top: 25px;
+    left: 35px;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+#AC
+{
+    font-size: xx-large;
+    font-weight:bold ;
+    text-align: center;
+}
+
+#AD
+{
+    background-color: white;
+    height: fit-content;
+    width: 450px;
+    margin-top: -15px;
+    margin-left:25px ;
+    text-align: center;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+}
