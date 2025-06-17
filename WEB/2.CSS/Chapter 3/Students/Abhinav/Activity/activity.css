@@ -1,0 +1,115 @@
+button
+{
+    transform: skewX(20deg) skewY(20deg);
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    top: 150px;
+    left: 50px;
+    background-color: palegreen;
+}
+.translate
+{
+    transform: translate(100px,50px);
+    background-color: blueviolet;
+    position: absolute;
+}
+.card
+{
+    transform: rotateX(150deg);
+    position: absolute;
+    background-color: palevioletred;
+    top: 300px;
+    width: 420px;
+    height: 60px;
+}
+.card1
+{
+    transform: rotateY(150deg);
+    position: absolute;
+    background-color: palevioletred;
+    top: 400px;
+    width: 420px;
+    height: 60px;
+}
+.square
+{
+    transform: rotate(45deg);
+    background-color: burlywood;
+    position: absolute;
+    width: 80px;
+    top: 500px;
+    left: 200px;
+    height: 40px;
+}
+.scale
+{
+    position: absolute;
+    top: 600px;
+    left: 220px;
+   transition: transform 0.4s ease;
+}
+.scale:hover
+{
+     transform: scale(2,2);
+}
+.smooth
+{
+    background-color: blue;
+    position: absolute;
+    top: 720px;
+    left: 220px;
+    color: aliceblue;
+    transition: transform 0.6s ease-in-out;
+}
+.smooth:hover
+{
+    transform: scale(2,5);
+}
+.border
+{
+    background-color: wheat;
+    position: absolute;
+    top: 780px;
+    left: 220px;
+    border:solid black;
+    transition: transform  0.5s ease-in-out ;
+}
+.border:hover
+{
+   border-color: red; 
+   transform: scaleX(4);
+}
+.fade
+{
+    position: absolute;
+    top: 820px;
+    left: 50px;
+    background-color: cadetblue;
+    width: 600px;
+    text-align: center;
+    opacity: 2;
+    transition: transform 1s ease-in-out ;
+}
+.fade:hover
+{
+    opacity: 0.4;
+    background-color: rgb(16, 49, 50);
+    
+}
+.effect
+{
+    position: absolute;
+    top: 880px;
+    left: 220px;
+    background-color: aqua;
+    width: 190px; 
+    height: 50px;
+    text-align: center;  
+    transition: transform 1s ease-out;
+}
+.effect:hover
+{
+    background-color: chartreuse;
+    font-size: 24px;
+}

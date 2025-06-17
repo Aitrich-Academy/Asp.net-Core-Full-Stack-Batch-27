@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 3</title>
+</head>
+<style>
+    .diagonal
+    {
+        width: 100px;
+        height: 100px;
+        background-color: peru;
+        border-radius: 50px;
+    }
+    .bounce
+    {
+        animation: diagonalRotate 1s alternate infinite ease-in;
+    }
+    @keyframes diagonalRotate
+    {
+        0%
+        {
+            transform: translate(0,0) rotate(0deg);
+        }
+        100%
+        {
+            transform: translate(300px,300px) rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="diagonal bounce"></div>
+</body>
+</html>

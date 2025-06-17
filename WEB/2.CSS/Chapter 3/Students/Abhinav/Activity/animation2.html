@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        .horizontal
+        {
+            width: 100px;
+            height: 100px;
+            background-color: springgreen;
+            border-radius: 50px;
+        }
+        .bounce
+        {
+            animation: bounceLeft 0.8s cubic-bezier(0.075, 0.82, 0.165, 1)  infinite alternate;
+        }
+        @keyframes bounceLeft
+        {
+            0%
+            {
+                transform: translateX(0);
+            }
+            100%
+            {
+                transform: translateX(900px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal bounce"></div>
+</body>
+</html>

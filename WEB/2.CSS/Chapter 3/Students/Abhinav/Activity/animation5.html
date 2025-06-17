@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 5</title>
+</head>
+<style>
+    .box
+    {
+        width: 200px;
+        background-color: seagreen;
+        height: 150px;
+        animation: colorChange 4s infinite;
+    }
+    @keyframes colorChange
+    {
+        0%
+        {
+            background: rebeccapurple;
+        }
+        25%
+        {
+            background: yellowgreen;
+        }
+        50%
+        {
+            background: saddlebrown;
+        }
+        100%
+        {
+            background: darkolivegreen;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
