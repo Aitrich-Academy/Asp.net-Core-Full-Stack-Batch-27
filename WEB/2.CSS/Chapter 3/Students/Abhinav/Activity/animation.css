@@ -1,0 +1,72 @@
+.ball
+{
+    background-color: brown;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    animation: bounce 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce
+{
+    from
+    {
+        transform: translate3d(0,0,0);
+    }
+    to
+    {
+        transform: translate3d(0,500px,0);
+    }
+}
+
+.fade
+{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 220px;
+}
+.box
+{
+    animation: fadeBox 2s alternate infinite ease-in-out;
+}
+@keyframes fadeBox
+{
+    from
+    {
+        opacity:5px;
+        background-color: lawngreen;
+        
+    }
+    to
+    {
+        opacity: 1px;
+    }
+}
+.slide
+{
+    position: absolute;
+    top: 350px;
+    font-weight: 600;
+    font-size: 24px;
+    color: blue;
+}
+.text
+{
+    animation: textSliding 5s   infinite ease-in-out ;
+}
+@keyframes textSliding
+{
+    from
+    {
+        transform: translateX(-600px);
+        
+    }
+    to
+    {
+        transform: translateX(1000px);
+    }
+}

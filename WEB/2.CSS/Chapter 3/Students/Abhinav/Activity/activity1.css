@@ -1,0 +1,279 @@
+.flip
+{
+    transform: scaleX(-1);
+}
+.perspective
+{
+    transition: transform 0.5s ease-in;
+    background-color: aquamarine;
+    width: 200px;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.perspective:hover
+{
+    transform: perspective(600px) rotateX(360deg); 
+}
+.custom
+{
+    background-color: blueviolet;
+    width: 200px;
+    text-align: center;
+    transition: transform 1s ease;
+    transform-origin: top left;
+}
+.custom:hover
+{
+    transform : rotate(45deg);
+}
+.skew
+{
+    background-color: brown;
+    width: 200px;
+    text-align: center;
+    transition: tranform 0.1s ease-out;
+}
+.skew:hover
+{
+    transform: skewX(20deg) skewY(25deg);
+}
+.rotate
+{
+    background-color: burlywood;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.5s linear;
+}
+.rotate:hover
+{
+    transform: rotate(90deg);
+}
+
+.para:hover
+{
+    transition: color 0.9s ease-in;
+    color: darkgreen;
+}
+
+.menu
+{
+    background-color: cadetblue;
+    width: 200px;
+    cursor: pointer;
+}
+.submenu
+{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+.menu:hover .submenu
+{
+    max-height: 100px;
+}
+.shadow
+{
+    background-color: yellow;
+    width: 200px;
+    text-align: center;
+    transition: box-shadow 1s;
+}
+.shadow:hover
+{
+    box-shadow:3px 4px 6px red ;
+    
+}
+.highlight
+{
+    background-color: transparent;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.1s ease-in-out;
+}
+.highlight:hover
+{
+    background-color: darkgray;
+}
+h3
+{
+    transition: font-weight 0.5s ease-in;
+}
+h3:hover
+{
+    font-weight: bolder;
+}
+.bounce
+{
+    background-color: chartreuse;
+    transition: transform 0.5s ease-in-out;
+}
+.bounce:hover
+{
+    transform: translateY(-10px);
+}
+.zoom
+{
+    background-color: violet;
+    transition: transform 0.5s ease-in-out;
+    width: 200px;
+    text-align: center;
+}
+.zoom:hover
+{
+    transform: rotate(25deg) scale(2);
+}
+.shift
+{
+    width: 200px;
+    text-align: center;
+    background-color: tomato;
+    transition: transform 0.5s,background-color 0.5s;
+}
+.shift:hover
+{
+    transform: skew(15deg,20deg);
+    background-color: thistle;
+}
+.flip-card 
+{
+  width: 150px;
+  height: 100px;
+  perspective: 1000px;
+}
+.flip-inner 
+{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.front 
+{
+  background-color: skyblue;
+}
+.back 
+{
+  background-color: steelblue;
+  transform: rotateY(180deg);
+}
+.flip-card:hover .flip-inner 
+{
+  transform: rotateY(180deg);
+}
+.circle
+{
+    background-color: teal;
+    text-align: center;
+    align-content: center;
+    width: 250px;
+    height: 200px;
+    transition: border-radius 1s;
+}
+.circle:hover
+{
+    border-radius: 200%;
+    width: 150px;
+    height: 150px;
+}
+.square
+{
+    border-radius: 100px;
+    background-color: wheat;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    transition: border-radius 0.5s;
+}
+.square:hover
+{
+    border-radius: 0px;
+}
+.tilt
+{
+  width: 200px;
+  background-color:cornflowerblue;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s linear;
+  perspective: 600px;
+}
+.tilt:hover 
+{
+  transform: rotateX(10deg) rotateY(25deg);
+}
+.color
+{
+    color: slateblue;
+    font-weight: 600;
+    transition: color 1s;
+}
+.color:hover
+{
+    color: sienna;
+}
+.expand 
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: saddlebrown;
+  color: white;
+  font-size: 12px;
+  border: none;
+  transition: transform 0.5s, background-color 1s;
+}
+.expand:hover 
+{
+  transform: scale(1.3);
+  background-color : firebrick;
+}
+.link 
+{
+  position: relative;
+  text-decoration: none;
+  color: grey;
+}
+.link::after 
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background:darkgoldenrod;
+  transition: width 0.3s ease;
+}
+.link:hover::after
+ {
+  width: 100%;
+}
+.slide
+{
+  width: 200px;
+  padding: 15px;
+  background: linear-gradient(90deg, red 50%, slategray 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  transition: background-position 0.4s;
+  text-align: center;
+  font-weight: bold;
+}
+.slide:hover 
+{
+  background-position: left bottom;
+}
+
