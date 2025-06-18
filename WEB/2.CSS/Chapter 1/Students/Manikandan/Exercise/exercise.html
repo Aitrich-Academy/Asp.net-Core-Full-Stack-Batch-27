@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      overflow-x: hidden;
+      padding: 0px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .left {
+      background: #40189D;
+      position: absolute;
+      width: 360px;
+      height: 1500px;
+      left: 0px;
+      top: 0px;
+    }
+
+    .right {
+
+      position: absolute;
+      width: 1565px;
+      height: 1500px;
+      left: 313px;
+      top: 0px;
+      background: #e3e2e2;
+      border-radius: 38px 0px 0px 38px;
+    }
+
+    .search {
+
+      position: absolute;
+      background-color: rgb(222, 214, 214);
+      margin-left: 700px;
+      border-radius: 25px;
+      margin-top: 45px;
+      width: 350px;
+      padding: 20px;
+
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 150px;
+    }
+
+    li img {
+      margin-left: 10px;
+    }
+
+    .menu {
+      padding: 10px 10px 10px 20px;
+      font-size: 20px;
+    }
+
+    .profiledetail {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      position: absolute;
+      margin-left: 1360px;
+    }
+
+    .jobproviders-seekers {
+      position: absolute;
+      border-bottom: 3px solid rgb(202, 197, 197);
+      height: 50px;
+      width: 280px;
+      margin-top: 165px;
+      margin-left: 400px;
+    }
+
+    .jobproviders-seekers img {
+      position: absolute;
+      margin-top: 10px;
+      color: gray;
+
+    }
+
+    .jobproviders-seekers h4 {
+      width: 110px;
+      font-family: calibri;
+    }
+
+    table,
+    th,
+    td {
+      border: 0px solid black;
+
+
+    }
+
+
+    .p {
+      background-color: blueviolet;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      text-align: center;
+      margin-left: 270px;
+      margin-top: -12.5px;
+      position: absolute;
+
+    }
+
+    .aitrich {
+      background-color: #f2f2f2;
+    }
+
+
+    .table2 {
+      position: absolute;
+      margin-left: 830px;
+      margin-top: 240px;
+      width: 640px;
+    }
+
+    .messageoption {
+
+      position: absolute;
+      background-color: rgb(222, 214, 214);
+      margin-left: 50px;
+      border-radius: 25px;
+      margin-top: 70px;
+      width: 350px;
+      padding: 20px;
+
+    }
+
+    .msg {
+      background-color: gray;
+      font-size: 11px;
+      width: 280px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    .onlinestatus {
+      font-size: smaller;
+      position: absolute;
+      margin-top: -10px;
+    }
+
+    .jobieportal {
+      font-weight: 600;
+      font-size: 10px;
+      margin-left: 60px;
+      color: gray;
+    }
+
+    .companyname {
+      font-size: medium;
+      font-weight: 600;
+      position: absolute;
+      margin-left: -30px;
+      margin-top: -5px;
+      width: 260px;
+    }
+
+    .response {
+      font-size: 13px;
+      width: 300px;
+      position: absolute;
+      margin-left: -28px;
+      margin-top: -5px;
+    }
+
+    .time {
+      position: absolute;
+      margin-top: -3px;
+      font-size: smaller;
+      margin-left: 250px;
+      width: 100px;
+    }
+
+    .table1 {
+      position: absolute;
+      margin-left: 400px;
+      margin-top: 250px;
+    }
+
+    #triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 20px solid gray;
+      border-left: 20px solid transparent;
+      position: absolute;
+      margin-left: -20px;
+      margin-top: 11px;
+    }
+
+    .triangle-topleft {
+      width: 0;
+      height: 0;
+      border-top: 20px solid #40189D;
+      border-right: 20px solid transparent;
+      position: absolute;
+      margin-left: 300px;
+      margin-top: 11px;
+    }
+
+    #msg2 {
+      background-color: #40189D;
+    }
+
+    .listdiv:hover {
+      background-color: rgb(85, 0, 0);
+      padding: 10px 0px 10px 0px;
+      border-radius: 25px 0px 0px 25px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="left">
+    <img src="images/Group 8.png" style="position: absolute; margin-left: 40px; margin-top: 30px;">
+    <img src="images/Hire me Now.png" style="position: absolute; margin-left: 130px; margin-top: 50px;">
+
+    <div class="menu">
+      <ul>
+
+        <div class="listdiv">
+          <li><a href="#"><img src="images/Vector.png"> Dashboard</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/image 10.png"> Job Providers</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/image 6.png"> New Registrations</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/image 9.png"> Job seekers</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/ic_search.png"> Jobs</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/frame.png"> My Profile</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/Vector (2).png"> Messages</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/image 7.png"> Settings</a></li>
+        </div><br>
+        <div class="listdiv">
+          <li><a href="#"><img src="images/image 8.png"> Log Out</a>
+        </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="right">
+    <img src="images/ic_menu.png"
+      style="position: absolute; margin-left: 40px; margin-top: 53px;">
+    <h4
+      style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px; position: absolute; margin-top: 50px; margin-left: 110px;">
+      My Profile</h4>
+  </div>
+
+  <div class="search">
+    <input type="search" placeholder="Search something here..."
+      style="border: 0px; position: absolute; margin-top: -9px; background-color:  rgb(222, 214, 214);">
+    <img src="images/Group.png"
+      style="position: absolute; margin-top: -12px; margin-left: 330px; height: 25px; width: 25px;">
+  </div>
+
+  <img src="images/notification.png"
+    style="position: absolute; margin-top: 37px; margin-left: 1130px; height: 50px; width: 50px;">
+  <img src="images/notification (1).png"
+    style="position: absolute; margin-top: 37px; margin-left: 1210px; height: 50px; width: 50px;">
+  <img src="images/profilePicture.png"
+    style="position: absolute; margin-top: 37px; margin-left: 1290px; height: 50px; width: 50px;">
+  <h4 class="profiledetail" style=" font-size: 15px;  margin-top: 45px; ">Oda Dink</h4>
+  <h4 class="profiledetail"
+    style=" font-size: 12px;  margin-top: 65px;  font-weight: 400; color:rgba(179, 168, 168, 0.808); ;">Super Admin</h4>
+
+  <div class="jobproviders-seekers">
+    <img src="images/frame.png" style="margin-left:0px;">
+    <h4 style="margin-left:30px; margin-top: 15px; ">Account</h4>
+    <br>
+    <form action="" style="background-color: white; padding: 30px; border-radius: 10px; width: 650px;">
+      <img src="images/profilePicture.png" alt=""><br>
+      <br><br><br>
+      <label for="">Full name</label><br>
+      
+      <input type="text" placeholder="Please enter your full name" size="40%" style="background-color: #F7F7F7; padding: 8px;">
+      <br><br>
+      <label for="">Username</label><br>
+      <input type="text" placeholder="please enter your name" size="40%" style="background-color: #F7F7F7; padding:  8px;"><br>
+      <br>
+      <label for="">Email</label><br>
+      <input type="text" name="" id="" placeholder="Please enter your email" size="40%" style="background-color: #F7F7F7; padding: 8px;"><br>
+      <br>
+      <label for="">Phone No</label><br>
+      <input type="text" name="" id="" placeholder="Please enter your phone no." size="40%" style="background-color: #F7F7F7; padding: 8px;"><br>
+      <br><br>
+      <button style="background-color: #0a3d91; color: white; padding: 10px; margin-top: 10px; border: none; border-radius: 5px;">Upload Details</button>
+      
+    </form>
+  </div>
+
+</body>
+
+</html>
