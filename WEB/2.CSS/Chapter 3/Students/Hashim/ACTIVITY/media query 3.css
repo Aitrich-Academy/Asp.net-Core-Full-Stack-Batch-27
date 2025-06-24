@@ -1,0 +1,11 @@
+div{
+    font-size: smaller;
+}
+
+@media(max-width:768px)
+{
+    div
+    {
+        font-size: xx-large;
+    }
+}

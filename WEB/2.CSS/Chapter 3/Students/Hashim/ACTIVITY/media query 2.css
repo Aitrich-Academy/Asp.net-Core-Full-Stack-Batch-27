@@ -1,0 +1,16 @@
+#A
+{
+    width: auto;
+    height: 100px;
+    background-color: blue;
+}
+
+@media(max-width:768px)
+{
+#A
+{
+    width:20%;
+    height: 1000px;
+}
+
+}
