@@ -1,0 +1,57 @@
+#A
+{
+    height: 200px;
+    width: 150px;
+    background-color: chartreuse;
+    float: left;
+}
+
+#B
+{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(0, 60, 255); 
+    float: left;
+}   
+
+#C
+{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(255, 0, 64); 
+    float: left;
+}
+
+@media(max-width:768px)
+{
+ #C
+{ 
+    width: 100%;
+}
+
+#A
+{
+    width: 50%;
+}
+
+#B
+{
+    width: 50%;
+}
+
+}
+
+@media (max-width:480px)
+{
+#B
+{
+    width: 100%;
+}
+
+#A
+{
+    width: 100%;
+}
+
+
+}
