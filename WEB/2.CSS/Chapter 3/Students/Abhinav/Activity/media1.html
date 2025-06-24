@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media activity1</title>
+</head>
+<style>
+    .div1
+    {
+        background-color: burlywood;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+    .div2
+    {
+        background-color: yellow;
+        width:200px;
+        height: 200px;
+        float: left;
+    }
+    .div3
+    {
+        background-color: olive;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+    @media(max-width:768px)
+    {
+        .div3
+        {
+            width: 100%;
+        }
+        .div2{
+            width: 50%;
+        }
+        .div1
+        {
+            width: 50%;
+        }
+    }
+    @media(max-width:480px)
+    {
+        .div2
+        {
+            width: 100%;
+        }
+        .div1
+        {
+            width: 100%;
+        }
+    }
+    
+</style>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
