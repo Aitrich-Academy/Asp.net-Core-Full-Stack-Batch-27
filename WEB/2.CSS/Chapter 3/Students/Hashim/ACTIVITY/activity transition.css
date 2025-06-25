@@ -1,0 +1,91 @@
+.A
+{
+    width: 150px;
+    height: 100px;
+    background-color: antiquewhite;
+    text-align: center;
+    align-content: center;
+    rotate: 45deg;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.B
+{
+    margin-top: 50px;
+    margin-left: 50px;
+   
+}
+.B :hover
+{
+     transform: scale(1.1,1.1)
+}
+
+#C
+{
+     width: 150px;
+    height: 100px;
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#C:hover
+{
+   transform: scale(1.5,2);
+}
+
+#D
+{
+     background-color: wheat;
+    position: absolute;
+    border:solid black;
+    transition: transform  0.5s ease-in-out ;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#D:hover
+{
+   border-color : rgb(4, 247, 121); 
+   transform: scaleX(4);
+}
+
+#E
+{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(159, 133, 3);
+    text-align: center;
+    align-content: center;
+    opacity: 2;
+    transition: transform 1s ease-in-out;
+      margin-top: 50px;
+    margin-left: 50px;
+}
+
+#E:hover
+{
+    opacity:0.5 ;
+}
+
+#F
+{
+    height: 100px;
+    width: 150px;
+    background-color: chartreuse;
+    transition: transform 1s;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#F:hover
+{
+    background-color: rgb(38, 211, 38);
+    font-size: x-large;
+}

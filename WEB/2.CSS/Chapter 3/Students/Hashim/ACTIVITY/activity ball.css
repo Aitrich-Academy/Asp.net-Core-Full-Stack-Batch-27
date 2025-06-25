@@ -1,0 +1,23 @@
+.A
+{
+    height:100px;
+    width: 100px;
+    border-radius: 60px;
+    background-color: gold;
+    animation: bounce 1s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce
+{
+    from
+    {
+        transform: translate3d(0,0,0);
+    }
+    to
+    {
+        transform: translate3d(0, 600px, 0);
+    }
+}

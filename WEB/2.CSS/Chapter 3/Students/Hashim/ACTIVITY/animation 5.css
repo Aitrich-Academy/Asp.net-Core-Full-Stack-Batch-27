@@ -1,0 +1,15 @@
+.color-box {
+  width: 200px;
+  height: 200px;
+  animation: colorb 4s infinite;
+
+}
+@keyframes colorb 
+{
+  0%   { background: red; }
+  25%  { background: yellow; }
+  50%  { background: blue; }
+  100% { background: green; }
+}
+
+

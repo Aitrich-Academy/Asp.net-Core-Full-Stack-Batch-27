@@ -1,0 +1,27 @@
+.A
+{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(233, 6, 180);
+     animation: fade 1s;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-iteration-count: infinite;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: transform 2s ease-in-out;
+
+}
+
+
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 0.1;
+    }
+    to
+    {
+        opacity: 2;
+    }
+}
