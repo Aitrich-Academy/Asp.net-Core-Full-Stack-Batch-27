@@ -1,0 +1,28 @@
+body
+{
+  background-color: gray;
+}
+
+#aa{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+#a{
+    background-color: aqua;
+    border: 5px solid black;
+    width: 11%;
+    height: 35%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+
+}
+
+#cd{
+  color: black;
+  font-weight: bold;
+  font-family: Arial;
+  
+}
