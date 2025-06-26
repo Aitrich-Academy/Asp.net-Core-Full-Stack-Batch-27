@@ -1,0 +1,299 @@
+ .signup a
+    {
+       color: white;
+        width: 70px;
+        background-color:deepskyblue;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .headsection h1
+    {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 110%;
+    text-align: center;
+    margin-top: 85px;
+    }
+
+    .headsection img
+    {
+        position: absolute;
+        margin-top: -33px;
+        margin-left: 760px;
+    }
+
+    .search
+    {
+        position: absolute;
+        background-color: white;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 380px;
+        width:1200px;
+        padding: 35px;
+    }
+    .keywordsearch
+    {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 15px;
+        width: 400px;
+        border: 0;
+        border-bottom: 1px solid #747474;
+    }
+    .locationsearch
+    {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 485px;
+        width: 400px;
+        border: 0;
+        border-bottom: 1px solid #747474;
+    }
+    .locationimg
+    {
+        position: absolute;
+        margin-left: 455px;
+        margin-top: 3px;
+    }
+
+    .SearchButton a
+    {
+        background-color: deepskyblue;
+        padding: 10px;
+        position: absolute; 
+        margin-top: -35px; 
+        margin-left: 1000px; 
+        font-family: Bahnschrift;
+        width: 100px;
+        text-align: center;
+        color: white;
+    }
+
+    .divider1
+    {
+        position: absolute;
+        margin-left:1275px; 
+        margin-top: 20px;
+    }
+
+
+    .divider2
+    {
+        position: absolute;
+        margin-left: 435px; 
+        margin-top: -5px;
+    }
+
+    .Popular
+    {
+        position: absolute;
+        margin-left: 155px;
+        margin-top: 470px; 
+        font-family: Bahnschrift;
+        color: lightgray;
+    }
+    .side input
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightside
+    {
+        margin-left: 450px;
+        margin-top: 620px;
+        position: absolute; 
+    }
+
+    .rightside h1
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        width: 159px;
+        line-height: 110%;
+        text-align: center;
+        margin-left: 25px;
+        margin-top: 0px;
+        position: absolute;
+    }
+
+    .rightside h5
+    {
+        margin-left: 40px;
+        margin-top: 45px;
+        position: absolute;
+        font-family:Bahnschrift;
+        width: 159px;
+        color: gray;
+        font-weight: lighter;
+    }
+
+   .jobs
+    {
+        border: 2px solid gray;
+        height: 150px;
+        width: 995px;
+        position: absolute;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        margin-left: 450px;
+        
+    }
+
+    #SocialMediaAssistant
+    {
+        margin-top: 710px;
+    }
+
+    #BrandDesigner
+    {
+        margin-top: 890px;
+    }
+
+    #InteractiveDeveloper
+    {
+        margin-top: 1070px;
+    }
+
+    #EmailMarketing
+    {
+        margin-top: 1250px;
+    }
+
+    #LeadEngineer
+    {
+        margin-top: 1430px;
+    }
+
+    #ProductDesigner
+    {
+        margin-top: 1610px;
+    }
+
+    #CustomerManager
+    {
+        margin-top: 1790px;
+    }
+
+
+    .jobs img
+    {
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .jobs h4
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .jobs p
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 55px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .secondfooter
+    {
+        background-image: url("images/Decoration.png");
+        background-position:center top; ;
+        background-color: #5cb4f4;
+        position: absolute;
+        height: 400px;
+        width: 100%;
+
+        text-align: center;
+        margin-top: 2100px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        color: white;
+    }
+
+    .secondfooter h2
+    {
+        margin-top: 80px;
+        font-style: normal;
+        font-size: 36px;
+        font-weight: 500;
+        
+    }
+
+    .subscribe input
+    {
+        border: 0;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -250px;
+    }
+
+    .footer
+    {
+        position: absolute;
+        margin-top: 2450px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding: 100px;
+        /* font-size: 36px;
+        font-weight: 500; */
+    }
+
+    .footer h3
+    {
+        position:relative;
+        margin-top: -35px;
+        margin-left: 80px;
+    }
+
+   
+
+    .lastfooter
+    {
+        height: 150px;
+        position: absolute;
+        top: 2490px;
+        padding: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+    }
+
+   .aboutus
+   {
+    top: 155px;
+   }
+
+   .Company
+   {
+    top: 155px;
+   }
+
+   .Support
+   {
+    top: 155px;
+   }
+
+   .Service
+   {
+    top: 155px;
+   }
+
+  #aa
+  {
+    height: 300px;
+    
+  }
+   
+   
