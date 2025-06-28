@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript-Chapter1-workshop1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="hireMeNow">
+        <h1>HireMe Now!</h1>
+        <table>
+            <tr>
+                <td><img src="images/dashboard 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 297px;">
+                </td>
+                <td>
+                    <span class="s1">Dash Board</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/suitcase 2.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 344px;">
+                </td>
+                <td>
+                    <span class="s2">Jobs</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/application (1) 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 395px;">
+                </td>
+                <td>
+                    <span class="s3">Applications</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/question (1) 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 449px;">
+                </td>
+                <td>
+                    <span class="s4">Interviews</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/message 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 504px;">
+                </td>
+                <td>
+                    <span class="s5">Message</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <img src="images/settings 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 562px;">
+                </td>
+                <td>
+                    <span class="s6">Settings</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/add-group (1) 1.png" style="position: absolute;
+        width: 84px;
+        height: 97px;
+        margin-left: 90px;
+        margin-top: 698px;">
+                </td>
+                <td>
+                    <span class="s7">Add New</span>
+
+                </td>
+            </tr>
+        </table>
+
+        <!-- <img src="images/dashboard 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 297px;">
+        <span class="s1">Dash Board</span>
+        <img src="images/suitcase 2.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 344px;">
+        <span class="s2">Jobs</span>
+        <img src="images/application (1) 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 395px;">
+        <span class="s3">Applications</span>
+        <img src="images/question (1) 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 449px;">
+        <span class="s4">Interviews</span>
+        <img src="images/message 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 504px;">
+        <span class="s5">Message</span>
+        <img src="images/settings 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 562px;">
+        <span class="s6">Settings</span>
+        <img src="images/add-group (1) 1.png" style="position: absolute;
+        width: 84px;
+        height: 97px;
+        margin-left: 90px;
+        margin-top: 698px;">
+        <span class="s7">Add New</span> -->
+    </div>
+    <div class="header">
+        <img src="images/Group 5689.png">
+        <div class="line"></div>
+
+    </div>
+    <div class="box">
+        <div class="line"></div>
+        <form name="myForm" onsubmit="return validateForm()">
+            <label class="l1">Job Title</label>
+            <input type="text" name="jobTitle" id="jobTitle" class="inpTitle" onblur="return validateCharacter(this.value)" placeholder="Enter job tittle"
+                style="font-size:18px;" onblur="return validateCharacter(this.value)">
+            <label class="l2">Description</label>
+            <input type="text" name="jobDescription" id="jobDescription" class="inpDesc"
+                placeholder=" Enter Description" style="font-size:18px;">
+            <label class="l3">Salary</label>
+            <input type="text" name="salary" id="salary" class="inpSalary" placeholder="Enter salary"
+                style="font-size:18px;" >
+            <label class="l4">Location</label>
+            <input type="text" name="location" id="location" class="inpLocation" placeholder="Enter location"
+                style="font-size:18px;">
+
+            <button class="btn1 " type="submit">Post Job</button>
+            <h2 class="notifications1">Push Notifications</h2>
+            <div id="pushNotif">
+                <input type="radio" name="btn">
+                <label>On</label>
+                <input type="radio" name="btn">
+                <label>Off</label>
+            </div>
+            <h2 class="notifications2">Email Notifications</h2>
+            <div id="emailNotif">
+                <input type="radio" name="btn2">
+                <label>On</label>
+                <input type="radio" name="btn2">
+                <label>Off</label>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <img src="images/Section 9.png" style="margin-left: -8px;margin-top: 992px;" width="1519px">
+        <h2>Get your Dream Job..................</h2>
+        <img src="images/home-button 4.png" class="imgHome">
+        <img src="images/calendar (2) 2.png" class="imgCal">
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

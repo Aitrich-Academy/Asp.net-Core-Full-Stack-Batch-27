@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript-chapter1-workshop4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script>
+        var clicked=false;
+        function showMessage(id)
+        {
+
+           if(id=="photo1")
+           {
+           var x= document.getElementById("message");
+           var y= document.getElementById("message2");
+           var z= document.getElementById("message3");
+           x.style.display="block";
+           y.style.display="none";
+           z.style.display="none";
+           }
+            else
+           {
+            var x= document.getElementById("message");
+           var y= document.getElementById("message2");
+           var z= document.getElementById("message3");
+           x.style.display="none";
+           y.style.display="block";
+           z.style.display="none";
+           }
+           
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 style="text-align: center;margin-top:80px;color:white;">HireMe Now!</h2>
+            <div class="sidebar-menu">
+            <ul>
+           <li style="list-style-image:url('images/dashboard 1.png');    margin: 5px 30px"> <a href="#" >Dash Board</p></a> </li>
+           <li style="list-style-image:url('images/suitcase 2.png');  margin: 5px 30px"> <a href="#">Jobs</a></li><br>
+            <li style="list-style-image:url('images/application (1) 1.png');  margin: 5px 30px"><a href="#"> Applications</a></li><br>
+            <li style="list-style-image:url('images/question (1) 1.png');   margin: 5px 30px"><a href="#">Interviews</a></li><br>
+            <li style="list-style-image:url('images/message 1.png');   margin: 5px 30px"><a href="#">Messages</a></li><br>
+            <li style="list-style-image:url('images/settings 1.png');   margin: 5px 30px"> <a href="#">Settings</a></li><br>
+        </ul>
+        <div style="text-align: center;">
+            <a href="#"><img src="images/add-group (1) 1.png"><br>AddNew</a></div>
+        </div>
+        </div>
+        <div class="navbar">
+            <div style="float: right;">
+            <table>
+               <tr>
+                   <td ><a href=""><img src="images/notification-bing.png"></a></td>
+                   <td><a href=""><img src="images/girl.png"></a></td>
+                  <td><a href=""><img src="images/exit 1.png" align="center">Logout</a></td> 
+               </tr>
+            </table>
+           </div>
+        </div>
+        <!--******************* Photos Area********************** -->
+        <div class="content" id="photo" >
+           <h2 style="margin-left: 10px;">All Messages</h2>
+           <div class="photo1" onClick="showMessage(this.id)" id="photo1">
+            <img src="images/adult-serious-businessman-looking-camera 1.png">
+            <div >
+                <div >
+                    <h3>Rajeev M V</h3>
+                    Java Developer!
+                </div>
+                <div style="float: right;">10.58 AM</div>
+            </div>
+            
+           </div>
+           <div class="photo1" onClick="showMessage(this.id)" id="photo2">
+            <img src="images/man-isolated-showing-facial-emotions 2.png">
+            <div >
+                <div >
+                    <h3>Anoop R</h3>
+                    Python Developer
+                </div>
+                <div style="float: right;">10:56 AM</div>
+            </div>
+           </div>
+           <div class="photo1">
+            <img src="images/young-attractive-teenage-girl-wearing-striped-casual-t-shirt-posing-against-pink-wall-with-charming-smile-looks-happy 1 (1).png">
+            <div >
+                <div>
+                    <h3>Revathy R.U</h3>
+                    Designer
+                </div>
+                <div style="float: right;">10.47 AM</div>
+            </div>
+           </div>
+        </div>
+
+        <!-- ***********Message Section************** -->
+        <div class="content"  >
+           <div class="banner" id="message" style="display:none;position: absolute;">
+
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <h3>Rajeev M V</h3>
+                    <p>Online</p>
+                </div>
+                  <div><button type="submit"><i class="fa fa-search"></i></button></p></h3></div>
+                </div>
+                
+                <div class="box1 sb1" align="right">Thank you for expressing interest to join Aitrich
+                    Technologies. To get you started with your application
+                    we will ask some questions.</div>
+
+                    <div class="box2 sb2">Proceed</div>
+
+                    <div class="box3 sb1" align="right">Your Current location</div>
+
+                    <div class="box2 sb2">Banglore</div>
+                       
+
+
+                        <div class="containers" style="margin-top: 80px;">
+                            <input type="text" placeholder="Type your message here">
+                          
+                          </div>
+                    
+           </div>
+
+            <div class="banner" id="message2" style=" margin-left: 750px;background-color: #f9f9f9;">
+
+            <div style="display:flex;justify-content: space-between;">
+                <div>
+                    <h3>Anoop M V</h3>
+                    <p>Online</p>
+                </div>
+                  <div><button type="submit"><i class="fa fa-search"></i></button></p></h3></div>
+                </div>
+                
+                <div class="box1 sb1" align="right">Hello Anoop.</div>
+
+                    <div class="box2 sb2">Hello sir</div>
+
+                    <div class="box3 sb1" align="right">What about your experience</div>
+
+                    <div class="box2 sb2">Banglore</div>
+                       
+
+
+                        <div class="containers" style="margin-top: 80px;">
+                            <input type="text" placeholder="Type your message here">
+                          
+                          </div>
+                    
+           </div>
+
+           <div class="banner" id="message3" style=" margin-left: 750px;background-color: #f9f9f9;display:none">
+
+            <div style="display:flex;justify-content: space-between;">
+                <div>
+                    <h3>Revathy R U</h3>
+                    <p>Online</p>
+                </div>
+                  <div><button type="submit"><i class="fa fa-search"></i></button></p></h3></div>
+                </div>
+                
+                <div class="box1 sb1" align="right">Hello Revathy.</div>
+
+                    <div class="box2 sb2">Hello sir</div>
+
+                    <div class="box3 sb1" align="right">Your current Location???</div>
+
+                    <div class="box2 sb2">Banglore</div>
+                       
+
+
+                        <div class="containers" style="margin-top: 80px;">
+                            <input type="text" placeholder="Type your message here">
+                          
+                          </div>
+                    
+           </div>
+        </div>
+        </div>
+
+
+       
+    <div class="footer">
+         <img src="images/Decoration.png" style="width:682px">
+  
+    </div>
+
+  
+    
+</body>
+</html>
