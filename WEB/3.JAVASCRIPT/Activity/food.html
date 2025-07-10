@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    
+let foodItems = [
+    {
+        name: "Burger",
+        restaurant: "Foodies Hub",
+        price: 150,
+        isAvailable: true
+    },
+    {
+        name: "Pizza",
+        restaurant: "Cheesy Bites",
+        price: 250,
+        isAvailable: true
+    },
+    {
+        name:"Fries",
+        restaurant:"ABC",
+        price:100,
+        isAvailable:true
+    }
+];
+
+// Function to display food details
+function displayDetails(item) {
+    console.log(`${item.name} from ${item.restaurant} costs ${item.price}`);
+}
+
+// Function to apply discount to a food item
+function applyDiscount(item, percent) {
+    item.price = item.price - (item.price * percent / 100);
+    console.log(`After ${percent}% discount: ${item.price}`);
+}
+
+// displayDetails(foodItems[0]);
+// applyDiscount(foodItems[0], 10);  
+
+// displayDetails(foodItems[1]);
+// applyDiscount(foodItems[1], 15); 
+
+// Using for...of loop to iterate over food items
+for (let item of foodItems) {
+    displayDetails(item);
+
+
+    let discount = (item.name === "Burger") ? 10 : 15;
+    
+
+    applyDiscount(item, discount);
+}
+    </script>
+</body>
+</html>
