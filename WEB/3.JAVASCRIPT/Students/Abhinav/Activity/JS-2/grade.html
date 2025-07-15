@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    
+    <script>
+        let grade=prompt("Enter your garde: ")
+
+        switch(grade.toUpperCase())
+        {
+            case "A":
+                confirm("Very Good")
+                break
+            case "B":
+                confirm("Good")
+                break
+            case "C":
+                confirm("Average")
+                break
+            case "D":
+                confirm("Pass")
+                break
+            case "F":
+                confirm("Fail")
+                break
+            default:
+                confirm("Invalid Grade")
+                break
+        }
+    </script>
+</body>
+</html>

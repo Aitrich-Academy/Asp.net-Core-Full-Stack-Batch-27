@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating</title>
+</head>
+<body>
+    
+    <script>
+        let bike={name:"GT 650",brand:"Royal Enfield"}
+        let car={name:"Fortuner",brand:"Toyota"}
+
+        let arr=[]
+
+        arr[0]=bike
+        arr[1]=car
+        console.log(arr)
+
+        for(let update of arr)
+        {
+            if(update.name==="GT 650")
+            {
+                update.type="petrol"
+                update.model=2025
+            }
+            if(update.name==="Fortuner")
+            {
+                update.type="diesel"
+                update.model=2023
+            }
+        }
+        
+        for(let i=0;i<arr.length;i++)
+        {
+            console.log(arr[i])
+        }
+
+        let i=0
+        do{
+            console.log(arr[i])
+            i++
+        }while(i<arr.length)
+
+
+
+    </script>
+</body>
+</html>

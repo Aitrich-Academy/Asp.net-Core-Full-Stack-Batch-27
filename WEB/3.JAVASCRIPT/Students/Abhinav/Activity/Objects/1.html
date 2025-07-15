@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food System</title>
+</head>
+<body>
+    
+    <script>
+    let foodItem=[
+        {
+            name:"Biriyani",
+            restaurant:"Paragon",
+            price:250,
+            isAvailable:true
+        },
+        {
+            name:"Mandi",
+            restaurant:"Nahadi",
+            price:200,
+            isAvailable:true
+        },
+        {
+            name:"Alfaham",
+            restaurant:"Smocky Docky",
+            price:250,
+            isAvailable:true
+        }
+    ]
+
+    function displayDetails(items)
+    {
+        document.write(" <br><br>You have ordered " + items.name + " from " + items.restaurant + " for ₹ "+items.price)
+    }
+    function applyDiscount(items,percent)
+    {
+        items.price  = items.price - (items.price*percent)/100
+        document.write("<br>After " + percent + "% discount: ₹", items.price)
+    }
+
+
+    for(let items of foodItem)
+    {
+        displayDetails(items)
+
+        let discount;
+
+        switch(items.name) 
+        {
+            case "Biriyani":
+                discount = 10;
+                break;
+            case "Mandi":
+                discount = 15;
+                break;
+            case "Alfaham":
+                discount = 25;
+                break;
+            default:
+                discount = 0;
+                break
+        }
+
+        
+        
+        applyDiscount(items,discount)
+
+        
+    }
+
+
+
+
+
+    </script>
+</body>
+</html>

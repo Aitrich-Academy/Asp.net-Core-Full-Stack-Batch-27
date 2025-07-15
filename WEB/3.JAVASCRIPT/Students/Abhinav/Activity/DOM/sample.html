@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="name"><br><br>
+    <input type="password" id="pass" placeholder="password"><br><br>
+    <input type="button"  id="b" value="SIGN IN" onclick="signIn()">
+ 
+ 
+    <script>
+    function signIn() 
+    {
+        let username = document.getElementById('name').value.toLowerCase();
+        let password = document.getElementById('pass').value;
+        
+        if (username === "abhinav" && password === "abhinav8") {
+            alert("SUCCESSFULLY LOGIN")
+        }else if(username=="" && password==""){
+            alert("PLEASE ENTER YOUR USERNAME AND PASSWORD")
+        } else if( password.length<8){
+            alert("PASSWORD MUST BE 8 CHARACTERS")
+        }else {
+        alert("PLEASE ENTER CORRECT DETAILS")
+        }
+    }
+   
+  
+</script>
+</body>
+</html>
