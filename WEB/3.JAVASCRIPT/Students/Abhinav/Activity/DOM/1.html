@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+</head>
+<body>
+    <h2 id="heading">MOVIE TICKET BOOKING</h2>
+    <hr id="line">
+
+    <div id="main">
+        <h2 id="name"></h2>
+        <h4 id="theater"></h4>
+        <p id="sub"></p>
+        <button id="btn" onclick="confirmation()">Book Tickets</button>
+        <div id="second">
+            <h2 id="confirm"></h2>
+            <p id="confirm1"></p>
+        </div>
+        <div id="third">
+            <h2 id="confirmed"></h2>
+            <h4 id="details"></h4>
+            <p id="c1"></p>
+            <p id="c2"></p>
+        </div>
+        
+    </div>
+    
+
+    <script>
+
+        var image=document.createElement('img') //img part
+        image.src="images/1.png"
+        image.width="50"
+        image.style.position="absolute"
+        image.style.left="540px"
+        image.style.top="10px"
+        document.body.appendChild(image) //
+
+
+        document.getElementById('heading').style.textAlign="center" //h2 part
+        document.getElementById('heading').style.color="#280000 "
+        document.getElementById('heading').style.fontFamily="georgia " //
+
+        document.getElementById('line').style.height="4px" //hr line part
+        document.getElementById('line').style.backgroundColor="#3399FF"
+        document.getElementById('line').style.border="0px"  //
+
+     
+        document.getElementById('main').style.border="0.5px solid"  //main div part
+        document.getElementById('main').style.width="520px"
+        document.getElementById('main').style.height="450px"
+        document.getElementById('main').style.borderRadius="20px"
+        document.getElementById('main').style.textAlign=""
+        document.getElementById('main').style.position="absolute"
+        document.getElementById('main').style.left="500px"//
+
+        var image1=document.createElement('img')  //ticket img part
+        image1.src="images/tickets.png"
+        image1.style.position="absolute"
+        image1.style.left="540px"
+        image1.style.top="90px"
+        image1.style.width="40px"
+        document.body.appendChild(image1)   //
+
+        document.getElementById('name').innerHTML="Thunderbolts"    //movie name part
+        document.getElementById('name').style.position="absolute" 
+        document.getElementById('name').style.left="90px"
+        document.getElementById('name').style.color="#CC0066"
+        document.getElementById('name').style.fontFamily="georgia"
+
+        document.getElementById('theater').innerHTML="Theater : <br><br> Seats : <br><br> Date : <br><br> Time : <br><br> Price: "      //theater part
+        document.getElementById('theater').style.position="absolute" 
+        document.getElementById('theater').style.left="40px"
+        document.getElementById('theater').style.top="50px"
+        document.getElementById('theater').style.color="black"
+        document.getElementById('theater').style.fontFamily="georgia"       //
+
+        document.getElementById('sub').innerHTML="RH Cinemas <br><br> f12,f15 <br><br> 11-07-2025 <br><br> 10:30pm <br><br> ₹ 330 "      //theater part
+        document.getElementById('sub').style.position="absolute" 
+        document.getElementById('sub').style.left="120px"
+        document.getElementById('sub').style.top="57px"
+        document.getElementById('sub').style.color="black"
+        document.getElementById('sub').style.fontFamily="timesnewroman"
+        document.getElementById('sub').style.fontSize="15.6px"  //
+
+        var image2=document.createElement('img') //poster part
+        image2.src="images/p.jpg"
+        image2.style.width="250px"
+        image2.style.position="absolute"
+        image2.style.left="750px"
+        image2.style.top="140px"
+        image2.style.borderRadius="20px"
+        document.body.appendChild(image2)//
+
+        btn.style.width="150px"      //button part
+        btn.style.backgroundColor="#CC0066"
+        btn.style.fontSize="20px"
+        btn.style.fontFamily="georgia"
+        btn.style.color="white"
+        btn.style.position="absolute"
+        btn.style.top="280px"
+        btn.style.left="45px"
+        
+        btn.style.borderRadius="5px"
+        btn.style.padding="10px"
+        btn.style.cursor="pointer"//
+        
+        
+        function confirmation()  //button onclick part
+        {
+            second.style.width="520px" //2nd div part
+            second.style.height="200px"
+            second.style.position="absolute"
+            second.style.top="500px"
+            second.style.border="2px solid #FFBF00"
+            second.style.backgroundColor="lightyellow"
+            second.style.borderRadius="20px"
+            
+            var alert=document.createElement('img') //alert icon
+            alert.src="images/alert.png"
+            alert.style.width="25px"
+            alert.style.position="absolute"
+            alert.style.top="605px"
+            alert.style.left="520px"
+            document.body.appendChild(alert)
+            
+            document.getElementById('confirm').innerHTML="Confirm Your Booking!"       //2nd div contents
+            document.getElementById('confirm').style.color="#FFBF00"
+            document.getElementById('confirm').style.position="absolute"
+            document.getElementById('confirm').style.left="55px"
+            document.getElementById('confirm1').innerHTML="Are you sure you want to book these tickets <br><br> Your Booking Price is ₹ 330"
+            document.getElementById('confirm1').style.position="absolute"
+            document.getElementById('confirm1').style.top="55px"
+            document.getElementById('confirm1').style.left="30px"
+
+
+            var yes=document.createElement('button')        //yes button
+            yes.innerHTML="Yes,Book Now"
+            yes.style.position="absolute"
+            yes.style.top="730px"
+            yes.style.left="530px"
+            yes.style.backgroundColor="green"
+            yes.style.color="white"
+            yes.style.padding="10px"
+            yes.style.fontSize="15px"
+            yes.style.borderRadius="5px"
+            yes.style.cursor="pointer"
+            yes.style.border="1px solid green"
+            document.body.appendChild(yes)
+            yes.onclick=booked              //
+
+            var no=document.createElement('button')        //no button
+            no.innerHTML="Cancel"
+            no.style.position="absolute"
+            no.style.top="730px"
+            no.style.left="690px"
+            no.style.width="120px"
+            no.style.backgroundColor="red"
+            no.style.color="white"
+            no.style.padding="10px"
+            no.style.fontSize="15px"
+            no.style.borderRadius="5px"
+            no.style.border="1px solid red"
+            no.style.cursor="pointer"
+            document.body.appendChild(no)
+            no.onclick=cancel//
+            
+        }
+
+        function booked()
+        {
+            document.getElementById('third').style.position="absolute"      //third div
+            document.getElementById('third').style.top="750px"
+            document.getElementById('third').style.border="2px solid green"
+            document.getElementById('third').style.width="520px"
+            document.getElementById('third').style.height="250px"
+            document.getElementById('third').style.borderRadius="20px"
+            document.getElementById('third').style.backgroundColor="#90EE90"
+
+            var correct=document.createElement('img')       //correct img
+            correct.src="images/correct.png"
+            correct.style.position="absolute"
+            correct.style.left="520px"
+            correct.style.top="850px"
+            correct.style.width="40px"
+            document.body.appendChild(correct)
+
+            document.getElementById("confirmed").innerHTML="Booking Confirmed!" //contents
+            document.getElementById("confirmed").style.color="green"
+            document.getElementById("confirmed").style.position="absolute"
+            document.getElementById("confirmed").style.left="65px"
+            document.getElementById("confirmed").style.top="5px"
+
+            document.getElementById('details').innerHTML="<br>Reference ID : <br><br> Status : "
+            document.getElementById('details').style.position="absolute"
+            document.getElementById('details').style.top="50px"
+            document.getElementById('details').style.left="60px"
+            document.getElementById('details').style.fontSize="17px"
+            document.getElementById('c1').innerHTML="<br>AKZ-1012-20 <br><br> Confirmed"
+            document.getElementById('c1').style.position="absolute"
+            document.getElementById('c1').style.top="55px"
+            document.getElementById('c1').style.left="190px"
+            document.getElementById('c1').style.fontSize="17px"
+
+            var email=document.createElement('img')
+            email.src="images/email.png"
+            email.style.position="absolute"
+            email.style.width="30px"
+            email.style.top="1015px"
+            email.style.left="560px"
+            document.body.appendChild(email)
+
+            var notification=document.createElement('img')
+            notification.src="images/coupoun.png"
+            notification.style.position="absolute"
+            notification.style.width="30px"
+            notification.style.top="1050px"
+            notification.style.left="560px"
+            document.body.appendChild(notification)
+
+            document.getElementById('c2').innerHTML="Confirmation email sent to abhinav@gmail.com <br><br> Please arrive 15 mins early"
+            document.getElementById('c2').style.position="absolute"
+            document.getElementById('c2').style.top="170px"
+            document.getElementById('c2').style.left="100px"
+
+            
+        }
+        function cancel()       //when click cancel
+        {
+            location.reload()
+        }                       //
+        
+        
+
+
+
+    </script>
+</body>
+</html>

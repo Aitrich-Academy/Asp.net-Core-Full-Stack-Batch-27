@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+</head>
+<body>
+    
+    <script>
+        let students=[
+            {
+                name:"Abhinav",
+                rollNumber:54,
+                course:"BCA",
+                marks:80
+            },
+            {
+                name:"Abhinesh",
+                rollNumber:10,
+                course:"BBA",
+                marks:35
+            }
+        ]
+
+
+    function displayInfo(details)
+    {
+        document.write(" <br><br>Name: "+details.name , "<br>RollNumber: " + details.rollNumber , "<br>Course: " +details.course , "<br>Marks: "+details.marks)
+    }
+
+    function isPassed(details)
+    {
+        if(details.marks>=40)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+
+
+    for(let details of students)
+    {
+        displayInfo(details)
+
+        if(isPassed(details))
+        {
+            document.write(" <br>TRUE : PASSED ")
+        }
+        else
+        {
+            document.write(" <br>FALSE : FAILED ")
+        }
+
+        
+    }
+
+    </script>
+</body>
+</html>
