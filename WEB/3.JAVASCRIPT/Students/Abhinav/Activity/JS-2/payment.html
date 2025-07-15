@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymemnt</title>
+</head>
+<body>
+
+    <script>
+        let mode=prompt("Enter the mode(cash,card,upi,net banking): ")
+
+        switch (mode)
+        {
+            case "cash":
+                confirm("You have selected cash mode")
+                break
+            
+            case "card":
+                confirm("You have selected card mode")
+                break
+            
+            case "upi":
+                confirm("You have selected upi mode")
+                break
+
+            case "net banking":
+                confirm("You have selected net banking mode")
+                break
+            
+            default:
+                confirm("Invalid Mode")
+                break
+        }
+    </script>
+</body>
+</html>

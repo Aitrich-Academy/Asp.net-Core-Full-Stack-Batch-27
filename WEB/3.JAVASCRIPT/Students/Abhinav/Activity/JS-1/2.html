@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        let bill=prompt("Enter the amount: ");
+        let discount;
+
+        if (bill>1000)
+        {
+            discount=bill*10/100
+        }
+        else
+        {
+            console.log("Bill amount less than 1000")
+        }
+        console.log("Discount amount is: "+discount)
+
+
+        document.write("<h1>Amount is:" +bill+"</h1>" +"<br>")
+        document.write("Discount amount is: "+discount)
+    </script>
+</body>
+</html>

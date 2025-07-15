@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping & iteration</title>
+</head>
+<body>
+    
+    <script>
+        let arr=[20,40,12,90,34]
+
+        document.write("forEach METHOD <br><br>")
+        arr.forEach(n=>document.write(n+"<br>"))
+        
+        document.write("<br>Map METHOD<br><br>")
+        let a=arr.map(n=>n*2)
+        document.write(a)
+
+        document.write("<br><br>Reduce METHOD <br><br>")
+        let b=arr.reduce((acc1,curr1)=>acc1+curr1,0)
+        document.write(b)
+
+        document.write("<br><br>Some METHOD <br><br>")
+        document.write(arr.some(n=>n+2))
+
+        document.write("<br><br>Every METHOD <br><br>")
+        document.write(arr.every(n=>n%2===0))
+    </script>
+</body>
+</html>
