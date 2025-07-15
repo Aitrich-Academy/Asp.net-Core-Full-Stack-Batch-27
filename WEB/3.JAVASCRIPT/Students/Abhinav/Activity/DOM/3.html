@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .food-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .food-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .food-price {
+            font-size: 22px;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        #orderBtn {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 18px 40px;
+            font-size: 20px;
+        }
+        
+        #confirmBtn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+        }
+        
+        #cancelBtn {
+            background: linear-gradient(45deg, #dc3545, #fd7e14);
+            color: white;
+        }
+        
+        #confirmation {
+            display: none;
+            margin: 20px 0;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #success {
+            display: none;
+            color: #ffd700;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            animation: bounce 0.6s ease-out;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .emoji {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🍕</div>
+        <h1>Food Order System</h1>
+        
+        <div class="food-item">
+            <div class="food-name">Margherita Pizza</div>
+            <div class="food-price">₹299</div>
+        </div>
+        
+        <button id="orderBtn">Order Food</button>
+        
+        <div id="confirmation">
+            <h3>🤔 Confirm your order?</h3>
+            <p>Margherita Pizza - ₹299</p>
+            <button id="confirmBtn">Yes, Place Order</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+        
+        <div id="success">🎉 Order Placed! 🎉</div>
+    </div>
+    
+    <script>
+        const orderBtn = document.getElementById('orderBtn');
+        const confirmation = document.getElementById('confirmation');
+        const confirmBtn = document.getElementById('confirmBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const success = document.getElementById('success');
+        
+        orderBtn.onclick = function() {
+            confirmation.style.display = 'block';
+        }
+        
+        confirmBtn.onclick = function() {
+            confirmation.style.display = 'none';
+            success.style.display = 'block';
+        }
+        
+        cancelBtn.onclick = function() {
+            confirmation.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    
+    <script>
+
+        let n=[9,1,4,5,2,3]
+        let rev=[]
+
+        for(i=n.length-1;i>=0;i--)
+        {
+            rev.push(n[i])
+        }
+        document.write(" Reversed array: " + rev)
+
+
+        let n1=[91,30,22,11]
+        let sum=0
+
+        for(i=0;i<n1.length;i++)
+        {
+            sum=sum+n1[i]
+        }
+        document.write(" <br><br>The sum is: " + sum)
+        
+
+        let n2=[530,20,500,33,11]
+        let largest=n2[0]      
+        let smallest=n2[0]
+
+        for(let i of n2)
+        {
+            if(i>largest)
+            {
+                largest=i
+            }
+            if(i<smallest)
+            {
+                smallest=i
+            }
+        }
+        document.write("<br><br>The largest number is: "+largest)
+        document.write("<br><br>The smallest number is: "+smallest)
+
+        let n3=[80,10,40,5,100,25 ]
+
+        for(i=0;i<n3.length-1;i++)
+        {
+            for(j=0;j<n3.length-i-1;j++)
+            {
+                if(n3[j]>n3[j+1])
+                {
+                    temp=n3[j]
+                    n3[j]=n3[j+1]
+                    n3[j+1]=temp
+                }
+            }
+        }
+        document.write("<br><br> Ascending Order: " +n3)
+
+
+        for(i=0;i<n3.length-1;i++)
+        {
+            for(j=0;j<n3.length-i-1;j++)
+            {
+                if(n3[j]<n3[j+1])
+                {
+                    temp=n3[j]
+                    n3[j]=n3[j+1]
+                    n3[j+1]=temp
+                }
+            }
+        }
+        document.write("<br><br> Descending Order: " +n3)
+
+ 
+    </script>
+</body>
+</html>
