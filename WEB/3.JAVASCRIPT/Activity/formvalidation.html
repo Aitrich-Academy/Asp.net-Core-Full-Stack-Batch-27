@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age"><br><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<p id="error" style="color:red;"></p>
+
+<script>
+    function validateForm() {
+  const username = document.getElementById("username").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const age = document.getElementById("age").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const errorElement = document.getElementById("error");
+
+  // Reset error message
+  errorElement.innerText = "";
+
+ // Regex for only alphabets (no digits or symbols)
+  const alphabetRegex = /^[A-Za-z]+$/;
+  // Username validation
+  if (username === "") {
+    errorElement.innerText = "Username is required.";
+    return false;
+  }else if (!alphabetRegex.test(username)) {
+    errorElement.innerText = "Username must contain only letters (A–Z or a–z).";
+    return false;
+  }
+
+  // Email validation using regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    errorElement.innerText = "Enter a valid email address.";
+    return false;
+  }
+
+  // Age validation
+  if (age === "" || isNaN(age) || age < 18) {
+    errorElement.innerText = "Age must be a number and 18 or older.";
+    return false;
+  }
+
+  // Phone: 10 digits only
+  const phoneRegex = /^[0-9]{10}$/;
+  if (!phoneRegex.test(phone)) {
+    errorElement.innerText = "Phone number must be exactly 10 digits.";
+    return false;
+  }
+
+  // If all validations pass
+  return true;
+}
+
+</script>
+</body>
+</html>

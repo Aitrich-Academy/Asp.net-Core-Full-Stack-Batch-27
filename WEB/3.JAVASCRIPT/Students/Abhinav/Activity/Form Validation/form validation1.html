@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        Full Name:
+        <input type="text" id="name" placeholder="enter your name"><br><br>
+        Email:
+        <input type="email" id="email" placeholder="enter your email id"><br><br>
+        Mobile No:
+        <input type="number" id="mob" placeholder="enter your mobile number"><br><br>
+        Age:
+        <input type="number" id="age" placeholder="enter your age"><br><br>
+        <input type="submit" value="Submit">
+        <p id="error" style="color: brown;"></p>
+    </form>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById('name').value.trim();
+            const mail = document.getElementById('email').value.trim();
+            const num = document.getElementById('mob').value.trim();
+            const agee = document.getElementById('age').value.trim();
+            const errorr = document.getElementById('error');
+			
+            errorr.innerHTML = "";
+
+            // Name validation
+            const alphaRegex = /^[A-Za-z]+$/;
+            if (username === "") {
+                errorr.innerText = "Username is required.";
+                return false;
+            } else if (!alphaRegex.test(username)) {
+                errorr.innerText = "Username must contain only letters.";
+                return false;    
+            }
+
+            // Email validation
+            const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (mail === "") {
+                errorr.innerText = "Email is required.";
+                return false;
+            } else if (!mailRegex.test(mail)) {
+                errorr.innerText = "Enter a valid email ID.";
+                return false;
+            }
+
+            // Age validation
+            if (agee === "" || isNaN(agee) || agee < 18) {
+                errorr.innerText = "Age must be a number and 18 or older.";
+                return false;
+            }
+
+            // Phone number validation
+            const phoneRegex = /^[0-9]{10}$/;
+            if (!phoneRegex.test(num)) {
+                errorr.innerText = "Phone number must be exactly 10 digits.";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

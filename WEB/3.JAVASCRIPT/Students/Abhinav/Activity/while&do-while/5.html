@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    
+    <script>
+         let total=0
+         let subtotal=0
+        let another=""
+        do
+        {
+            alert("1.Margheritta - ₹200\n 2.Veggie - ₹250\n 3. Pepperoni - ₹300")
+            let choice=parseInt(prompt("Enter the pizza u need: "))
+
+            let name=""
+            let cost=0
+            if(choice==1)
+            {
+                name="Margheritta"
+                cost=200
+            }
+            else if(choice==2)
+            {
+                name="Veggie"
+                cost=250
+            }
+            else if(choice==3)
+            {
+                name="Pepperoni"
+                cost=300
+            }
+            else
+            {
+                alert("Please select correct option")
+            }
+            let quantity=parseInt(prompt("Enter the quantity of " + name + " pizza: "))
+            let addons=parseInt(prompt("Please select your add-ons\n 1.Extra Cheese - ₹40\n 2.Olives - ₹30\n 3.Jalapenos-₹35\n 4.No Add-ons"))
+        
+            
+            let c1=0
+
+            if(addons==1)
+            {
+                c1=40
+            }
+            else if(addons==2)
+            {
+                c1=30
+            }
+            else if(addons==3)
+            {
+                c1=35
+            }
+            else if(addons==4)
+            {
+                c1=0
+            }
+
+            subtotal=(cost+c1)*quantity
+            alert(quantity + name + " Ordered \n\nAdd-on: "+c1 +"\nSubTotal: "+subtotal)
+            total=total+subtotal
+            another=prompt("Would you like to order another pizza: yes/no ").toLowerCase()
+        
+        }while(another==="yes")
+        alert("You total bill is: " + total + " Thank you for shopping!!")
+    </script>
+</body>
+</html>

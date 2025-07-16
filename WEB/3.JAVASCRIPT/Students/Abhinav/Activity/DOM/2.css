@@ -1,0 +1,260 @@
+   #main
+        {
+            border: 2px solid #000080;
+            width: 1400px;
+            height: 800px;
+            border-radius: 20px;
+            position: absolute;
+            margin-top: 90px;
+            margin-left: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    
+        #head1
+        {
+            color: white;
+            font-family: sans-serif;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 130px;
+            font-size: 27px;
+        }
+          #movie
+        {
+            width: 480px;
+            height: 615px;
+            position: absolute;
+            top: 185px;
+            left: -2px;
+            opacity: 0.2;
+            border-radius: 20px;
+        }
+        #img1
+        {
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 20px;
+            width: 140px;
+        }
+        #x
+        {
+            width: 20px;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+        }
+        #second
+        {
+            border-radius: 20px;
+            width: 325px;
+            height: 370px;
+            position: absolute;
+            margin-top: 170px;
+            margin-left: 600px;
+            padding: 20px;
+            line-height: 35px;
+            transition: background-color 0.3s ease;
+        }
+        h4
+        {
+            color: lavenderblush;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        p
+        {
+            color: whitesmoke;
+            font-size: 13px;
+            position: absolute;
+            margin-top: -35px;
+            font-family: sans-serif;
+        }
+        #third
+        {
+            border-radius: 20px;
+            width: 100px;
+            height: 370px;
+            position: absolute;
+            margin-top: 170px;
+            margin-left: 990px;
+            padding: 20px;
+            line-height: 35px;
+            transition: background-color 0.3s ease;
+        }
+        #super
+        {
+            position: absolute;
+            font-family: sans-serif;
+            color: aliceblue;
+            margin-top: -18px;
+            margin-left: 20px;
+            color: silver;
+        }
+        #right
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 25px;
+            margin-left: 35px;
+        }
+        #right2
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 80px;
+            margin-left: 35px;
+        }   
+        #delete
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 135px;
+            margin-left: 35px;
+        }
+        #no
+        {
+            position: absolute;
+            font-family: sans-serif;
+            margin-top: 190px;
+            margin-left: 45px;
+            font-size: 17px;
+        }
+        #full
+        {
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 6px;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        #dolby
+        {
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        #fourth
+        {
+            border-radius: 20px;
+            width: 100px;
+            height: 370px;
+            position: absolute;
+            margin-top: 170px;
+            margin-left: 1150px;
+            padding: 20px;
+            line-height: 35px;
+            transition: background-color 0.3s ease;
+        }
+        #premium
+        {
+            position: absolute;
+            font-family: sans-serif;
+            color: aliceblue;
+            margin-top: -18px;
+            margin-left: 8px;
+            color: darkgoldenrod;
+        }
+        #right1
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 25px;
+            margin-left: 35px;
+        }
+        #right3
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 80px;
+            margin-left: 35px;
+        }   
+        #right4
+        {
+            position: absolute;
+            width: 25px;
+            margin-top: 137px;
+            margin-left: 35px;
+        } 
+        #no1
+        {
+            position: absolute;
+            font-family: sans-serif;
+            margin-top: 193px;
+            margin-left: 45px;
+            font-size: 17px;
+        }
+        #full1
+        {
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 22px;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        #dolby1
+        {
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        #fifth
+        {
+            border-radius: 20px;
+            width: 320px;
+            height: 100px;
+            position: absolute;
+            margin-top: 610px;
+            margin-left: 600px;
+            padding: 20px;
+            line-height: 35px;
+            transition: background-color 0.3s ease;
+        }
+        #s1
+        {
+            color: silver;
+            position: absolute;
+            top: -5px;
+            left: 50px;
+        }
+        #p1
+        {
+            color: silver;
+            position: absolute;
+            top: 51px;
+            left: 50px;
+        }
+        #sixth
+        {
+            transition: background-color 0.3s ease;
+            width: 278px;
+            height: 100px;
+            position: absolute;
+            margin-top: 610px;
+            margin-left: 980px;
+            padding: 20px;
+            line-height: 35px;
+            border-radius: 20px;
+        }
+        #s2
+        {
+            color: darkgoldenrod;
+            position: absolute;
+            top: -5px;
+            left: 50px;
+
+        }
+        #p2
+        {
+            color: darkgoldenrod;
+            position: absolute;
+            top: 51px;
+            left: 50px;
+        }
+ 
+        #second:hover,#third:hover,#fourth:hover,#fifth:hover,#sixth:hover {
+            background-color: rgba(240, 248, 255, 0.1); 
+        }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<body>
+
+    <script>
+        let product=[
+        {
+            productName:"Mobile",
+            category:"Electronics",
+            price:50000,
+            stockQuantity:10
+        },
+        {
+            productName:"Shirt",
+            category:"Clothes",
+            price:1000,
+            stockQuantity:20
+        }
+        ]
+        function showProduct(p1)
+        {
+            document.write(" <br><br>Product Name: " + p1.productName + " <br>Category: " + p1.category + " <br>Price: " + 
+                                p1.price + " <br>Stock Quantity: " + p1.stockQuantity)
+        }
+        function purchase(p1,quantity)
+        {
+                p1.stockQuantity=p1.stockQuantity-quantity
+                document.write(" <br><br>Updated Stock: " +p1.stockQuantity)
+                const totalBill=quantity * p1.price
+                document.write(" <br>Sales bill for " + quantity + " " + p1.productName + "s: ₹" +totalBill)
+
+        }
+        
+            for(let p1 of product)
+            {
+                showProduct(p1)
+                 
+            let quantity=(p1.productName==="Mobile") ? 5:10
+            
+            purchase(p1,quantity)
+            }
+    </script>
+</body>
+</html>
