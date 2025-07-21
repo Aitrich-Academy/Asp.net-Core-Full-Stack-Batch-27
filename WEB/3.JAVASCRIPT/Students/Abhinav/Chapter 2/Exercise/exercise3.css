@@ -1,0 +1,48 @@
+#main
+{
+    margin-top: -20px;
+    height: 990px;
+    width: 20%;
+    margin-left: -10px;
+    background-color: steelblue;
+}
+#heading
+{
+    color: aliceblue;
+    font-family: sans-serif;
+    position: absolute;
+    padding: 55px;
+}
+#sidemenu
+{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 35px;
+}
+li
+{
+    margin: 25px;
+}
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: right;
+}
+#right
+{
+    
+    width: 80.5%;
+    position: absolute;
+    left: 330px;
+    height: 900px;
+}
+#topbar
+{
+    margin: 100px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 1100px;
+    width: 200px;
+}
