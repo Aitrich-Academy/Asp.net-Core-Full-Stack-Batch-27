@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+.login{
+    margin-left:900px;
+    margin-top: 150px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #00bbff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.img-cur{
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 837px;
+    height: 750px;
+    margin-left: -8px;
+    margin-top: -8px;
+} 
+.slider1{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    
+}
+.wrapper1{
+    width: 270%;
+    display: flex;    
+}
+.wrapper1 img{
+    width: 100%;
+    margin-left: 210px;
+    margin-top: 100px;
+animation: slide 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes slide{
+    0%{
+        transform: translateX
+        (0);
+    }
+    50%{
+        transform: translateX(-80%);
+    }
+    
+    100%{
+        transform: translateX(-160%);
+    }
+}
+input
+{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+.sub
+{
+    background-color: rgb(0, 88, 182);
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    top: 250px;
+}
+.forgot
+{
+color: rgb(255, 255, 255); 
+position: absolute;
+left: 174px;
+top: 210px;
+}
+.forgot:hover
+{
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img-cur">
+            <div class="header">
+                <img src="images/Group 8.png">
+                <img src="images/Hire me Now.png" style="position: absolute;margin-top: 20px;margin-left: 20px;">
+            </div>
+            <div class="slider1">
+                <div class="wrapper1">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <h2>Sign in to Admin Dashboard</h2>
+            <form action="" id="ok" onsubmit="return validateForm()">
+                <label for="email"><b>Email :</b></label><br>
+                  <input type="text" id="email" name="email">
+                  <p id="error" style="color: rgb(196, 1, 1);font-size: medium;"></p>
+                <label for="Password"><b>Password :</b></label><br>
+                  <input type="text" id="password">
+                  <p id="errored" style="color: rgb(196, 1, 1);font-size: medium;"></p>
+
+                  <p class="forgot">Forgot password ?</p>
+                <input type="submit" value="sign in" class="sub">
+            
+            </form>
+               
+        </div>
+    </div>
+
+
+    <script>
+        function validateForm()
+        {
+            const email=document.getElementById('email').value.trim();
+            const password=document.getElementById('password').value.trim();
+            const errorElement=document.getElementById('error');
+            const erroredElement=document.getElementById('errored')
+             
+            errorElement.innerHTML="";
+            
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+     if (email=== "") {
+    errorElement.innerText = "***Email is required***";
+    return false;
+            }
+     else if (!emailRegex.test(email)) {
+    errorElement.innerText = "***Enter a valid email address***";
+    return false;
+  }
+  
+    
+
+    if (password==="")
+  {
+    erroredElement.innerText="***password is required***";
+    return false;
+  }
+  else if(password.length<8) {
+    erroredElement.innerText = "***password must be contain 8 digits***";
+    return false;
+  }
+
+  return true;
+}
+        
+    </script>
+</body>
+</html>
