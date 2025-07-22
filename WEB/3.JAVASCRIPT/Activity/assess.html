@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add and Delete Table Rows</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Information</h2>
+  
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+  <button onclick="addRow()">Add</button>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be added here -->
+    </tbody>
+  </table>
+
+  <script>
+    function addRow() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      if (name === "" || email === "") {
+        alert("Please enter both Name and Email.");
+        return;
+      }
+
+      const tableBody = document.getElementById("userTable");
+
+      // Create a new <tr> element
+      const newRow = document.createElement("tr");
+
+      // Set its innerHTML
+      newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${email}</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      `;
+
+      // Append the new row to the table
+      tableBody.appendChild(newRow);
+
+      // Clear input fields
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+    }
+
+    function deleteRow(button) {
+      const row = button.parentElement.parentElement;
+      row.remove();
+    }
+  </script>
+
+</body>
+</html>
