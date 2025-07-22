@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript-chapater2-workshop2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="sidebar">
+            <h2 style="text-align: center;margin-top:80px;color:white;">HireMe Now!</h2>
+            <div class="sidebar-menu">
+            <ul type="none">
+           <li> <a href="#"> <img src="images/dashboard 1.png" align="center">Dash Board</p></a> </li>
+           <li> <a href="#"><img src="images/suitcase 2.png" align="center">Jobs</a></li><br>
+            <li><a href="#"> <img src="images/application (1) 1.png" align="center">Applications</a></li><br>
+             <li><a href="#"><img src="images/question (1) 1.png" align="center">Interviews</a></li><br>
+            <li><a href="#"><img src="images/message 1.png" align="center">Messages</a></li><br>
+            <li> <a href="#"> <img src="images/settings 1.png" align="center">Settings</a></li><br>
+        </ul>
+        <div style="text-align: center;">
+            <a href="#"><img src="images/add-group (1) 1.png"><br>AddNew</a></div>
+        </div>
+        </div>
+
+        <div class="header">
+            <div style="float: right;">
+             <table>
+                <tr>
+                    <td ><a href=""><img src="images/notification-bing.png"></a></td>
+                    <td><a href=""><img src="images/girl.png"></a></td>
+                   <td><a href=""><img src="images/exit 1.png" align="center">Logout</a></td> 
+                </tr>
+             </table>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+    <div class="profile" >
+        <div align="center" style="font-family:monospace;margin-top: 30px;">
+            <p><img src="images/girl.png"></p>
+            <div style="font-size: 1.5em;"><b>Bindhu Pillai</b></div>
+            <div>Java Developer</div>
+            <div style="height: 30px;width: 250px;background: #ecf0f1;align-items: center;border-radius: 5px;">
+                <a href=""><h4 ><img src="images/upload 1.png" align="center">RESUME</h4></a>
+
+            </div>  
+        </div>
+        <div style="margin-top: 40px;">
+        <ul type="none">
+            <li><img src="images/sms.png" align="center">bindhu1996@gmail.com</li><br>
+            <li><img src="images/call.png" align="center">123 456 789</li><br>
+            </li><img src="images/Vector.png" align="center">Location<button style="float:right;border:0"><img src="images/icons8-pencil-drawing-32.png" align="right" height="30px" width="30px"></li>
+        </ul>
+    </div>
+    </div>
+    <div class="skills" style="overflow: auto; ">
+       <h3 style="margin-left: 82px;"><img src="images/light-bulb 1.png" align="center" height="20px" width="20px" >Skills</h3> 
+       <ul id="skillList">
+        <li>Operating Systems : Windows 9x/NT/2000,
+             DOS/ Unix/LinuxIDE Tools : JBuilderDatabases : PL/SQLLanguages : Java, C, C++, C#, Asp.Net,
+             PHPWeb Technologies : HTML, JSP, Servlets, Struts Framework,
+              PhotoshopApplication Servers : BEA WebLogic7.0Web Servers : Tomcat 5.0,
+               Apache</li>
+       </ul>
+       <hr width="90%">
+      <button style="float:right;border:0" onclick="showForm(this.id)"  id="myButton1"><img src="images/icons8-pencil-drawing-32.png"  height="20px" width="20px" ></button>
+     <div align="center">
+      <input type="text" height="50px" width="150px" align="center" style="display: none;" id="myTextBox">
+      <button style="display: none;" id="myButton" onclick="add('skill')">add</button></div>
+     </div>
+   </div>
+   <div class="skills" style="overflow: auto; ">
+        <h3 style="margin-left: 80px;"><img src="images/portfolio 1.png" align="center" height="20px" width="20px">Education</h3>
+        <div style="margin-left: 80px;">
+            <div style="float:left">Bachelor of Arts - Design</div>
+            <div style="float:right;">   Nov ‘13 - Dec ‘17</div><br>
+            <div style="float:left">Field & Fort University  </div>
+            <div style="float:right;">  Mansfield, Ohio</div><br>
+            <ul id="eduList">
+                <li>Top 10 percentile of the class</li>
+            </ul>
+            <p>Master of arts        Texas University</p></p>
+        </div>
+        <hr width="90%">
+      <button style="float:right;border:0"  onclick="showForm(this.id)" id="myButton2"><img src="images/icons8-pencil-drawing-32.png"  height="20px" width="20px"></button>
+      <div align="center">
+        <input type="text" height="50px" width="150px" style="display: none;" align="center"  id="eduTextBox">
+        <button style="display: none;" id="eduButton" onclick="add('edu')">add</button></div>
+       </div>
+       
+    </div>
+    <div class="aboutme" style="overflow: auto; ">
+      <h3 style="margin-left: 10px;">About Me</h3>
+      <p style="margin-left: 10px;">Hard working,dedicated candidate with proffesional qualification in IT,Seeking an oppurtunity
+        to work with a growth oriented organization on a real time software development project.
+      </p>
+      <hr width="80%">
+      <button style="float:right;border:0"><img src="images/icons8-pencil-drawing-32.png"  height="20px" width="20px"></button>
+     </div>
+    <div class=" skills experience" style="overflow: auto; ">
+        <h3 style="margin-left: 80px;"><img src="images/portfolio 2.png" align="center" height="20px" width="20px">Experience</h3>
+        <ul>
+            <li>Advertising Speciality Institute, San Francisco, TX - Graphic Designer <br>
+                Dec ‘18 - June ‘20</li><br>
+                <li>Advertising Age - Graphic Design Intern<br>
+                    Jan ‘21 - Nov ‘22</li>
+        </ul>
+        <hr width="90%">
+      <button style="float:right;border:0"><img src="images/icons8-pencil-drawing-32.png"  height="20px" width="20px"></button>
+    </div>  
+</div>
+<div >
+    <div class="accept" >
+        <button class="button"><img src="images/upload 1.png">Accept</button>
+    </div>
+    <div class="accept">
+        <button class="button"><img src="images/upload 1.png">Reject</button>
+    </div>
+    <div class="accept"><button class="button"><img src="images/upload 1.png">Shedule </button></div>
+</div>
+
+<div class="footer">
+    <img src="images/Decoration.png" style="width:682px">
+  
+</div>
+</body>
+</html>
