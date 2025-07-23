@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assesment.css">
+</head>
+<body>
+    <div id="AAA">
+        <div  id="num"> 0 </div>
+    </div>
+    <button type="button" id="incre" onclick="increase1()"> increase </button>
+
+    <button type="reset" id="rst" onclick="reset2()"> reset </button>
+
+    <button type="button" id="decre" onclick="decrease3()"> decrease </button>
+
+ 
+ 
+ <script>
+
+    let number=document.getElementById('num').value++
+
+    function increase1()
+    {
+        number++;
+        document.getElementById('incre').style.background="green";
+        document.getElementById('num').innerHTML=number;
+    }
+
+
+    function reset2()
+    {
+        document.getElementById('rst').style.background="grey";
+        document.getElementById('num').innerHTML=number="0";
+    }
+
+
+    function decrease3 ()
+    {
+        number--
+        document.getElementById('decre').style.background="red";
+        document.getElementById('num').innerText=number;
+
+            if (number>0)
+        {
+             document.getElementById('AAA').style.background="green"
+        }
+        else if(number<0)
+        {
+            document.getElementById('AAA').style.background="red"
+        }
+        else
+        {
+            document.getElementById('AAA').style.background="black"
+        }
+    }
+   </script>
+</body>
+</html>

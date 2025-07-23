@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="assessment2.css">
+</head>
+<body>
+    
+     <h2>User Information</h2>
+  
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+  <button id="btn" onclick="addRow()">Add</button>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+  <script>
+    function addRow() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      document.getElementById('btn').style.background="green"
+
+      if (name === "" || email === "") {
+        alert("Please enter both Name and Email.");
+        return;
+      }
+
+      const tableBody = document.getElementById("userTable");
+
+      
+      const newRow = document.createElement("tr");
+
+      
+      newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${email}</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      `;
+
+      
+      tableBody.appendChild(newRow);
+
+      
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+    }
+
+    function deleteRow(button) {
+      const row = button.parentElement.parentElement;
+      row.remove();
+    }
+  </script>
+
+</body>
+</html>

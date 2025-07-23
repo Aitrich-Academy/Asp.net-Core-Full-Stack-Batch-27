@@ -1,0 +1,53 @@
+#AAA
+{
+    background-color: rgb(238, 236, 174);
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    margin-left: 250px;
+    text-align: center;
+    text-align: center;
+}
+
+#incre
+{
+    position: absolute;
+    margin-top:200px ;
+    margin-left: 200px;
+    background-color: rgb(10, 148, 104);
+}
+
+#rst
+{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 320px;
+    background-color: rgb(10, 148, 104);
+}
+
+#decre
+{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 410px;
+    background-color: rgb(10, 148, 104);
+}
+
+#ab
+{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 265px;
+}
+
+#num
+{
+    position: absolute;
+    text-align: center;
+    text-align: center;
+    margin-top: 13%;
+    margin-left: 40%;
+    border: none;
+    font-size: 80px;
+    color: white;
+}

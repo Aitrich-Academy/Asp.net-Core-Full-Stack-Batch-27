@@ -35,3 +35,8 @@ document.getElementById("inp1").addEventListener("keydown", function (event) {
         }
     }
 });
+
+
+
+
+
