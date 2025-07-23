@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise3.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id =bluebox>
+        <div id="img1">
+            <img src="images/Group 8.png" id="J" alt="">
+        <img src="images/Hire me Now.png" id="jobie" alt="">
+        </div>
+
+        <div id="list">
+            <ul type="none">
+                <li>
+                    <a href="#"><img src="images/Vector.png" alt="">&nbsp;Dashboard</a>
+                </li>
+                
+                <li>
+                    <a href="#"><img src="images/image 10.png" alt="">&nbsp;Job Providers</a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/image 6.png" alt="">&nbsp;New Registrations</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/image 9.png">&nbsp;Job seekers</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/ic_search.png">&nbsp;Jobs</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/Group 239604.png">&nbsp;My Profile</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/card.png">&nbsp;Messages</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/image 7.png">&nbsp;Settings</a>
+                </li>
+
+                 <li>
+                    <a href="#"><img alt="" src="images/image 8.png"> &nbsp;Logout</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div id="mainbox">
+            
+            <div id="myprof">
+                <img alt="" src="images/ic_menu.png" id="line3">
+                <h4>My Profile</h4>
+                <input type="text" placeholder="Search somthing here" id="inputmain">
+                <img alt="" src="images/Group.png" id="search">
+                <img alt="" src="images/notification.png" id="msg">
+                <img alt="" src="images/notification (1).png" id="nfcn">
+                <img alt="" src="images/profilePicture.png" id="profile">
+                <h5>Oda Dink</h5>
+                <p id="Super">Super Admin</p>
+            </div>
+
+            
+                <img alt="" src="images/Group 239604.png" id="AA">
+                <p id="BB">Account</p>
+                <hr>
+
+
+                <form>
+
+                    <img alt="" src="images/profilePicture.png" id="profile2">
+                    
+                    
+                    <br>
+                    <label id="fname">Full Name</label>
+                    <br>
+                    <input placeholder="full name" type="text" id="infname">
+                    
+                    
+                    <br>
+                    <label id="uname">Username</label>
+                    <br>
+                    <input placeholder=" username" id="inuname" type="text">
+                    
+                    
+                    <br>
+                    <label id="mail" for="inmail">Email</label>
+                    <br>
+                    <input id="inmail" placeholder="email" type="email">
+                    
+                    
+                    <br>
+                    <label id="phone">Phone No.</label>
+                    <br>
+                    <input placeholder="phone" id="inphone" type="text">
+
+                
+                  <input type="button" value="update" onclick="show()" class="but">
+
+                </form>
+
+             <div class="popup" id="pop">
+              Entered details are<br>
+              <h2 id="nameh2">Name</h2>
+              UserName:<span id="unamep"></span><br>
+              Mail:<span id="mailp"></span><br>
+              PhoneNum:<span id="phnp"></span><br><br>
+             <input type="button" value="close" onclick="closed()">
+           </div>
+    </div>
+        <script>
+           
+   
+            var a=document.getElementById("pop");
+        var maind=document.getElementById("main"); 
+
+         function show()
+        {
+          maind.style.filter="blur(0px)";
+          
+          a.classList.remove("close_popup");
+          a.classList.add("open_popup");
+          document.getElementById("nameh2").innerHTML=document.getElementById("infname").value;
+          document.getElementById("unamep").innerHTML=document.getElementById("inuname").value;
+          document.getElementById("mailp").innerHTML=document.getElementById("inmail").value;
+          document.getElementById("phnp").innerHTML=document.getElementById("inphone").value;
+          
+        }
+
+         function closed()
+        {
+            a.classList.add("close_popup");
+            maind.style.filter="none";
+        }
+        </script>
+</body>
+</html>

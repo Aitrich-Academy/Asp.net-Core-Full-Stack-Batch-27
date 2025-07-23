@@ -1,0 +1,281 @@
+#bluebox
+{
+    position: absolute;
+    background-color: rgb(3, 3, 199);
+    width: 250px;
+    height: 740px;
+}
+
+#J
+{
+    position: absolute;
+    margin-top: 30px;
+}
+
+#jobie
+{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+#img1
+{
+    margin-left: 20px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+li
+{
+    margin: 35px;
+}
+
+#list
+{
+    position: absolute;
+    color: white;
+    margin-top: 120px;
+    margin-left: -30px;
+}
+
+
+#mainbox
+{
+    position: absolute;
+    background-color: rgb(239, 244, 244);
+    width: 1000px;
+    height: 740px;
+    margin-left: 230px;
+    border-radius: 25px;
+}
+
+#line3
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+h4
+{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+#inputmain
+{
+    position: absolute;
+    background-color: rgb(243, 235, 235);
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-top:25px ;
+}
+
+#search
+{
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 28px;
+}
+
+#msg
+{
+    position: absolute;
+    margin-left: 720px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+#nfcn
+{
+    position: absolute;
+    width: 50px;
+    margin-left:780px ;
+    margin-top: 10px;
+}
+
+#profile
+{
+    margin-left: 850px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+h5
+{
+    position: absolute;
+    margin-left: 910px;
+    margin-top: -50px;
+}
+
+#Super
+{
+    margin-left: 910px;
+    margin-top: -25px;
+    font-size: smaller;
+    color: rgb(134, 132, 132);
+}
+
+#AA
+{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#BB
+{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+hr
+{
+    position: absolute;
+    margin-top: 100px;
+    width: 250px;
+    margin-left: 90px;
+    background-color: rgb(0, 0, 0);
+}
+
+#formd
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 500px;
+    margin-top: 140px;
+    margin-left: 60px;
+}
+
+#profile2
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#fname
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+#infname
+{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(153, 194, 231);
+    border-radius: 10px;
+    border: none;
+}
+
+#uname
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 65px;
+}
+
+#inuname
+{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(153, 194, 231);
+    border-radius: 10px;
+    border: none;
+}
+
+#mail
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 105px;
+}
+
+#inmail
+{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 110px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(153, 194, 231);
+    border-radius: 10px;
+    border: none;
+}
+
+#phone
+{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 145px;
+}
+
+#inphone
+{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(153, 194, 231);
+    border-radius: 10px;
+    border: none;
+}
+
+.but
+{
+     background-color: rgb(3, 3, 199);
+     color: white;
+     font-size: smaller;
+     position: absolute;
+     margin-top: 230px;
+     margin-left: 250px;
+     border-radius: 10px;
+}
+  .popup
+  {
+  
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top:45%;
+    left:45%;
+    border-radius: 10px;
+    text-align: left;
+    padding:0 15px 15px;
+    color:black;
+    border: 1px solid black;
+    visibility:hidden;
+    margin:auto;
+  }
+.open_popup
+{
+  visibility: visible;
+  opacity:1;
+}
+.close_popup
+{
+  visibility: hidden;
+}
+.body#blur.active
+{
+filter:blur(20px);
+}

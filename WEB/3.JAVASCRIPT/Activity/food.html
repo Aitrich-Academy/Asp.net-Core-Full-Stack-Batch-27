@@ -3,60 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-commerce</title>
 </head>
 <body>
+
     <script>
+        let product=[
+        {
+            productName:"Mobile",
+            category:"Electronics",
+            price:50000,
+            stockQuantity:10
+        },
+        {
+            productName:"Shirt",
+            category:"Clothes",
+            price:1000,
+            stockQuantity:20
+        }
+        ]
+        function showProduct(p1)
+        {
+            document.write(" <br><br>Product Name: " + p1.productName + " <br>Category: " + p1.category + " <br>Price: " + 
+                                p1.price + " <br>Stock Quantity: " + p1.stockQuantity)
+        }
+        function purchase(p1,quantity)
+        {
+                p1.stockQuantity=p1.stockQuantity-quantity
+                document.write(" <br><br>Updated Stock: " +p1.stockQuantity)
+                const totalBill=quantity * p1.price
+                document.write(" <br>Sales bill for " + quantity + " " + p1.productName + "s: ₹" +totalBill)
+
+        }
         
-    
-let foodItems = [
-    {
-        name: "Burger",
-        restaurant: "Foodies Hub",
-        price: 150,
-        isAvailable: true
-    },
-    {
-        name: "Pizza",
-        restaurant: "Cheesy Bites",
-        price: 250,
-        isAvailable: true
-    },
-    {
-        name:"Fries",
-        restaurant:"ABC",
-        price:100,
-        isAvailable:true
-    }
-];
-
-// Function to display food details
-function displayDetails(item) {
-    console.log(`${item.name} from ${item.restaurant} costs ${item.price}`);
-}
-
-// Function to apply discount to a food item
-function applyDiscount(item, percent) {
-    item.price = item.price - (item.price * percent / 100);
-    console.log(`After ${percent}% discount: ${item.price}`);
-}
-
-// displayDetails(foodItems[0]);
-// applyDiscount(foodItems[0], 10);  
-
-// displayDetails(foodItems[1]);
-// applyDiscount(foodItems[1], 15); 
-
-// Using for...of loop to iterate over food items
-for (let item of foodItems) {
-    displayDetails(item);
-
-
-    let discount = (item.name === "Burger") ? 10 : 15;
-    
-
-    applyDiscount(item, discount);
-}
+            for(let p1 of product)
+            {
+                showProduct(p1)
+                 
+            let quantity=(p1.productName==="Mobile") ? 5:10
+            
+            purchase(p1,quantity)
+            }
     </script>
 </body>
 </html>
