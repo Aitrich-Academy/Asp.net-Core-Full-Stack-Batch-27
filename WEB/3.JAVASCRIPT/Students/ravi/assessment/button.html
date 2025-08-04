@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick="increment()" value="increment">increment</button>
+<button onclick="reset()" value="reset">reset</button>
+<button onclick="decrement()" value="decrement">decrement</button>
+<input type="number" style="background-color: rgb(204, 148, 148); color: black;" id="digit" ></input>
+
+    
+
+    <script>
+      
+      var k=0;
+
+      function increment()
+      {
+       var k= document.getElementById('digit').value
+        k++
+     document.getElementById('digit').innerHTML=k
+      
+
+      }
+      
+
+      function reset()
+      {
+        document.getElementById('digit').value
+
+
+      }
+
+
+       function decrement()
+       {
+        var k= document.getElementById('digit').value
+        k--
+     document.getElementById('digit').innerHTML=k
+
+       }
+
+     if(k>0)
+     {
+        document.getElementById('digit').style.backgroundColour=green
+
+     }
+     if(k<0)
+     {
+        document.getElementById('digit').style.backgroundColor=red
+     }
+      
+
+    </script>
+</body>
+</html>
