@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .shy
+        {
+            background-color: rgb(218, 175, 175);  
+            height:100vh;
+            width: 39%;
+
+        }
+        .wrapper
+        {
+         width: 100%;
+         position: absolute;
+         left: 50%;
+         top: 10%;
+         transform: translate(-50%,50%);
+        
+
+
+        }
+        .wrapper1{
+           width: 270%;
+           display: flex;
+
+
+
+        }
+    .wrapper1 img
+    {
+        position:absolute;
+        left: 210px;
+        top: 10px;
+        animation: mover 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        
+
+     
+
+    }
+   @keyframes mover{
+    0%{
+        transform: translateX
+        (0%);
+    }
+    50%{
+        transform: translateX(-80%);
+    }
+    
+    100%{
+        transform: translateX(-160%);
+    }
+}
+
+form
+{
+position: absolute;
+top: 200px;
+left: 600px;
+
+
+}
+
+   
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="shy">
+    <img src="images/Group 8.png" alt="">
+
+
+
+    </div>
+    <div class="wrapper">
+    <div class="wrapper1">
+
+        
+         <img src="images/Group.png" alt="" >
+         <img src="images/Group.png" alt="" >
+         <img src="images/Group.png" alt="">
+
+        
+         
+
+    </div>
+    </div>
+
+    <div>
+    <form onsubmit="return validateUser()">
+                <input type="text" name="email" id="email" class="inpTxt" placeholder="   Your Email" style="font-weight: bolder;color: #000000;" > <br> <br>
+                <input type="password" name="password" id="password" class="inpPwd" placeholder="   Your Password" style="position: relative; font-weight: bolder;color: #000000;"> <br> <br>
+                <input type="submit" style=" position: absolute" value="Log in" >
+                <p id="error" style="color: red;"></p>
+            </form>
+           
+            
+
+    </div>
+   
+<script>
+    function validateUser()
+    {
+  var email=document.getElementById('email').value
+  var password=document.getElementById('password').value
+  var error=document.getElementById('error')  
+
+
+  error.innerText=""
+ const emailRegex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(email==="")
+  {
+    error.innerText="please enter valid email";
+    return false;
+  }
+else if (!emailRegex.test(email)) {
+    error.innerText = "Enter a valid email address.";
+    return false;
+  }
+
+  if(password==="")
+
+  {
+    error.innerText="please enter valid password"
+    return false;
+  }
+
+  else if(password.length<8)
+  {
+    error.innerText="password must be atleast 8 characters"
+    return false;
+  }
+
+
+  
+
+  return true;
+
+    }
+
+
+</script>
+    
+</body>
+</html>

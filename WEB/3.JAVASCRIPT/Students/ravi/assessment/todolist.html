@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="list">
+   <h1>to do list</h1>
+   <input type="text" placeholder="enter your task" id="inp">
+   <button style="background-color: green;" onclick="addtask()">
+   add task
+   </button>
+
+
+  </div>
+  <div id="taskbox"></div>
+
+    <script>
+    function addtask()
+    {
+
+       const task=document.getElementById('inp').value.trim()
+       document.getElementById('taskbox').innerHTML=task
+
+      // document.getElementById('inp').value="" 
+
+
+
+      const bt=document.createElement("button")
+       bt.innerHTML="mark as completed"
+      document.body.appendChild(bt)
+      bt.style.backgroundColor="green"
+       
+       
+
+   const bt2=document.createElement("button")
+      bt2.innerHTML="remove"
+document.body.appendChild(bt2)
+       
+
+    }
+
+  bt.onclick=function()
+  {
+    bt.textContent="UNMARK"
+    bt.style.textDecoration="line-through"
+    taskbox.style.textDecoration="line-through"
+
+    
+  }
+
+  bt2.onclick=function()
+  {
+    taskbox.remove()
+    bt.remove()
+    bt2.remove()
+
+  }
+
+    </script>
+
+
+</body>
+</html>
