@@ -1,94 +1,84 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PostJob
 {
     internal class Program
     {
-        struct Jobs
+        struct Job
         {
-            public string title;
-            public string description;
-            public double salary;
+            public string Title;
+            public string Description;
+            public double Salary;
             public string Location;
         }
+
         public static void Main(string[] args)
         {
- 
-            Jobs[] jobs = new Jobs[10];
+            Job[] jobs = new Job[10];
+            int jobCount = 0; // Track how many jobs have been added
 
-string choice;
-          
+            string choice;
             do
             {
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                Console.WriteLine("------------------------------------------------------------------------------------Jobs Provider-----------------------------------------------------------------------\n");
+                Console.WriteLine("\n-------------------------------- JOB PROVIDER --------------------------------\n");
                 Console.WriteLine("A - Post a Job");
                 Console.WriteLine("D - Display Posted Jobs");
-                Console.WriteLine("Enter yes for Continue the process");
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                Console.WriteLine("Please Select an Option");
-                string Command = Console.ReadLine();
-                switch (Command)
+                Console.WriteLine("Please select an option:");
+                string command = Console.ReadLine()?.Trim().ToUpper();
+
+                switch (command)
                 {
                     case "A":
-                        {
-                            Console.WriteLine("How many No of Jobs You Want to post\n");
-                            int Count = Convert.ToInt32(Console.ReadLine());
-                            for (int i = 0; i < Count; i++)
-                            {
-                                Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                                Console.WriteLine("----------------------------------------------------------------JobDetails{0}---------------------------------------------------------------------------------------------\n", i + 1);
-                                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                                Console.Write("Enter the Name of job {0}:\n ", i + 1);
-                                jobs[i].title = Console.ReadLine();
-                                Console.Write("Enter the description of job {0}:\n  ", i + 1);
-                                jobs[i].description = Console.ReadLine();
-                                Console.Write("Enter the salary of job {0}:\n  ", i + 1);
-                                jobs[i].salary = Convert.ToDouble(Console.ReadLine());
-                                Console.Write("Enter the Location of job {0}:\n  ", i + 1);
-                                jobs[i].Location = Console.ReadLine();
+                        Console.WriteLine("How many jobs do you want to post?");
+                        int count = Convert.ToInt32(Console.ReadLine());
 
-                            }
-                            break;
+                        for (int i = 0; i < count && jobCount < jobs.Length; i++)
+                        {
+                            Console.WriteLine($"\n---- Job Details {jobCount + 1} ----");
+                            Console.Write("Enter the name of job: ");
+                            jobs[jobCount].Title = Console.ReadLine();
+
+                            Console.Write("Enter the description of job: ");
+                            jobs[jobCount].Description = Console.ReadLine();
+
+                            Console.Write("Enter the salary of job: ");
+                            jobs[jobCount].Salary = Convert.ToDouble(Console.ReadLine());
+
+                            Console.Write("Enter the location of job: ");
+                            jobs[jobCount].Location = Console.ReadLine();
+
+                            jobCount++;
                         }
+                        break;
+
                     case "D":
+                        Console.WriteLine("\n------------------ List of Jobs ------------------");
+                        if (jobCount == 0)
                         {
-                            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                            Console.WriteLine("----------------------------------------List of Jobs-------------------------------------------------------------------------------------------------------------------\n");
-                            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                            for (int i = 0; i < jobs.Length; i++)
-                            {
-                                if (jobs[i].title != null)
-                                {
-                                    Console.WriteLine("------------------------------------------------------------------------------Job Id: {0}----------------------------------------------------------------------------------------\n", i + 1);
-                                    Console.WriteLine("Name of Job: {0}", jobs[i].title);
-                                    Console.WriteLine("description: {0}", jobs[i].description);
-                                    Console.WriteLine("salary :{0}", jobs[i].salary);
-                                    Console.WriteLine("Location:{0}", jobs[i].Location,"\n");
-                                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-                                }
-                            }
-
-
-                            Console.ReadLine();
-                            break;
+                            Console.WriteLine("No jobs posted yet.");
                         }
+                        else
+                        {
+                            for (int i = 0; i < jobCount; i++)
+                            {
+                                Console.WriteLine($"\nJob ID: {i + 1}");
+                                Console.WriteLine($"Name of Job: {jobs[i].Title}");
+                                Console.WriteLine($"Description: {jobs[i].Description}");
+                                Console.WriteLine($"Salary: {jobs[i].Salary}");
+                                Console.WriteLine($"Location: {jobs[i].Location}");
+                            }
+                        }
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option! Please choose A or D.");
+                        break;
                 }
-                   
 
-
-
-                
-                Console.WriteLine("Do you want to continue (yes/No)\n");
-                choice = Console.ReadLine();
+                Console.WriteLine("\nDo you want to continue? (yes/no)");
+                choice = Console.ReadLine()?.Trim().ToLower();
 
             } while (choice == "yes");
         }
-            } 
+    }
 }
-    
