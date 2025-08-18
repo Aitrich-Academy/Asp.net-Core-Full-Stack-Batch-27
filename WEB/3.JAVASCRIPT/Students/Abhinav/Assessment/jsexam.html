@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXAM</title>
+</head>
+
+<style>
+    #box1
+    {
+        width: 300px;
+        height: 150px;
+        border: 1px solid;
+        opacity: 0.1px;
+        position: absolute;
+        left: 320px;
+        top: 200px;
+        border-radius: 10px;
+        border: 5px solid gainsboro;
+        background-color: gainsboro;
+        font-family: Verdana;
+    }
+
+    #btn1
+    {
+        font-size: 20px;
+        background-color: yellowgreen;
+        height: 50px;
+        position: absolute;
+        top: 400px;
+        left: 300px;
+        border-radius: 10px;
+    }
+    #btn2
+    {
+        font-size: 20px;
+        background-color: red;
+        height: 50px;
+        position: absolute;
+        top: 400px;
+        left: 500px;
+        border-radius: 10px;
+    }
+    #btn3
+    {
+        font-size: 20px;
+        height: 50px;
+        position: absolute;
+        top: 500px;
+        left: 420px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="main">
+    <div id="box1"></div>
+    <input type="button" id="btn1" value="INCREMENT +" onclick="incrementNum()">
+    <input type="button" id="btn2" value="DECREMENT -" onclick="decrementNum()">
+    <input type="button" id="btn3" value="RESET" onclick="resetNum()">
+    </div>
+    
+
+    <script>
+        
+            
+        function incrementNum(){
+            
+            var dis1=document.getElementById('box1')
+            
+            dis1.style.fontSize="90px"
+            dis1.style.textAlign="center"
+            const btn1=document.getElementById('btn1')
+               
+            n++
+            dis1.innerHTML=n
+
+        if(n>0 )
+        {
+            dis1.style.color="green"
+        }
+        else if(n==0)
+        {
+            dis1.style.color="black"
+        }        
+        }
+         let n=""
+
+        function decrementNum()
+        {
+            var dis1=document.getElementById('box1')
+            
+            dis1.style.fontSize="90px"
+            dis1.style.textAlign="center"
+            const btn2=document.getElementById('btn2')
+
+            n1--
+            dis1.innerHTML=n1
+            n--
+            dis1.innerHTML=n
+            
+        if(n<0)
+        {
+            dis1.style.color="red"
+        }
+        else if(n==0)
+        {
+            dis1.style.color="black"
+        }   
+        }
+        let n1=""
+
+        function resetNum()
+        {
+            var dis1=document.getElementById('box1')
+            dis1.style.fontSize="90px"
+            dis1.style.color="black"
+            dis1.style.background="gainsboro"
+            dis1.style.textAlign="center"
+            const btn3=document.getElementById('btn3')
+
+            n=0
+            n1=0
+            dis1.innerHTML=n2
+                
+        }
+        let n2=0
+    </script>
+</body>
+</html>

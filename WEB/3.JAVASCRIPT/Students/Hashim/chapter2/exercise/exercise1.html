@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise 1.css">
+</head>
+<body onload="loadData()">
+    <div class="hireMeNow">
+        <h1>HireMe Now!</h1>
+        <table>
+            <tr>
+                <td><img src="images/dashboard 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 297px;">
+                </td>
+                <td>
+                    <span class="s1">Dash Board</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/suitcase 2.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 344px;">
+                </td>
+                <td>
+                    <span class="s2">Jobs</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/application (1) 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 395px;">
+                </td>
+                <td>
+                    <span class="s3">Applications</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/question (1) 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 449px;">
+                </td>
+                <td>
+                    <span class="s4">Interviews</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/message 1.png" style="position: absolute;
+                    width: 21px;
+                    height: 27px;
+                    margin-left: 54px;
+                    margin-top: 504px;">
+                </td>
+                <td>
+                    <span class="s5">Message</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <img src="images/settings 1.png" style="position: absolute;
+        width: 21px;
+        height: 27px;
+        margin-left: 54px;
+        margin-top: 562px;">
+                </td>
+                <td>
+                    <span class="s6">Settings</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/add-group (1) 1.png" style="position: absolute;
+        width: 84px;
+        height: 97px;
+        margin-left: 90px;
+        margin-top: 698px;">
+                </td>
+                <td>
+                    <span class="s7">Add New</span>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="header">
+        <img src="images/Group 5689.png">
+        
+    </div>
+
+
+    
+      
+      <div id="Evans">     
+
+            <img src="images/evans.webp" id="img1">
+            <h3 id="name1"></h3>
+            <p id="qualification1"></p>
+            <p id="experience1"></p>
+            <p id="Location1"></p>
+            
+        </div>
+
+        <div id="Hemsworth">
+
+            <img src="images/hemsworth.jpg" id="img2">
+            <h3 id="name2"></h3>
+            <p id="qualification2"></p>
+            <p id="experience2"></p>
+            <p id="Location2"></p>
+
+        </div>
+
+
+        <div id="Cavill">
+
+            <img src="images/henry.webp" id="img2">
+            <h3 id="name3"></h3>
+            <p id="qualification3"></p>
+            <p id="experience3"></p>
+            <p id="Location3"></p>
+
+        </div>
+
+
+
+         <div id="Gosling">
+
+            <img src="images/gosling.webp" id="img1">
+            <h3 id="name4"></h3>
+            <p id="qualification4"></p>
+            <p id="experience4"></p>
+            <p id="Location4"></p>
+
+        </div>
+
+
+
+        <script>
+
+             var jobsList=
+        [
+
+        {persname:"Evans",quali: "<br> Qualification : MCA",expe:"<br>Experience : 3 years", loca: "<br> Location : Bangalore" },
+        {persname:"Hemsworth",quali: "<br> Qualification : MSC",expe:"<br>Experience : 2 years", loca: "<br> Location : Chennai" },
+        {persname:"Cavill",quali: "<br> Qualification : B.Tech",expe:"<br>Experience : 5 years", loca: "<br> Location : Kochi" },
+        {persname:"Gosling",quali: "<br> Qualification : B.Tech",expe:"<br>Experience : 2 years", loca: "<br> Location : Mumbai" },
+
+
+
+        ]
+
+        function loadData()
+        {
+        var person1=document.getElementById("name1");
+        var person2=document.getElementById("name2");
+        var person3=document.getElementById("name3");
+        var person4=document.getElementById("name4");
+
+
+
+
+
+
+
+        var quali1=document.getElementById("qualification1");
+        var quali2=document.getElementById("qualification2");
+        var quali3=document.getElementById("qualification3");  
+        var quali4=document.getElementById("qualification4");                                                             
+
+
+
+
+
+
+        var expe1=document.getElementById("experience1")
+        var expe2=document.getElementById("experience2")
+        var expe3=document.getElementById("experience3")
+        var expe4=document.getElementById("experience4")
+
+
+
+
+
+
+        var loca1=document.getElementById("Location1")
+        var loca2=document.getElementById("Location2")
+        var loca3=document.getElementById("Location3")
+        var loca4=document.getElementById("Location4")
+
+
+
+
+        person1.innerHTML=jobsList[0].persname;
+        quali1.innerHTML=jobsList[0].quali;
+        expe1.innerHTML=jobsList[0].expe;
+        loca1.innerHTML=jobsList[0].loca;
+
+
+        person2.innerHTML=jobsList[1].persname;
+        quali2.innerHTML=jobsList[1].quali;
+        expe2.innerHTML=jobsList[1].expe;
+        loca2.innerHTML=jobsList[1].loca;
+
+
+
+        person3.innerHTML=jobsList[2].persname;
+        quali3.innerHTML=jobsList[2].quali;
+        expe3.innerHTML=jobsList[2].expe;
+        loca3.innerHTML=jobsList[2].loca;
+
+
+
+        person4.innerHTML=jobsList[3].persname;
+        quali4.innerHTML=jobsList[3].quali;
+        expe4.innerHTML=jobsList[3].expe;
+        loca4.innerHTML=jobsList[3].loca;
+
+        
+        }
+
+
+
+        </script>
+</body>
+</html>

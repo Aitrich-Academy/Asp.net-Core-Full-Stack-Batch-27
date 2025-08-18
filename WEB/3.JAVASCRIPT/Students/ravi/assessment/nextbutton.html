@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ravi
+        {
+            width: 150px;
+            height: 30px;
+            background-color: rgb(168, 171, 174);
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="increment()" value="increment">increment</button>
+<button onclick="reset()" value="reset">reset</button>
+<button onclick="decrement()" value="decrement">decrement</button>
+<div class="ravi" id="digit"></div>
+    
+
+    <script>
+      
+      var k=0;
+
+      function increment()
+      {
+        k++
+     document.getElementById('digit').innerHTML=k
+     
+      
+      
+
+      }
+      
+
+      function reset()
+      {
+        k=0;
+        document.getElementById('digit').innerHTML=k
+
+
+      }
+
+
+       function decrement()
+       {
+       
+        k--
+     document.getElementById('digit').innerHTML=k
+
+       }
+
+   
+      
+
+    </script>
+</body>
+</html>

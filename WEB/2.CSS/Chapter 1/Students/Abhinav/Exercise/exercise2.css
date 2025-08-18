@@ -1,0 +1,170 @@
+.sidebar
+{
+    background-color: #20a6fc;
+    height: 80em;
+    width: 200px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-top: -10px;
+}
+
+#logout
+{
+    position: absolute;
+    margin-top: 300px;
+}
+
+.profile
+{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 18em;
+    height: 550px;
+    width: 300px;
+}
+.profile1
+{
+    position: absolute;
+    border: 1px solid beige;
+    border-radius: 10px;
+    margin-top: 220px ;
+    margin-left: 33px;
+    background-color:lightblue;
+    height: 45px;
+    width: 240px;
+}
+.about
+{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 44em;
+    margin-left: 18em;
+    height: 360px;
+    width: 300px;
+}
+#hr
+{
+    margin-top: 18em;
+    width: 100%;
+}
+.skills
+{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: absolute;
+    margin-top:11em;
+    margin-left: 40em;
+    height: 360px;
+    width: 800px;
+    float: right;   
+}
+.skills1
+{
+    position: absolute;
+    color: gray;
+    margin-top: 5em;
+    margin-left: 6em;
+    line-height: 25px;
+}
+#hr1
+{
+    margin-top: 3em;
+    margin-left: -3em;
+    width: 720px;
+}
+.education
+{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 33em;
+    margin-left: 40em;
+    height: 280px;
+    width: 800px;
+    float: right;   
+}
+#hr2
+{
+    margin-top: 14em;
+    margin-left: 3em;
+    width: 720px;
+}
+.experience
+{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 50em;
+    margin-left: 40em;
+    height: 280px;
+    width: 800px;
+    float: right;   
+}
+
+.secondfooter
+{
+    background-image: url("images/Decoration.png");
+    background-position:center top; ;
+    background-color: #20a6fc;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 1200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+.secondfooter h2
+{
+    margin-top: 80px;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 500;
+ }
+
+.subscribe input
+ {
+    border: 0;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -250px;
+}
+.footer
+{
+        position: absolute;
+        margin-top: 1460px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding: 100px;
+    }
+
+    .footer h3
+    {
+        position: absolute;
+        margin-top: -35px;
+        
+        font-size: 24px ;
+    }
+
+    .footer p
+    {
+        position: absolute;
+        margin-top: 20px;
+        width: 450px;
+        word-spacing: 2px;
+        line-height: 25px;
+        color: grey;
+    }
+  

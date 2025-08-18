@@ -1,0 +1,58 @@
+body{
+    overflow: hidden;
+    position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login{
+    margin-left:829px;
+    margin-top: -8px;
+    position: absolute;
+    width: 700px;
+    height: 900px;
+    background-color: #ffffff;
+}
+
+.img-cur{
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 837px;
+    height: 750px;
+    margin-left: -8px;
+    margin-top: -8px;
+} 
+.slider1{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    
+}
+.wrapper1{
+    width: 100%;
+    display: flex;    
+}
+.wrapper1 img{
+    width: 100%;
+    margin-left: 210px;
+    margin-top: 100px;
+
+}
+@keyframes slide{
+    0%{
+        transform: translateX
+        (0);
+    }
+    50%{
+        transform: translateX(-80%);
+    }
+    
+    100%{
+        transform: translateX(-160%);
+    }
+}

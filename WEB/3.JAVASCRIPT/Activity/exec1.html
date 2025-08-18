@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .tablediv{
+    
+    height: 450px;
+    width: 700px;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: -10px;
+  }
+  .label{
+    color: gray;
+  }
+  .input{
+    height: 40px;
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-color: aliceblue;
+    border-width: 1px;
+  }
+  .buttoninput{
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #1B0589;
+    margin-left: 350px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: 0px;
+  }
+  .lastdiv
+  {
+  
+position: absolute;
+margin-top:-50px ;
+  }
+  .popup
+  {
+  
+    width:200px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top:45%;
+    left:45%;
+    border-radius: 10px;
+    text-align: left;
+    padding:0 15px 15px;
+    color:black;
+    border: 1px solid black;
+    visibility:hidden;
+    margin:auto;
+  }
+.open_popup
+{
+  visibility: visible;
+  opacity:1;
+}
+.close_popup
+{
+  visibility: hidden;
+}
+.body#blur.active
+{
+filter:blur(20px);
+}
+    </style>
+</head>
+<body>
+  <div id="main">
+    <div class="tablediv">
+            <table border="0" height="400px" width="800px" cellpadding="5">
+                <tr>
+                    <td>
+                     
+                    
+                        <form>
+                        <label class="label">Full Name:</label>
+                        <br>
+                        <input type="text" class="input" id="name" >
+                        <br>
+                        <br>
+                        <label class="label">Username:</label>
+                        <br>
+                        <input type="text" class="input" id="uname" >
+                        <br>
+                        <br>
+                        <label class="label">Email:</label>
+                        <br>
+                        <input type="text" class="input" id="mail" >
+                        <br>
+                        <br>
+                        <label class="label">Phone:</label>
+                        <br>
+                        <input type="text" class="input" id="no" >
+                        </form>
+                    </td>
+                </tr>
+            </table>
+           </div>
+           <div class="lastdiv">
+            <form>
+            <input type="button" class="buttoninput" onclick="show()" value="Update Details">
+        </form>
+           </div>
+  </div>
+       
+           <div class="popup" id="pop">
+              Entered details are<br>
+              <h2 id="nameh2">Name</h2>
+              UserName:<span id="unamep"></span><br>
+              Mail:<span id="mailp"></span><br>
+              PhoneNum:<span id="phnp"></span><br><br>
+             <input type="button" value="close" onclick="closed()">
+           </div>
+  
+    <script>
+        var a=document.getElementById("pop");
+        var maind=document.getElementById("main");       
+        function show()
+        {
+          
+          
+          a.classList.remove("close_popup");
+          a.classList.add("open_popup");
+          document.getElementById("nameh2").innerHTML=document.getElementById("name").value;
+          document.getElementById("unamep").innerHTML=document.getElementById("uname").value;
+          document.getElementById("mailp").innerHTML=document.getElementById("mail").value;
+          document.getElementById("phnp").innerHTML=document.getElementById("no").value;
+          
+        }
+        function closed()
+        {
+            a.classList.add("close_popup");
+            maind.style.filter="none";
+        }
+
+    </script>
+</body>
+</html>

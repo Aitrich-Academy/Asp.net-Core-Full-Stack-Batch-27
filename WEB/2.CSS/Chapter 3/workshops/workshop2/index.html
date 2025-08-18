@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <style>
+        table input{
+            position: absolute;
+            width: 380px;
+            height: 35px;
+            margin-top: -19px;
+            margin-left: 50px;
+            border-radius: 6px;
+            border: 1px solid #5541d7;
+
+        }
+        th{
+            height: 55px;
+        }
+        td{
+            height: 50px;
+        }
+        .sp1{
+            position: absolute;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        table p{
+            position: absolute;
+
+            margin-top: -18px;
+            margin-left: 60px;
+
+            /* Heading/H4 Bold */
+
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 120%;
+            /* or 37px */
+
+            letter-spacing: .5px;
+
+            /* Light/Text Color/Title */
+
+            color: #11142D;
+        }
+        .forgot{
+            position: absolute;
+            margin-left: 75px;
+            margin-top: -10px;
+            font-size: 16px;
+            line-height: 120%;
+            /* or 19px */
+
+            text-align: right;
+            letter-spacing: 0.005em;
+
+            /* Light/Text Color/Body 2 */
+
+            color: #9A9AB0;
+
+        }
+        table .button{
+            position: absolute;
+            margin-left: 50px;
+            margin-top: -23.5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 24px;
+            gap: 10px;
+            border: 0;
+            position: absolute;
+            width: 385px;
+            height: 48px;
+            color: white;
+
+            /* Light/Primary Color/50% */
+
+            background: #5541D7;
+            border-radius: 8px;
+        }
+        table img{
+            position: absolute;
+            margin-left: 400px;
+            margin-top: -11px;
+        }
+        .img-cur{
+            position: absolute;
+            background-color: #f7f7fc;
+        }
+        .header{
+            position: absolute;
+            width: 250px;
+            height: 68px;
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img-cur">
+            <div class="header">
+                <img src="images/Group 8.png">
+                <img src="images/Hire me Now.png" style="position: absolute;margin-top: 20px;margin-left: 20px;">
+            </div>
+            <div class="slider1">
+                <div class="wrapper1">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <form>
+                <table style="position: absolute;margin-left: 10px;width: 500px;height: 350px;margin-top: 150px;">
+                    <tr>
+                        <th colspan="2"><p style="font-style: Mulish;">Sign in to Admin Dashboard</p></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="sp1">Email</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email" placeholder="   input your email in here" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="sp1">Password</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="    input your password in here" required> <img src="images/eye-no.png"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span class="forgot">Forgot passwod?</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Sign In" class="button"></td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+</html>

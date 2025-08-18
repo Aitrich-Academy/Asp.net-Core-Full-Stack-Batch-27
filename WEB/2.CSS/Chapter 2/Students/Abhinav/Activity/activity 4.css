@@ -1,0 +1,104 @@
+.a
+{
+    border: 2px solid black;
+    width: 650px;
+    margin: 20px;
+    height: 350px;
+}
+.title
+{
+    position: absolute;
+    margin-left: 30px;
+}
+.jobtitle
+{
+    margin: 30px;
+    margin-top: 60px;
+    background-color: rgb(209, 213, 217);
+    width: 590px;
+    height: 30px;
+    border: 6px grey;
+    border-radius: 10px;
+}
+.jobtitle::placeholder
+{
+    position: absolute;
+    margin-left: 40px;    
+}
+
+
+.b
+{
+    border: 2px solid black;
+    width: 500px;
+    margin: 20px;
+    height: 530px;
+}
+.img
+{
+    position: absolute;
+    margin: 25px;
+}
+.carlie
+{
+    margin: 40px;
+    margin-left: 100px;
+}
+
+hr
+{
+    margin-left: 20px;
+    color: gray;
+}
+h4
+{
+    margin: 20px;
+}
+.info
+{
+    color: gray;
+    position: absolute;
+    margin: 20px;
+    margin-top: -10px;
+}
+.fn
+{
+    margin: 20px;
+    margin-top: 70px;
+}
+::placeholder
+{
+    margin-left: 0px;
+}
+.emailaddress
+{
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 35px;
+}
+.f
+{
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 240px;
+}
+.bio
+{
+    margin: 20px;
+}
+.biobox
+{
+   margin: 20px;
+   margin-top: 2px;
+}
+button
+{
+    background-color: blueviolet;
+    width: 150px;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    position: absolute;
+    margin: -2px;
+    left: 50px;
+}

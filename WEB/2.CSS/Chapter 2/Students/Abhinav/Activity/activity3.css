@@ -1,0 +1,102 @@
+.main
+{
+    border: 2px solid black;
+    height: 525px;
+    width: 500px;
+    margin: 50px;
+}
+.img
+{
+    margin: 15px;
+    position: absolute;
+    margin-left: 200px;
+}
+h1
+{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 130px;
+}
+.google
+{
+    background-color: whitesmoke;
+    position: absolute;
+    margin: 20px;
+    margin-top: 150px;
+    margin-left: 35px;
+    width: 420px;
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+    box-shadow:  5px 5px 5px aliceblue ;
+}
+
+.email
+{
+    color: gray;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 155px;
+}
+.form1
+{
+    
+    position: absolute;
+    width: 420px;
+    margin: 20px;
+    margin-top: 290px;
+    margin-left: 35px;
+    height: 35px;
+}
+.form2
+{
+    
+    position: absolute;
+    width: 420px;
+    margin: 20px;
+    margin-top: 350px;
+    margin-left: 35px;
+    height: 35px;
+}
+::placeholder
+{
+    color: gray;
+    font-weight: 600;
+}
+.checkbox
+{
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 35px;
+}
+.keep
+{
+    position: absolute;
+    margin-top: 406px;
+    margin-left: 55px;
+    font-weight: 600;
+}
+.l1
+{
+    text-decoration: none;
+    color: blue;
+}
+button
+{
+    background-color: steelblue;
+    width: 420px;
+    position: absolute;
+    top:550px;
+    left: 100px;
+    height: 25px;
+    
+}
+button:hover
+{
+    background-color: blue;
+    color: white;
+}
+.google:hover
+{
+    background-color: steelblue;
+}

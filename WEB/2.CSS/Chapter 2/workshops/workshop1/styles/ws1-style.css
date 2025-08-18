@@ -1,0 +1,194 @@
+.navbar {
+    background-color: whitesmoke;/*The background-color property sets the background color of an element.*/
+    border-radius: 30px; /*The border-radius CSS property rounds the corners of an element's outer border edge.*/
+}
+
+.navbar li {
+    float: left;/*The float property is used for positioning and formatting content */
+    list-style: none;/*The CSS list-style property defines the appearance, position, and image for list item elements*/
+}
+
+.navbar ul {
+    overflow: auto;/*The overflow: auto property in CSS is used to control the behavior of overflowing content within a container element.*/
+}
+
+.navbar li a {
+    padding: 3px;/*Padding is used in CSS to create space between an element's content and its border.*/
+    text-decoration: none;/*Remove underline of Hyperlink */
+    color: #3487bf;
+    font-size: larger;
+}
+
+.navbar li .selected {
+    text-decoration: underline;
+    text-decoration-color: #3487bf;
+    text-decoration-thickness: 4px;
+}
+
+.navbar li:hover {
+    background-color: #3487bf;
+    color: white;
+}
+
+.navbar li:hover a {
+    color: white;
+}
+
+.navbar li:hover .selected {
+    text-decoration-color: #ffffff;
+}
+
+.navItem {
+    height: 25px;
+    padding: 10px;
+}
+
+/* end of navbar style */
+
+
+.row {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Style For fullitem , marketing, design buttons  */
+
+.fulltime {
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 12px;
+    width: 65px;
+    font-size: smaller;
+    font-style: unset;
+    color: #011604;
+    border: 1px solid #07300b;
+    border-color: #0a5808;
+    border-radius: 18px;
+    margin-left: 5px;
+}
+
+.fulltime:hover {
+    color: #ffffff;
+    background-color: #0a5808;
+}
+
+
+.marketing {
+    height: 20px;
+    margin-left: 5px;
+    padding-top: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 65px;
+    background-color: rgb(255, 255, 255);
+    font-size: smaller;
+    font-style: unset;
+    color: rgb(203 163 17);
+    border: 1px solid;
+    border-color: #ecc900;
+    border-radius: 18px;
+}
+
+.marketing:hover {
+    color: #ffffff;
+    background-color: #ecc900;
+}
+
+.design {
+    margin-left: 5px;
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 65px;
+    background-color: rgb(255, 255, 255);
+    font-size: smaller;
+    font-style: unset;
+    color: rgb(10 98 141);
+    border: 1px solid;
+    border-color: #0095ec;
+    border-radius: 18px;
+}
+
+.design:hover {
+    color: #ffffff;
+    background-color: #0095ec;
+}
+
+.btn-apply {
+    height: 22px;
+    text-align: center;
+    padding-bottom: 5px;
+    width: 95px;
+    background-color: white;
+    font-size: larger;
+    font-style: unset;
+    border: 1px solid;
+    border-color: #117aa3;
+}
+
+.btn-apply a {
+    text-decoration: none;
+    color: #2d9cddfc;
+}
+
+.btn-apply:hover {
+    color: white;
+    background-color: #2d9cddfc;
+}
+
+.btn-apply:hover a {
+    color: white;
+}
+
+.end-row {
+    display: inline-grid;
+    row-gap: 20px;
+}
+
+/* Style For Pagination */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #2d9cddfc;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.center {
+    text-align: center;
+}
+
+#tbl-all-jobs {
+    box-shadow: 0px 1px 6px 1px #81838bd1;
+    padding: 10px;
+}
+
+.scroll {
+    height: 500px;
+    overflow: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+

@@ -1,0 +1,40 @@
+.aa{
+    background-color: blue;
+    width: 20%;
+    height: 100vh;
+    float: left;
+}
+
+.bb{
+    background-color: rgb(189, 188, 188);
+    width: 80%;
+    height: 100vh;
+
+}
+
+#ab{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    
+}
+
+#ac{
+    font-size: xx-large;
+    background-color: white;
+    color: blue;
+    text-align: center;
+    height: 70px;
+    
+}
+
+#ad{
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: white;
+    position: absolute;
+    left: 45%;
+    top: 2%;
+}

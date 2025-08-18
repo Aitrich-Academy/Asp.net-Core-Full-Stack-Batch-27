@@ -1,0 +1,125 @@
+.main{
+    border: 4px solid;
+    width: 100%;
+    height:90%;
+}
+.sidebar{
+    background-color: rgb(0, 97, 195);
+    color:#fff;
+    width: 20%;
+    height:90vh;
+    padding:10px;
+}
+#header{
+    font-size: larger;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+a{
+    padding-left: 10%;
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+    
+}
+li{
+    margin: 20%;
+}
+.rightside
+{
+    background-color: rgb(248, 249, 249);
+    position: absolute;
+    margin-left: 500px;
+    bottom: 90px;
+    width: 500px;
+    height: 560px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image1
+{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 180px;
+    width: 100px;
+}
+.company
+{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+h3
+{
+    color: gray;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 250px;
+}
+h4
+{
+    color: gray;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 270px;
+}
+.sms
+{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 20px;
+}
+.provider
+{
+    color: gray;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+.call1
+{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 20px;
+}
+.call2
+{
+    color: gray;
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+.loc1
+{
+    position: absolute;
+    margin-top: 435px;
+    margin-left: 20px;
+}
+.loc2
+{
+    color: gray;
+    position: absolute;
+    margin-top: 435px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+
+button:hover
+{ background-color: rgb(0, 200, 255);
+
+}
+.button {
+            background-color: #ecf0f1; /* Green */
+            border: none;
+            color: rgb(57, 86, 158);
+            padding: 10px 70px;
+            text-align: center;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            
+          }

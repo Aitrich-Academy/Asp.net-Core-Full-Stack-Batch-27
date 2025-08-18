@@ -1,0 +1,60 @@
+.AAA
+{
+    border: 2px solid;
+    height: 330px;
+    width: 600px;
+}
+
+#b
+{
+  
+    margin-left: 30px;
+    font-size: x-large;
+}
+
+#bb
+{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(215, 216, 220);
+    border: none;
+    border-radius: 8px;
+}
+
+#c
+{
+    margin-left: 30px;
+    font-size: x-large;
+    
+}
+
+#cc
+{
+     margin-top: 25px;
+    margin-left: 25px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(215, 216, 220);
+    border: none;
+    border-radius: 8px;
+}
+
+#d
+{
+     margin-left: 30px;
+    font-size: x-large;
+}
+
+#dd
+{
+     margin-top: 25px;
+    margin-left: 25px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(215, 216, 220);
+    border: none;
+    border-radius: 8px; 
+}
+

@@ -1,0 +1,175 @@
+.main
+{
+    border: 4px solid black;
+    width: 1080px;
+}
+
+.sidebar
+{
+    background-color: steelblue;
+    width: 390px;
+    height: 700px;
+}
+.hire
+{
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.rightside
+{
+    background-color: aliceblue;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -460px;
+    width: 500px;
+    height: 560px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image1
+{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 180px;
+    width: 100px;
+}
+.company
+{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+h3
+{
+    color: gray;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 250px;
+}
+h4
+{
+    color: gray;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 270px;
+}
+.sms
+{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 20px;
+}
+.provider
+{
+    color: gray;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+.call1
+{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 20px;
+}
+.call2
+{
+    color: gray;
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+.loc1
+{
+    position: absolute;
+    margin-top: 435px;
+    margin-left: 20px;
+}
+.loc2
+{
+    color: gray;
+    position: absolute;
+    margin-top: 435px;
+    margin-left: 60px;
+    font-size: 24px;
+}
+.pencil
+{
+    position: absolute;
+    margin-top: 425px ;
+    margin-left: 450px;
+}
+.dashboard
+{
+    margin: 20px;
+    margin-top: 150px;
+}
+.dashboard1
+{
+    margin: 20px;
+    margin-top: -52px;
+    margin-left: 85px;
+    color: white;
+    font-size: x-large;
+}
+.jobs
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.jobs1
+{
+  
+    margin-top: 60px;
+    margin-left: 85px;
+    color: white;
+    font-size: x-large;
+}
+.application
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.application1
+{
+  
+    margin-top: 60px;
+    margin-left: 85px;
+    color: white;
+    font-size: x-large;
+}
+.interview
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.interview1
+{
+  
+    margin-top: 60px;
+    margin-left: 85px;
+    color: white;
+    font-size: x-large;
+}
+.message
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.message1
+{
+  
+    margin-top: 60px;
+    margin-left: 85px;
+    color: white;
+    font-size: x-large;
+}

@@ -1,0 +1,17 @@
+.ball 
+ {
+    width: 100px;
+    height: 100px;
+  background-color: #04e80c;
+  border-radius: 50px;
+  animation: bounceX 1s infinite alternate cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes bounceX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}

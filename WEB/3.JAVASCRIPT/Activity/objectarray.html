@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AFRA">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+    <script>
+        let fruits=[];
+        fruits[0]="Apple";
+        fruits[1]="Orange";
+        fruits[2]="Pineapple";
+        console.log(fruits);
+        let student1={name:"AFRA",qualification:"Btech CSE",course:".NetCoreFullStack"};
+        let student2={name:"NEETHU",qualification:"MBA",course:"..NetCoreFullStack"};
+        let student3={name:"VISHAL",qualification:"Bcom",course:"..NetCoreFullStack"};
+        let student4={name:"PRANAV",qualification:"Bsc Chemistry",course:"..NetCoreFullStack"};
+        let student5={name:"MUSTHAFA",qualification:"BCA",course:"..NetCoreFullStack"};
+        let arr=[];
+        arr[0]=student1;
+        arr[1]=student2;
+        arr[2]=student3;
+        arr[3]=student4;
+        arr[4]=student5;
+       console.log(arr);
+       //for loop
+       console.log("object array iteration using for loop");
+       for(let i=0;i<arr.length;i++)
+       {
+        console.log(arr[i]);
+       }
+       //do while loop
+       console.log("object array iteration using do while loop");
+       let i=0;
+       do{
+        console.log(arr[i]);
+        i++;
+       }while(i<arr.length)
+       //while loop
+       console.log("object array iteration using while loop");
+       let j=0;
+       while(j<=arr.length)
+       {
+        console.log(arr[j]);
+        j++;
+       }
+       //for in loop
+       console.log("object array iteration using for in loop");
+       for(i in arr)
+       {
+        console.log(arr[i]);
+       }
+       //for of loop
+       console.log("object array iteration using for of loop");
+       for(let i of arr)
+       {
+        console.log(i);
+       } 
+       //updation using for of
+       console.log("updated object array");
+       for (let update of arr)
+       {
+        update.course+=" Batch 8";
+        update.place="Thrissur";
+        console.log(update);
+       }
+       
+    
+    </script>
+    </body>
+</html>

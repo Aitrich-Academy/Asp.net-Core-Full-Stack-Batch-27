@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    
+    <script>
+        let n=parseInt(prompt("Enter the number of array: "))
+        let arr=[]
+
+        for(i=1;i<=n;i++)
+        {
+            let num=parseFloat(prompt("Enter the numbers to the array: "))
+            arr.push(num)
+        }
+        document.write("Array: "+arr)
+        
+        let filter=arr.filter(n=>n%2===0)
+        document.write("<br><br>Even Numbers in the array: "+filter)
+
+        let sort=arr.sort((a, b) => a - b);
+
+        document.write("<br><br>Sorted Array: "+sort)
+
+        let search=parseInt(prompt("Enter the number to search: "))
+        let s=arr.indexOf(search)
+        
+        if(search!==-1)
+        {
+            document.write(" <br><br> " + search + " Found at position " + s)
+        }
+        else
+        {
+            document.write(search+"Not Found")
+        }
+    </script>
+</body>
+</html>

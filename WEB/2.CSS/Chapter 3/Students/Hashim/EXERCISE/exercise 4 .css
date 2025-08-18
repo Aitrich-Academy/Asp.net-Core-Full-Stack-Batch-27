@@ -1,0 +1,215 @@
+body{
+    position: relative;
+    background-color: rgb(231, 229, 230);
+}
+.hireMeNow{
+    width: 20%;
+    height: 1349px;
+    background-color: #117EBD;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -20px;
+}
+
+ul
+{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+li
+{
+    
+    margin: 20px;
+    margin-top: 50px;
+}
+
+a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+li:hover
+{
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: darkblue;
+}
+
+
+
+
+
+
+
+
+#A
+{
+    color: #FFFFFF;
+    margin-top: 200px;
+    margin-left: 120px;
+}
+
+#B
+{
+    color: #FFFFFF;
+    margin-left: 75px;
+    margin-top: -10px;
+}
+
+#AAA
+{
+    margin-top: 20px;
+}
+
+.topbar
+{
+width: 1220px;
+background-color: #FFFFFF;
+height: 100px;
+position: absolute;
+margin-left: 300px;
+margin-top: -960px;
+}
+
+
+
+ .ui-ux,.product-designer,.product-designer1,.product-designer2{
+     position: absolute;
+     width: 630px;
+     height: 210px;
+     left: 332px;
+     top: 241px;
+     border-radius: 10px;
+ 
+ }
+
+ .ui-ux
+ {
+     margin-top: 50px;
+     
+ }
+
+ .product-designer
+ {
+     margin-top: 330px;
+   
+ }
+
+
+
+ .jobs
+ {
+     position: absolute;
+     width: 128px;
+     height: 21px;
+     left: 330px;
+     top: 192px;
+     font-family: calibri;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 21px;
+ }
+
+ .sorting
+ {
+     align-items: center;
+     padding: 0px;
+     gap: 8px;
+     color: #C7C7C7;
+     position: absolute;
+     width: 186px;
+     height: 21px;
+     left: 790px;
+     top: 192px;
+     font-family: calibri;
+     font-weight: 500;
+ }
+
+ .sorting img
+ {
+    margin-left: 160px;
+    margin-top: -38px;
+    position: absolute;
+ }
+
+
+ #Z
+ {
+   
+    margin-top: 965px;
+    margin-left: 230px;
+    position: absolute;
+    height: 365px;
+
+ }
+
+
+
+
+
+
+ #v
+ {
+    position: absolute;
+    margin-top: 185px;
+    margin-left: 1050px;
+ }
+
+ #footer
+ {
+   
+    margin-top: -949px;
+    position: relative;
+ }
+
+
+ .imhome
+ {
+    margin-top: 1100px;
+    margin-left: 990px;
+    position: absolute;
+    animation: bounceB 1s alternate infinite;
+ }
+
+ .imdates
+ {
+    margin-top: 1100px;
+    margin-left: 1200px;
+    position: absolute;
+    animation: bounceA 1s alternate infinite;
+ }
+
+ .text
+ {
+    margin-top: 1100px;
+    font-size: xx-large;
+    position: absolute;
+    width: max-content;
+    margin-left: 333px;
+    font-family: sans-serif ;
+ }
+
+
+ @keyframes bounceA
+ {
+     from {
+            transform: translate(0px);
+    }
+    to {
+        transform: translate(50px);
+    }
+ }
+
+ @keyframes bounceB
+ {
+    from {
+        transform: translate(50px);
+    }
+    to{
+        transform: translate(0);
+    }
+ }

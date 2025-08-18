@@ -1,0 +1,22 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF5722;
+  margin: 30px;
+}
+.squash {
+  animation: bounceStretch 1s infinite alternate ease-in-out;
+}
+
+@keyframes bounceStretch {
+  0% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: translateY(250px) scaleX(1.1) scaleY(0.9);
+  }
+  100% {
+    transform: translateY(500px) scaleX(1) scaleY(1.2);
+  }
+}

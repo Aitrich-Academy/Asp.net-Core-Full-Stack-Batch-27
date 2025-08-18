@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript-chapter1-workshop3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <style>
+        .menu span{
+            position: absolute;
+            left: 32px;
+
+            top: 208px;
+
+
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+
+            color: #000000;
+
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="images/gallery.png">
+        </div>
+        <div >
+            <input type="search" class="search">
+            <img src="images/search-normal.png" style="margin-left: 60px;margin-top: 129px;position: absolute;">
+            <h4 style="position: absolute;margin-left: 105px;margin-top: 132px;color: #ADA7A7;">Search</h4>
+        </div>
+
+
+        <div class="menu">
+            <span style="opacity: .6;position: absolute;margin-top: 50px;font-size: 16px;">Menu</span>
+            <table>
+                <tr>
+                    <td>
+                        <div class="menu1">
+                            <img src="images/card.png" style="position: absolute;margin-left: 25px;margin-top: 300px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Overview</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu2">
+                            <img src="images/element-3.png" style="position: absolute;margin-left: 25px;margin-top: 350px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Card</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu3">
+                            <img src="images/note.png" style="position: absolute;margin-left: 25px;margin-top: 400px;">
+                            <a href="" ><span class="m1" style="opacity: .8;">Transaction</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu4">
+                            <img src="images/document-text.png" style="position: absolute;margin-left: 25px;margin-top: 450px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Invoicing</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu5">
+                            <img src="images/flag.png" style="position: absolute;margin-left: 25px;margin-top: 500px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Report</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu6">
+                            <img src="images/receipt-minus.png" style="position: absolute;margin-left: 25px;margin-top: 550px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Payment</span></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="menu7">
+                            <img src="images/setting-2.png" style="position: absolute;margin-left: 25px;margin-top: 600px;">
+                            <a href=""><span class="m1" style="opacity: .8;">Settings</span></a>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div class="logout">
+            <span style="opacity: .5;">Profile</span>
+            <div class="logout-Details" style="margin-left: 22px;margin-top: 840px;">
+                <img src="images/Ellipse 1.png">
+                <img src="images/gallery.png" style="margin-left: -36px;margin-top: 10px; position: absolute;">
+            </div>
+            <h2>Amanda</h2>
+            <h3>Admin Account</h3>
+            <img src="images/DotsThree.png" style=" margin-left: 220px;margin-top: 850px;position: absolute;">
+            <button>Logout</button>
+            
+            <div>
+                <img src="images/logout.png"  style="position: absolute;margin-left: 55px;margin-top: 180px;">
+            </div>
+        </div>
+        <div class="line"></div>
+
+
+        <div class="welcome">
+            <span>Welcome, Admin</span>
+            <p >Tue, 07 June 2022</p>
+        </div>
+        <div >
+            <input type="search" class="search2" style="font-size: 15px;">
+            <img src="images/search-normal.png" style="margin-left: 980px;margin-top: 45px; position: absolute;">
+            <h4 style="position: absolute;margin-left: 1020px;margin-top: 47px;color: #ADA7A7;">Search</h4>
+        </div>
+        <div class="bell">
+            <img src="images/notification-bing.png" style="margin-left: 5px;margin-top: 5px;">
+        </div>
+        <div class="gallery">
+            <img src="images/Rectangle 1072.png">
+            <img src="images/gallery.png" style="position: absolute;margin-left: -37px;margin-top: 14px;">
+        </div>
+
+        
+        <div class="subHead">
+            <h2>General Settings</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typeetting industry.</p>
+        </div>
+        <div class="nav">
+            <div class="nav1">
+                <img src="images/frame.png" style="position: absolute; margin-top: 7px;">
+                <span class="sp1"><a href="">Account</a></span>
+                <div id="n1"></div>
+            </div>
+            <div class="nav2">
+                <img src="images/card.png"  style="position: absolute; margin-top: 7px;margin-left:150px;">
+                <span class="sp2"><a href="">Billing</a></span>
+                <div id="n2"></div>
+            </div>
+            <div class="nav3">
+                <img src="images/notification-bing.png"  style="position: absolute; margin-left: 295px;margin-top: 7px;" width="28px">
+                <span class="sp3" ><a href="">Notification</a></span>
+                <div id="n3"></div>
+            </div>
+        </div>
+
+        <div class="Bio">
+            <div>
+                <img src="images/Ellipse 1837.png">
+            </div>
+            <h1>Carlie John</h1>
+            <div class="line"></div>
+            <div>
+                <a href="" style="color: #9340fb;"><button class="btn1">Upload new picture</button></a>
+            </div>
+            <div>
+                <h4>Basic Information</h4>
+                <p>Lorem Ipsum is simply dummy text.</p>
+                <form onsubmit="return validateForm()">
+                    <label class="lab1">Full Name</label>
+                    <input type="text" name="name" id="name" class="inp1" placeholder="Your Name" >
+                    <label class="lab2">About Biography</label>
+                    <textarea class="inp2" placeholder=" Say something about you..." ></textarea>
+                    <label class="lab3"  type="email">Email Address</label>
+                    <input type="text" class="inp3" placeholder="Example@gmail.com" name="email" id="email" onblur=" return validateMail()">
+                    <label class="lab4" >Phone Number</label>
+                    <input type="tel" name="text" id="phone" class="inp4" placeholder=" +12 3456 7890">
+                    <label class="lab5">Role</label>
+                    <input type="text" class="inp5" placeholder="Designer"  name="role" id="role">
+                    <label class="lab6">Location</label>
+                    <input type="text" class="inp6" placeholder="Your Location" name="location" id="location" >
+                    <label class="lab7">Website</label>
+                    <input type="text" class="inp7" placeholder=" Example.com" name="websie" id="website" >
+                    <a href="" style="color: white;text-decoration: none;font-size: 15px;"></a><button style="color: azure; border: 0;border-radius: 10px; background-color: #9340fb; position: absolute;left: 33px;top: 520px;width: 181px;height: 52px;">Save Changes</button></a>
+                </form>
+            </div>
+            <div>
+                <h4 style="margin-left: 600px;">More Information</h4>
+                <p style="margin-left: 570px;">Lorem Ipsum is simply dummy text.</p>
+            </div>
+            
+
+        </div>
+
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

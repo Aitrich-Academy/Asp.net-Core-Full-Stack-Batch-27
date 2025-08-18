@@ -1,0 +1,123 @@
+.opentowork
+{
+     position: absolute;
+     left: 80px;
+     top: 169px;
+     background: #4CB32B;
+     border-radius: 4px;
+     padding:6px;
+     font-size:13px;
+     font-family:Bahnschrift;
+     color: white;
+}
+
+.rightside a
+{
+     position: absolute;
+     font-weight: 900px;
+     font-size: 22px;
+     width: 84px;
+     height: 29px;
+     left: 50px;
+     top: 30px;
+     font-family:Bahnschrift;
+     color: black;
+}
+
+.digitalproductdesigner
+ {
+     padding: 12px;
+     gap: 8px;
+     position: absolute;
+     width: 328px;
+     height: 48px;
+     left: 330px;
+     top: 120px;
+     background: #FFFFFF;
+     border-radius: 8px;
+ }
+ .Location
+ {
+     align-items: center;
+     padding: 12px;
+     gap: 8px;
+     position: absolute;
+     width: 176px;
+     height: 48px;
+     left: 720px;
+     top: 120px;
+     background: #FFFFFF;
+     border-radius: 8px;
+ }
+
+ .jobs
+ {
+     position: absolute;
+     width: 128px;
+     height: 21px;
+     left: 330px;
+     top: 192px;
+     font-family: calibri;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 21px;
+ }
+
+ .sorting
+ {
+     align-items: center;
+     padding: 0px;
+     gap: 8px;
+     color: #C7C7C7;
+     position: absolute;
+     width: 186px;
+     height: 21px;
+     left: 790px;
+     top: 192px;
+     font-family: calibri;
+     font-weight: 500;
+ }
+
+ .sorting img
+ {
+     position: absolute;
+     margin-top: -38px;
+     margin-left: 150px;
+ }
+
+ .ui-ux,.product-designer,.ui,.ux
+ {
+     position: absolute;
+     width: 630px;
+     height: 210px;
+     left: 332px;
+     top: 241px;
+     border-radius: 10px;
+ 
+ }
+
+ .ui-ux
+ {
+     margin-top: 10px;
+     border: 1px solid gray;
+ }
+
+ .product-designer
+ {
+     margin-top: 250px;
+     border: 1px solid gray;
+     background-color: white;
+ }
+
+ .ui
+ {
+     margin-top: 490px;
+     border: 1px solid gray;
+ }
+
+ .ux
+ {
+     margin-top: 730px;
+     border: 1px solid gray;
+ }

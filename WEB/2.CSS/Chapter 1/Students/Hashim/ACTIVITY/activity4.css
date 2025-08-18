@@ -1,0 +1,20 @@
+#a{
+    text-decoration-line: underline;
+     font-size: xx-large;
+
+}
+
+#b{
+    font-weight: bold;
+     font-size: xx-large;
+}
+
+#c{
+    text-decoration: line-through;
+     font-size: xx-large;
+}
+
+#d{
+    font-style: italic;
+    font-size: xx-large;
+}

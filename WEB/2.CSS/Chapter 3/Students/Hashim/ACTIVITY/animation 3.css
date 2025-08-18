@@ -1,0 +1,18 @@
+.diagonal 
+{
+    height: 100px;
+    width: 118px;
+    border-radius: 50px;
+  background-color: #720167;
+  animation: bounceRotate 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes bounceRotate
+ {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(300px, 300px) rotate(360deg);
+  }
+}

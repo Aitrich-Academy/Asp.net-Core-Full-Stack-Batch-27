@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Css-chapter2-workshop2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <style>
+        .googleBtn{
+            background-color: #fff;
+            width: 375px;
+            height: 42px;
+            position: absolute;
+            margin-left: 110px;
+            position: absolute;
+            margin-top: 204px;
+            border: 0.1em solid grey;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .loginWithGoogle h2{
+            font-size: 17.5px;
+            margin-left: 230px;
+            position: absolute;
+            margin-top: 204px;
+        } 
+        .inpTxt{
+            margin-left: 108px;
+            width: 370px;
+            height: 40px;
+            margin-top: 320px;
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.31);
+        }
+        .inpPwd{
+            margin-left: 108px;
+            width: 370px;
+            height: 40px;
+            margin-top: 380px;
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.31);
+        }
+        .checkbox{
+            position: absolute;
+            margin-top: 440px;
+            margin-left: -375px;
+        }
+        .btn{
+           
+        }
+        .p1{
+            color: #636262;
+            margin-left:170px;
+            margin-top: 100px;
+            position: absolute;
+        }
+        .span{
+            width: 90px;
+            position: absolute;
+            color: #000000;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftContainer" >
+            <div class="logo">
+                <img src="images/Logo.png">
+            </div>
+            <h1 style="position: absolute;width: 332px;height: 72px;margin-left: 135px;margin-top: 120px; font-family: 'Roboto';font-style: normal;font-weight: 700;
+            font-size: 28px;line-height: 42px;text-align: center;color: #000000;">Welcome Back</h1>
+            <a href=""><div class="loginWithGoogle">
+                <img src="images/Login with google shape.png" style="margin-left: 105px;width: 380px;margin-top: 180px;position: absolute;">
+                <img src="images/Google symbol.png" style="position: absolute;margin-left: 150px;margin-top: 200px;width: 25px;">
+                <h2><a href="#" style="text-decoration: none;">Log in with Google</a></h2>
+           
+            </div></a>
+           
+
+            <h2 style="margin-left: 180px;margin-top: 270px; position: absolute;width: 249px;height: 20px;font-family: 'Roboto';font-style: normal;font-weight: 700;font-size: 13px;line-height: 19px;text-align: center;color: #C5BEBE;">OR LOGIN WITH E-MAIL</h2>
+            <div style="margin-left: 380px;margin-top: 275.5px; box-sizing: border-box;position: absolute;width: 100px;height: 0px;border: 3px solid #F5F5F5;">
+
+            </div>
+            <form action="#">
+                <input type="email" class="inpTxt" placeholder="   Your Email" style="font-weight: bolder;color: #000000;" required>
+                <input type="password" class="inpPwd" placeholder="   Your Password" style="position: relative; font-weight: bolder;color: #000000;">
+                <input type="checkbox" class="checkbox">
+            </form>
+            
+            <div class="p1">
+                <p>Don't have an account yet ? <a href="#" class="span"> Sign up</a></p>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <img src="images/LoginPageImg.png" width="650px" height="600px">
+        </div>
+    </div>
+</body>
+</html>

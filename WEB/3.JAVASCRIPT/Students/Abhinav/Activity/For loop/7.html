@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity</title>
+</head>
+<body>
+    
+    <script>
+        const rate=3
+        let unitperday=0
+        let dayrate
+        
+
+        for(let day=1;day<=30;day++)
+        {
+            
+            if(day>=1 && day<=10)
+            {   
+                unitperday=unitperday+5
+                dayrate=rate*unitperday
+                let start=dayrate-15
+
+                console.log(" Day " + day + " : " + " 5 units -Rs : "+start + "  + " + " Rs: 15 " + " = Rs: " + dayrate +  " (Total Units: " + unitperday + " ) " )
+               
+            }
+            else if(day>=11 && day<=20)
+            {
+                unitperday=unitperday+7
+                dayrate=rate*unitperday
+                start=dayrate-21
+
+                console.log(" Day " + day + " : " + " 7 units -Rs : " + start + "  + " + " Rs: 21 " + " = Rs: " + dayrate + " ( Total Units: " + unitperday + " ) " )
+                
+            }
+            else if(day>=21 && day<=30)
+            {
+                unitperday=unitperday+10
+                dayrate=rate*unitperday
+                start=dayrate-30
+
+                console.log(" Day " + day + " : " + " 10 units -Rs : " + start + " + " + " Rs: 30 " + " = Rs: " + dayrate + " ( Total Units: " + unitperday + " ) " )
+                
+            }
+            else
+            {
+                console.log("Wrong")
+            }
+            
+        }
+        console.log("\nTotal units consumed for 30 days: "+unitperday)
+        console.log("Total electricity bill: Rs: "+dayrate)
+    </script>
+</body>
+</html>
