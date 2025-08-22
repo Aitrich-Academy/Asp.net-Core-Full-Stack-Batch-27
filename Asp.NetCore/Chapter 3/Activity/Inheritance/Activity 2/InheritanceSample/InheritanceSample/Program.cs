@@ -15,12 +15,6 @@
 
             Console.WriteLine($"Employee Details : {employee1.GetEmployee()}");
             Console.WriteLine($"Employee Details : {employee2.GetEmployee()}");
-
-            
-
-
-
-
         }
     }
 }
