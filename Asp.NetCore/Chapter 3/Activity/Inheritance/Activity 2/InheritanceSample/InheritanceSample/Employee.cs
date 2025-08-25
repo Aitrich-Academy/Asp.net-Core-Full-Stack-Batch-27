@@ -19,6 +19,7 @@ namespace InheritanceSample
             //Console.WriteLine("Last Name :{0}", LastName);
             //Console.WriteLine("Position : {0}", Position);
             //Console.WriteLine("Age : {0}", Age);
+
             return $"ID:{Id} FullName:{FirstName} {LastName} Position:{Position} Age:{Age}";
             
         }
