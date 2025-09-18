@@ -17,14 +17,14 @@ namespace ExceptionHandling2
                 j = Convert.ToInt32(Console.ReadLine());
                 k = i / j;
             }
-            catch(DivideByZeroException ex)
-            { 
+            catch (DivideByZeroException ex)
+            {
                 Console.WriteLine(ex.Message);
             }
-            finally
-            {
-                Console.WriteLine("Result is {0} :", k);
-            }
+            //finally
+            //{
+            Console.WriteLine("Result is {0} :", k);
+            //}
         }
     }
 }

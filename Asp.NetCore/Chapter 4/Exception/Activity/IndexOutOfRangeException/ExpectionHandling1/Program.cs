@@ -13,14 +13,14 @@ namespace ExpectionHandling1
                 string[] pets = { "Dog", "Cat", "Parrot" };
                 Console.WriteLine(pets[10]);
             }
-            catch (IndexOutOfRangeException)
+            catch (IndexOutOfRangeException ex)
             {
-                Console.WriteLine("Exception occured");
+                Console.WriteLine(ex.Message);
             }
-            finally
-            {
-                Console.WriteLine("Final block executed");
-            }
+            //finally
+            //{
+            //    Console.WriteLine("Final block executed");
+            //}
         }
     }
 }
