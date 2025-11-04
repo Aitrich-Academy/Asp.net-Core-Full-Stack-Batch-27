@@ -1,0 +1,22 @@
+﻿@page
+@model SimpleAuth.Pages.LoginModel
+@{
+}
+<h2>Login</h2>
+
+<form method="post">
+    <label>Username:</label>
+    <input type="text" asp-for="Username" required />
+    <span asp-validation-for="Username" class="text-danger"></span>
+
+    <label>Password:</label>
+    <input type="password" asp-for="Password" required />
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <button type="submit">Login</button>
+</form>
+
+<!-- Show general validation errors -->
+<p class="text-danger">@Html.ValidationSummary(true, "", new { @class = "text-danger" })</p>
+
+<a href="/Register">Don't have an account? Register</a>

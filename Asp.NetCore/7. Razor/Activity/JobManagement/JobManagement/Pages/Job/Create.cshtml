@@ -1,0 +1,60 @@
+﻿@page 
+@model JobManagement.Pages.Job.CreateModel
+@{
+}
+<h2>Create Job Post</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="JobPost.JobTitle" class="control-label"></label>
+        <input asp-for="JobPost.JobTitle" class="form-control" />
+        <span asp-validation-for="JobPost.JobTitle" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.Company" class="control-label"></label>
+        <input asp-for="JobPost.Company" class="form-control" />
+        <span asp-validation-for="JobPost.Company" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.Location" class="control-label"></label>
+        <input asp-for="JobPost.Location" class="form-control" />
+        <span asp-validation-for="JobPost.Location" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.EmploymentType" class="control-label"></label>
+        <select asp-for="JobPost.EmploymentType" class="form-control">
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Contract">Contract</option>
+        </select>
+        <span asp-validation-for="JobPost.EmploymentType" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.SalaryRange" class="control-label"></label>
+        <input asp-for="JobPost.SalaryRange" class="form-control" />
+        <span asp-validation-for="JobPost.SalaryRange" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.JobDescription" class="control-label"></label>
+        <textarea asp-for="JobPost.JobDescription" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="JobPost.JobDescription" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="JobPost.Requirements" class="control-label"></label>
+        <textarea asp-for="JobPost.Requirements" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="JobPost.Requirements" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Create</button>
+    <a asp-page="Index" class="btn btn-secondary mt-3">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
