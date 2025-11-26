@@ -1,0 +1,47 @@
+﻿@page "/register"
+@inject AuthService AuthService
+@inject NavigationManager Navigation
+@using BlazorAuth.Services
+
+<h3>Register</h3>
+
+@* @if (!string.IsNullOrEmpty(errorMessage))
+{
+    <p class="text-danger">@errorMessage</p>
+} *@
+
+<div>
+    <label>Username</label>
+    <input @bind="username" class="form-control" />
+
+    <label>Email</label>
+    <input @bind="email" type="email" class="form-control" />
+
+    <label>Password</label>
+    <input @bind="password" type="password" class="form-control" />
+
+    <button @onclick="RegisterUser" class="btn btn-success mt-2">Register</button>
+</div>
+
+@code {
+    private string username;
+    private string email;
+    private string password;
+    private string errorMessage;
+
+    private async Task RegisterUser()
+    {
+        /*If registration is successful, the user is redirected to the login page (/login).
+        forceLoad: true ensures a full page reload instead of a Blazor internal navigation, 
+        which can help when dealing with authentication changes.*/
+        if (await AuthService.Registerr(username, password, email))
+        {
+            Navigation.NavigateTo("/login",forceLoad:true);
+        }
+        else
+        {
+            errorMessage = "Username already taken.";
+        }
+    }
+}
+
