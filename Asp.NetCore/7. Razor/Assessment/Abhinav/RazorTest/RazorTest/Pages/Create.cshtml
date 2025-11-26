@@ -1,0 +1,28 @@
+﻿@page
+@model RazorTest.Pages.CreateModel
+@{
+}
+<h1>Create Book</h1>
+<div>
+    <div>
+        <form method="post">
+            <label asp-for="BookPost.Title"></label>
+            <input asp-for="BookPost.Title" type="text" class="form-control"/>
+            <span asp-validation-for="BookPost.Title" class="text-danger"></span>
+
+
+            <label asp-for="BookPost.Author"></label>
+            <input asp-for="BookPost.Author" type="text" class="form-control" />
+            <span asp-validation-for="BookPost.Author" class="text-danger"></span>
+
+            <label asp-for="BookPost.Price"></label>
+            <input asp-for="BookPost.Price" type="text" class="form-control" />
+            <span asp-validation-for="BookPost.Price" class="text-danger"></span>
+
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+
+      
+
+    </div>
+</div>

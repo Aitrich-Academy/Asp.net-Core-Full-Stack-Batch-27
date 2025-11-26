@@ -1,0 +1,25 @@
+﻿@page
+@model RazorTest.Pages.DeleteModel
+@{
+}
+<div>
+    <h1>Are you sure you want to delete</h1>
+    <dl>
+        
+            <dt>Book Title:<dt> 
+                <dd>@Model.BookPost.Title</dd>
+            <dt>Book Author: </dt>
+                <dd>@Model.BookPost.Author</dd>
+            <dt>Book Author:</dt>
+            <dd>@Model.BookPost.Price</dd>
+       
+    </dl>
+   
+  
+
+    <form method="post">
+        <input type="hidden" asp-for="BookPost.Id" />
+        <button type="submit" class="btn btn-danger"> Delete </button>
+        <a asp-page="/Read" class="btn btn-success">Cancel</a>
+    </form>
+</div>
