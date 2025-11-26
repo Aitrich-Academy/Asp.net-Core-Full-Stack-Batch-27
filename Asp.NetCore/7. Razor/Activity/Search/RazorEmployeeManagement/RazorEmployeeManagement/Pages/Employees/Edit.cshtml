@@ -1,0 +1,28 @@
+﻿@page "{id:int}"
+@model RazorEmployeeManagement.Pages.Employees.EditModel
+@{
+}
+<h2>Update Employee</h2>
+<form method="post">
+    <input type="hidden" asp-for="Employee.Id" />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Employee.Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Position</label>
+        <input asp-for="Employee.Position" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Salary</label>
+        <input asp-for="Employee.Salary" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Department</label>
+        <input asp-for="Employee.Department" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
