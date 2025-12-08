@@ -1,0 +1,91 @@
+﻿@page "/"
+@page "/JobList"
+@using BlazorAssessment.Dto
+@using BlazorAssessment.Interface
+
+@inject ITaskkService service
+@inject NavigationManager navigation
+
+<h1 class="text-center">Task List</h1>
+
+<div>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Task Title</th>
+                <th>DueDate</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var t in taskkDto)
+            {
+                <tr>
+                    <td>@t.Id</td>
+                    <td>@t.Title</td>
+                    <td>@t.DueDate</td>
+                    <td>@t.Status</td>
+                    <td>
+                     <button class="btn btn-danger" @onclick="() => DeleteTask(t.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+<EditForm Model="addTaskk" OnValidSubmit="AddTask">
+    <DataAnnotationsValidator/>
+
+    <label class="form-label">Task Title:</label>
+    <InputText class="form-control" @bind-Value="addTaskk.Title"/>
+
+    <label class="form-label">Due Date:</label>
+    <InputDate class="form-control"  @bind-Value="addTaskk.DueDate"/>
+
+    <label class="form-label mt-4">Status:</label>
+
+
+    <InputSelect @bind-Value="addTaskk.Status">
+        <option>Select</option>
+        <option class="text-success">Completed</option>
+        <option class="text-danger">Pending</option>
+    </InputSelect>
+   
+    <div class="mt-4">
+        <button value="submit" class="btn btn-success mt-5">Save Task</button>
+    </div>
+
+</EditForm>
+
+
+
+
+@code {
+    private List<TaskkDto> taskkDto=new();
+    private TaskkDto addTaskk=new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        taskkDto = await service.GetAllTaskAsync();
+
+    }
+
+    public async Task AddTask()
+    {
+        await service.AddTaskAsync(addTaskk);
+    }
+
+
+    private async Task DeleteTask(int id)
+    {
+        var task = await service.GetTaskByIdAsync(addTaskk.Id);
+        await service.DeleteTaskAsync(id);
+
+   
+    }
+}
