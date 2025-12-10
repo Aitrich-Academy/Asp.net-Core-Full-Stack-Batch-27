@@ -1,0 +1,117 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HireMeNow.Dto.CompanyMemberDto
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 bg-primary min-vh-100 d-flex flex-column p-3">
+			<div class="text-center">
+				<div class="p-1 bg-secondary rounded-circle mx-auto">
+					<img class="img-fluid" src="images/dashboard/cheerful-curly-business-girl-wearing-glasses 1.png">
+				</div>
+				<h4 class="text-white mt-2">Olivia</h4>
+				<p class="text-white">olivia@gmail.com</p>
+			</div>
+			<ul class="list-group list-unstyled mt-3">
+                
+                <li class="list-group-item border-0 bg-primary">
+                      <i class="bi bi-grid-fill"></i>Dashboard
+                </li>
+                 <li class="list-group-item border-0 bg-primary">
+                      <i class="bi bi-suitcase-lg-fill"></i>Jobs
+                 </li>
+                            <li class="list-group-item border-0 bg-primary">
+                                <i class="bi bi-card-checklist"></i>Application
+                            </li>
+                            <li class="list-group-item border-0 bg-primary">
+                                <i class="bi bi-chat-left-text"></i>Interview
+                            </li>
+                            <li class="list-group-item border-0 bg-primary">
+                                <i class="bi bi-chat-fill"></i>Message
+                            </li>
+                            <li class="list-group-item border-0 bg-primary">
+                                <i class="bi bi-gear-fill"></i>Settings
+                            </li>
+                            <li class="list-group-item border-0 bg-primary">
+                                <img class="img-fluid" src="images/dashboard/add-group (1) 1 (1).png"><br>
+                                <span class="text-white">Add New</span>
+                            </li>
+            </ul>
+            
+        </div>
+    
+
+<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-12 bg-white border-bottom p-2">
+					<img class="img-fluid float-right pl-4" src="/publicassets/Company/images/Group 33999.png">
+					<img class="img-fluid float-right" src="/publicassets/Company/images/notification-bing.png">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-9 p-5 mx-auto d-blok border rounded bg-light mb-5">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="h1 fluid text-center p-2">Registration Of Job Provider</h3>
+						</div>
+					</div>
+					<form method="post">
+						<div class="row mt-3 ">
+							<div class="col-md-5 ml-5 ">
+								<div class="form-group">
+									<label><strong>First Name</strong></label><br>
+									<input asp-for="FirstName" class="form-control border-dark" type="text" name="FirstName" placeholder="Please enter first name"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>Email</strong></label><br>
+									<input asp-for="Email" class="form-control border-dark" type="text" name="email" placeholder="Enter Email"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>Designation</strong></label><br>
+									<input asp-for="Designation" class="form-control border-dark" type="text" name="designation" placeholder="Please enter Designation"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>Password</strong></label><br>
+									<input asp-for="Password" class="form-control border-dark" type="password" name="password" placeholder="Password"><br>
+								</div>
+							</div>
+
+							<div class="col-md-5 ml-2 ">
+								<div class="form-group">
+									<label><strong>LastName</strong></label><br>
+									<input asp-for="LastName" class="form-control border-dark" type="text" name="LastName" placeholder="Please enter Last name"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>PhoneNumber</strong></label><br>
+									<input asp-for="Phone" class="form-control border-dark" type="text" name="phone" placeholder="phone Number"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>CompanyID</strong></label><br>
+									<input asp-for="CompanyId" class="form-control border-dark" type="text" name="CompanyId" placeholder="Please enter User ID"><br>
+								</div>
+								<div class="form-group">
+									<label><strong>ConfirmPassword</strong></label><br>
+									<input asp-for="Password" class="form-control border-dark" type="password" name="password" placeholder="Confirm Password"><br>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-10 mx-auto d-block">
+								<button class="btn  bg-secondary mx-auto d-block">REGISTER</button>
+							</div>
+						</div>
+					</form>
+					</div>
+					</div>
+					</div>
+					</div>
+</div>
+
