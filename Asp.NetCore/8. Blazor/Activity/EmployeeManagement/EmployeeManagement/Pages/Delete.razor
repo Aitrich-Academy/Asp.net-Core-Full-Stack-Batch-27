@@ -1,0 +1,60 @@
+﻿@page "/delete/{id:int}"
+@inject EmployeeService EmployeeService
+@inject NavigationManager Navigation
+@using EmployeeManagement.Service
+@using EmployeeManagement.Models
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Employee employee;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employee = await EmployeeService.GetEmployeeByIdAsync(id);
+        if (employee == null)
+        {
+            Navigation.NavigateTo("/"); // Redirect if employee not found
+        }
+    }
+
+    private async Task ConfirmDelete()
+    {
+        await EmployeeService.DeleteEmployeeAsync(id);
+        Navigation.NavigateTo("/list"); // Redirect to list after deletion
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/list"); // Redirect to list without deleting
+    }
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">Delete Employee</h3>
+        </div>
+        <div class="card-body text-center">
+            @if (employee == null)
+            {
+                <div class="text-center">
+                    <div class="spinner-border text-danger" role="status"></div>
+                    <p>Loading employee details...</p>
+                </div>
+            }
+            else
+            {
+                <p class="fs-5">Are you sure you want to delete <b>@employee.Name</b>?</p>
+
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-danger me-2" @onclick="ConfirmDelete">
+                        <i class="bi bi-trash"></i> Yes, Delete
+                    </button>
+                    <button class="btn btn-secondary" @onclick="Cancel">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

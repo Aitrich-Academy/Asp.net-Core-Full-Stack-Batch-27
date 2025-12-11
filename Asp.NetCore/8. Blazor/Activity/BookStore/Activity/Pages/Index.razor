@@ -1,0 +1,65 @@
+﻿@page "/"
+@using Activity.Data
+@inject BudgetBookService BookService
+<!--A Blazor Application to Add And View Books using List-->
+<style>
+    .card{
+        background-color:lightgray;
+        margin:3%;
+        padding:3%;
+        
+    }
+</style>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <label class="control-label">Amount</label>
+                    <input class="form-control" type="text" @bind="@newBookEntry.Amount" />
+                    <label class="control-label">Name</label>
+                    <input class="form-control" type="text" @bind="@newBookEntry.Name"/>
+                    <label class="control-label">Description</label>
+                    <input class="form-control" type="text" @bind="@newBookEntry.Description" />
+                    <br /><br />
+                    <button type="submit" class="btn btn-primary" @onclick="@CreateEntry">ADD</button>
+                </form>
+
+            </div>
+            <div class="col-md-6">
+                <h4 style="text-align:center">BOOK LIST</h4>
+                
+                    @foreach(Entry entry in newEntry)
+                    {
+                        <div class="card">
+                        <h6>Amount: @entry.Amount</h6>
+                        <h6>Name: @entry.Name</h6>
+                        <h6>Description: @entry.Description</h6>
+                        </div>
+                    }
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+
+@code{
+
+    List<Entry> newEntry = new List<Entry>();
+    Entry newBookEntry = new Entry();
+
+    /*OnInitialized() is a lifecycle method in Blazor 
+     that is called when a component is initialized. 
+     It's used to perform initialization logic, such as fetching data.*/
+    protected override async Task OnInitializedAsync()
+    {
+        newEntry = await BookService.GetAllEntries();
+    }
+
+    protected async void CreateEntry()
+    {
+        await BookService.AddEntry(newBookEntry);
+    }
+}

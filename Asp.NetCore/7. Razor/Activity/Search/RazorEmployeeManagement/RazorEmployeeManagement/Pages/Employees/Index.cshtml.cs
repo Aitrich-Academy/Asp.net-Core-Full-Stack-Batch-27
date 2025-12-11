@@ -33,7 +33,7 @@ namespace RazorEmployeeManagement.Pages.Employees
         SearchTerm: Holds the text the user types into the search box.
          */
 
-        [BindProperty]
+        [BindProperty(SupportsGet =true)]
         public string SearchTerm { get; set; } // <-- Added search term binding
 
         public async Task OnGetAsync()
