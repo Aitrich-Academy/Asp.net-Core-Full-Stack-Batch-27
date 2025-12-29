@@ -1,0 +1,37 @@
+﻿
+using Microsoft.Extensions.Options;
+using SendMail.Helper;
+
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
+
+
+
+namespace SendMail.Service
+{
+    public class EmailService:IEmailService
+    {
+        private readonly EmailSettings emailsettings;
+        public EmailService(IOptions<EmailSettings> options)
+        {
+            this.emailsettings = options.Value;
+        }
+        public async Task SendEmailAsync(MailRequest mailRequest)
+        {
+            var email = new MimeMessage();
+            email.Sender = MailboxAddress.Parse(emailsettings.Email);
+            email.To.Add(MailboxAddress.Parse(mailRequest.ToEmail));
+            email.Subject = mailRequest.Subject;
+            var builder=new BodyBuilder();
+            builder.HtmlBody = mailRequest.Body;
+            email.Body=builder.ToMessageBody();
+
+            using var smtp = new SmtpClient();
+            smtp.Connect(emailsettings.Host, emailsettings.Port,SecureSocketOptions.StartTls);
+            smtp.Authenticate(emailsettings.Email, emailsettings.Password);
+            await smtp.SendAsync(email);
+            smtp.Disconnect(true);
+        }
+    }
+}
