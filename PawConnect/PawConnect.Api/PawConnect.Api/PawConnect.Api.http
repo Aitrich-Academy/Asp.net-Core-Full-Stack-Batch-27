@@ -1,0 +1,6 @@
+@PawConnect.Api_HostAddress = http://localhost:5055
+
+GET {{PawConnect.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
