@@ -1,0 +1,34 @@
+<div class="header">
+<div class="search">
+    <h2>Find Jobs</h2>
+    <div class="searchContainer">
+        <input type="text" (input)="filterJobs($event)" id="searchBox" placeholder="Search by Name Member ID,Designation" style="border:none; width: 90%;">
+        <button id="filter" ><img src="../../assets/images/icon filter (1).png"></button>
+    </div>
+</div>
+<div class="bellIcons">
+    <img src="../../assets/images/Group 5689.png" > 
+</div>
+<div class="logIcon">
+    <img src="../../assets/images/mi_log-out.png" >
+</div>
+<div class="listJobs"><h2>List Jobs</h2></div>
+<div class="postJobs"><h2>Post Jobs</h2></div>
+<div class="updateJobs"><h2>Update Jobs</h2></div>
+</div>
+<div class="job">
+<div class="heading-info">
+  <h5>Showing 106 Applicants</h5>
+  
+</div>
+<div class="card"  *ngFor="let list of filteredJobs">
+    <img [src]="list.companyLogo" style="float: left; padding-bottom: 6px;">
+    <div class="company">
+        <h4>{{list.job_post}}<br><small style="color: dodgerblue;">{{list.company_name}} </small><small>&#8226;{{list.location}}</small></h4>
+    </div>
+    
+    <p style="font-size: 1.2em;">We are looking for a UI/UX Designer to turn our software into easy-to- use products for our
+        clients.</p>
+       
+</div>
+

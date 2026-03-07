@@ -1,0 +1,32 @@
+<div class="search-container">
+  <div class="search-link">
+    <span class="search-name" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">Search Job/</span>
+    <span class="search-name">Companies</span>
+  </div>
+  <br>
+  <br>
+  <div class="search-bar">
+    <input type="text" placeholder="Search by Title, Company or any jobs keyword.." (input)="filterJobs($event)" />
+    <button class="find-button" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+      <img src="../../assets/images/Search.png" class="search-img"> Find
+    </button>
+  </div>
+</div>
+<br>
+<br>
+<div class="heading-info">
+  <h5>Showing 35 Applicants</h5>
+  <p>Based Your Preferences</p>
+</div>
+<br>
+<div class="card-row">
+  <ng-container *ngFor="let list of filteredCompany">
+    <div class="card">
+      <h5>{{list.companyName}}</h5>
+      <h6>{{list.jobRole}}</h6>
+      <br>
+      <img src="../../assets/images/background.png" class="left-image">
+      <img src="../../assets/images/background (2).png" class="right-image">
+    </div>
+  </ng-container>
+</div>

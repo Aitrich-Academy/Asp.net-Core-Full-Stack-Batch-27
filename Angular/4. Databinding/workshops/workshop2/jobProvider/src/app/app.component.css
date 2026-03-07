@@ -1,0 +1,21 @@
+.sidebar {
+    width: 20%;
+    background-color: #117EBD;
+    color: white;
+    padding-bottom: 20%;
+}
+.article {
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 31%;
+
+}
+.footer {
+    background-color: #117EBD;
+    position: absolute;
+    top: 132%;
+    left: 0%;
+    width: 100%;
+  
+}
