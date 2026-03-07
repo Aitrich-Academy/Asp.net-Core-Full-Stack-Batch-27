@@ -1,0 +1,30 @@
+
+
+<div class="container">
+    <div class="chats">
+        <div class="chat">
+            <div class="chat-left">
+                <div class="chat-left-image">
+                    <img [src]="selectedOption?.displayPicture" alt="Selected Image" *ngIf="selectedOption">
+                </div>
+                <div class="chat-left-text">
+                    <h3>{{ selectedOption?.name }}</h3>
+                    <p>Online Now</p>
+                </div>
+            </div>
+            <div class="chat-right">
+                <img src="../../assets/images/Icon.png">
+                <img src="../../assets/images/dots.png">
+            </div>
+        </div>
+    </div>
+    
+    <div class="type-section">
+        <div class="placeholder">
+            <p>Type your message here</p>
+        </div>
+        <div class="send-btn">
+            <img src="../../assets/images/20.png">
+        </div>
+    </div>
+</div>

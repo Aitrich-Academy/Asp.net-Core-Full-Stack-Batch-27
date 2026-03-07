@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+}
+
+.section
+{
+    padding: 10px 0;
+}
+.parent {
+    flex-basis: 50%;
+    margin: 0 25px;
+    overflow-y: scroll;
+    /* background-color: rgb(255, 206, 47); */
+}
+
+.child {
+    flex-basis: 50%;
+    background-color: rgb(237, 236, 236);
+}
+
+.chat {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    align-items: center;
+   
+    height: 14vh;
+}
+
+.chat-left {
+    display: flex;
+    align-items: center;
+}
+
+.chat-left-text{
+    margin: 20px;
+  
+}
+
+.chat-left-text h3{
+    margin-top: 12px;
+}
+
+.chat-left-text p{
+    margin-top: -15px;
+}

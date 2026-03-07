@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="col-9">
+        <div class="container">
+            <div class="content">
+                <h2>My Applications</h2>
+        
+                <div class="jobs" *ngFor="let job of jobs" (click)="clicked(job.status)">
+                    <div class="job" *ngIf="job.isFeatured">
+                        <div class="job-header">
+                            <div class="company">
+                                <img [src]="job.companyLogo" alt="Company Logo">
+                                <div class="text-container">
+                                    <p style="font-size: large;">{{ job.designation }}</p>
+                                    <p><span style="color: deepskyblue;">{{ job.companyName }}</span> &bull;<span
+                                            style=" color: gray;">London</span></p>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="job-text">
+                            <p>We are looking for a UI/UX Designer to turn our software into easy-to-use products for our
+                                clients.</p>
+                        </div>
+                        <div class="job-footer">
+                            <div class="pills">
+                                <p>{{ job.text1 }}</p>
+                                <p>{{ job.text2 }}</p>
+                                <p>{{ job.text3 }}</p>
+                                <p>{{ job.text4 }}</p>
+                                <p>{{ job.text5 }}</p>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3" *ngIf="counter">
+        <app-application-status [status]="showStatus" [value]="events" [applicationStatus]="applyStatus"></app-application-status>
+
+    </div>
+    </div>
+    
