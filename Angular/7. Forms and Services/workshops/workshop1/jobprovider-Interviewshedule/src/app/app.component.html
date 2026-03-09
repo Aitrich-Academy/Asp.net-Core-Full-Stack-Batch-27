@@ -1,0 +1,25 @@
+<!-- <h1>Registration App</h1>
+<nav>
+  <a routerLink="/registration-form" routerLinkActive="active">Registration Form</a>
+  <a routerLink="/registered-details" routerLinkActive="active">Registered Details</a>
+  <a routerLink="/remove-registered-details" routerLinkActive="active">Remove Registered Details</a>
+</nav>
+<router-outlet></router-outlet> -->
+
+<div class="container">
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="main">
+    <div class="header">
+      <app-header></app-header>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>
+

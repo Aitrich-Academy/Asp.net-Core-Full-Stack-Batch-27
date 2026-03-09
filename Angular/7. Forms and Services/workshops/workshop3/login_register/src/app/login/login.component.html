@@ -1,0 +1,30 @@
+<div class="all">
+    <div class="left">
+        <div class="left-inner-main">
+            <form (ngSubmit)="login()" #loginForm="ngForm">
+                <div class="left-inner">
+                    <img src="../../assets/images/logo.png">
+                    <h1>Welcome Back</h1>
+                    <div class="google">
+                        <div class="google-img">
+                            <img src="../../assets/images/google.png">
+                        </div>
+                        <div class="google-login">
+                            <h3>Login With Google</h3>
+                        </div>
+                    </div>
+                    <h3 style="color: rgb(161, 161, 161);">OR LOGIN WITH EMAIL</h3>
+                    <input type="email" id="email" name="email" ngModel required placeholder="Your Email">
+                    <input type="password" id="password" name="password" ngModel required placeholder="Your Password">
+                    <button type="submit">Login</button>
+                    <h4>Don’t have an account yet ? <a [routerLink]="['/signup']">Sign up</a></h4>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-inner">
+            <img src="../../assets/images/lock.png">
+        </div>
+    </div>
+</div>

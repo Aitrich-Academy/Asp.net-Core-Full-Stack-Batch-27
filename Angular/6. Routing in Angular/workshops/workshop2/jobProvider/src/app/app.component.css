@@ -1,0 +1,17 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #117EBD;
+    color: white;
+    padding-bottom:10%;
+
+}
+
+.footer {
+    background-color: #117EBD;
+    position: absolute;
+    top: 124%;
+    right: 0%;
+    padding-right: 7%;
+    width: 100%;
+}

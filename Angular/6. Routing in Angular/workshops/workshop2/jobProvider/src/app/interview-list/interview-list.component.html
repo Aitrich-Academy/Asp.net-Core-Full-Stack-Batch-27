@@ -1,0 +1,33 @@
+<div class="header">
+    <div class="search">
+        <h2>Short List</h2>
+        <div class="searchContainer">
+            <i class="fas fa-search searchIcon"></i>
+            <input type="text" (input)="filterMembers($event)" id="searchBox"
+                placeholder="Search by Name Member ID,Designation" style="border:none; width: 90%;">
+            <button id="filter"><img src="../../assets/images/icon filter (1).png"></button>
+        </div>
+    </div>
+    <div class="bellIcons">
+        <img src="../../assets/images/Group 5689.png">
+    </div>
+    <div class="logIcon">
+        <img src="../../assets/images/mi_log-out.png">
+    </div>
+</div>
+<div class="content-container">
+    <div class="card_row">
+        <div class="member-card" *ngFor="let list of memberList">
+            <div class="member-image">
+                <img [src]="list.member_image" alt="Member Image" width="75" height="75">
+            </div>
+            <div class="member-details">
+                <p> {{list.member_name}}<br>
+                    {{list.qualification}}<br>
+                    {{list.experience}}<br>
+                    {{list.place}}</p>
+                <button id="view">View</button>
+            </div>
+        </div>
+    </div>
+</div>

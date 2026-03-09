@@ -1,0 +1,102 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #117EBD;
+    color: white;
+    padding-bottom: 7%;
+    
+}
+.header
+{
+    position: absolute;
+    top: 0%;
+    left:20%;
+    padding: 2%;
+    width: 75%;
+    height: 5%;
+    border-bottom: 1px solid rgb(247, 241, 241);
+}
+.bell
+{
+    position: absolute;
+    left:76%;
+    top: 35%;
+}
+.girlPic
+{
+    position: absolute;
+    left:80%;
+    top:31%;
+}
+.logout
+{
+    position: absolute;
+    left: 85%;
+    top: 31%;
+}
+.login
+{
+    position: absolute;
+    left:40%;
+    top: 14%;
+    font-size: 1.8em;
+ }
+ .updateJobs:hover
+{
+    width: 14%;
+    background-color:  #f7f9fa;
+    text-align: center;
+    cursor: pointer;
+}
+.container
+{
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    height: 100%;
+    width:50%;
+    overflow-y: scroll; padding-right: 3%;
+}
+.ChangeUsername
+{
+    /* border: 1px solid rgb(247, 241, 241) ; */
+    border:1px solid rgb(233, 227, 227);
+    border-radius: 50px;
+   
+    padding: 4%;
+    font-size: 1.3em;
+    margin-bottom: 2%;
+   
+}
+hr{
+    border-color: rgb(250, 241, 241);
+}
+.changePassword
+{
+    /* border: 1px solid rgb(247, 241, 241) ; */
+    border:1px solid rgb(233, 227, 227);
+    border-radius: 50px;
+    /* position: absolute;
+    top: 18%;
+    left: 25%; */
+    padding:4%;
+    font-size: 1.3em;
+  
+}
+input {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #EDF2F6;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+    margin-bottom: 3%;
+  }
+  button
+  {
+    background-color: #20A6FC;
+    padding:10px 35px;
+    border-radius: 5px;
+    border: none;
+  }
