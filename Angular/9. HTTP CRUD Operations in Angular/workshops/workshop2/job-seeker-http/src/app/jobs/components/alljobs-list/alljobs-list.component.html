@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <ng-container *ngFor="let job of jobs">
+
+        <div class="card" style="width:100%; margin-bottom: 10px;" id="card" (click)="viewJobDetail(job)">
+
+          <div class="card-body">
+            <div class="d-flex">
+              <img src="../assets/images/Rectangle 14.png" alt="Card image" width="50" height="50">
+              <div class="ms-4">
+                <h5 class="card-title mb-1 pl-3">{{job.jobTitle}}</h5>
+                <p class="card-text mb-0 pl-3"><span class="text-primary">{{job.companyName}}</span><span
+                    class="px-2">&bull;</span><span>{{job.location}}</span></p>
+              </div>
+            </div>
+            <br>
+            <p class="card-text">{{job.description}}</p>
+
+            <span class="badge badge-pill text-light p-2 m-2"
+              style="background-color: #CAC3AA;">{{job.typeOfEmployment}}
+            </span>
+            <span class="badge badge-pill text-light p-2 m-2"
+              style="background-color:  #CAC3AA;">{{job.experienceLevel}}</span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{job.salaryRange}}
+            </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{job.onsiteOrRemote}}
+            </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{job.location}}
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </ng-container>
+
+
+    </div>
+
+    <div class="col-md-6">
+
+      <app-all-jobs-detail [job]="selectedJob"></app-all-jobs-detail>
+
+    </div>
+  </div>
+</div>
