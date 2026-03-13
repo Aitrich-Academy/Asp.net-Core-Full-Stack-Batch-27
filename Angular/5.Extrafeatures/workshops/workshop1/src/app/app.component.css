@@ -1,0 +1,29 @@
+.row {
+    display: flex;
+    
+  }
+  
+  .col-3 {
+    flex-basis: 20%; /* Adjust the width as needed */
+    height: 123vh;
+    background-color: #20a6fc;
+  }
+  
+  .col-9 {
+    flex-basis: 80%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    height: 123vh;
+}
+
+header {
+   
+    padding: 30px 20px;
+    
+}
+
+.parent {
+    flex-grow: 1;
+   
+    background-color: #e6e6e67c;
+}

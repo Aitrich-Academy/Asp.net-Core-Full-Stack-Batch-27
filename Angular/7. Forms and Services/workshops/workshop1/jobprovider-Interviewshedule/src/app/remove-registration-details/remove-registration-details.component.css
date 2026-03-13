@@ -1,0 +1,44 @@
+.row {
+    display: flex;
+  }
+  
+  .col-6 {
+    flex: 1;
+    cursor: pointer;
+    background-color: white;
+    margin: 50px 100px;
+    border-radius: 55px;
+    border: 1px solid;
+    padding: 40px 65px;
+}
+
+.col h2
+{
+text-align: center;
+font-weight: bold;
+font-size: 30px;
+margin-bottom: 50px;
+}
+
+.action-btn
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.grid-form
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.btn{
+     background-color: rgb(26, 135, 224);
+     color: rgb(255, 255, 255);
+     border-radius: 5px;
+     margin-top: 7px;
+     padding: 10px 60px;
+}

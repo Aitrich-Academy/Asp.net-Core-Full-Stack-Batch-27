@@ -1,0 +1,173 @@
+/* header */
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:962px;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-items li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-items li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+  }
+ 
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .profile-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  
+  /* content */
+
+  .card-row {
+    display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+  }
+  
+  .card {
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    width: 20%;
+  }
+  
+  .logo {
+    margin-top: 5%;
+    max-width: 100px;
+  }
+  
+  h5, h6 {
+    margin: 0;
+  }
+  h6{
+    color: rgb(54, 54, 54);
+  }
+  
+  .left-image {
+    max-width: 20px;
+    float: left;
+    padding-left: 15%;
+  }
+  
+  .right-image {
+    max-width: 20px;
+    float: right;
+    padding-right: 15%;
+  }
+  
+  .heading-info h5 {
+    margin: 0%;
+    font-size: 14px;
+    display: flex;
+  }
+  
+  .heading-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-link {
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    position: absolute;
+    left: 25%;
+  }
+  
+  .search-name:hover,
+  .search-name:active,
+  .search-name:focus {
+     color: #0a079c;
+  }
+  .search-bar {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search-bar input[type="text"] {
+   padding-right: 40px;
+   width: 875px;
+   padding: 15px;
+   border-radius: 110px;
+   outline: none;
+   border: none;
+   background-color: #ffffff;
+  }
+  
+  .find-button{
+    position:absolute;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    top:50%;
+    left: 800px;
+    background-color: #201794;
+    color: #ffffff;
+    transform: translateY(-50%);
+  }
+  
+  .find-button:hover,
+  .find-button:focus,
+  .find-button:active {
+    background-color: #10941f; /* Set your desired hovering color here */
+    color: #000000;
+  }
+  
+  .search-img{
+    max-width: 25%;
+  }
+  

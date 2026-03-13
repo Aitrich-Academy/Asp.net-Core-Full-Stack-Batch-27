@@ -1,0 +1,40 @@
+.space {
+    height: 150px;
+}
+
+.photo {
+
+    height: 10%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: dimgray;
+    border-radius: 50%;
+}
+
+.photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    line-height: 50px;
+
+}
+
+li img {
+    padding-right: 10px;
+}
+
+.addNew img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

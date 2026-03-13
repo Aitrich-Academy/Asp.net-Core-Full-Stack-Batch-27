@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr; /* Sidebar and main column */
+    height: 100vh; /* Adjust this value as needed to fit the viewport */
+  }
+  
+  .sidebar {
+    background-color: #117EBD;
+    padding: 10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+
+    padding: 10px;
+  }
+  
+  .content {
+    background-color: #efebeb;
+    padding: 10px;
+  }
+  .footer {
+    background-color: #117EBD;
+ 
+    
+    width: 100%;
+}

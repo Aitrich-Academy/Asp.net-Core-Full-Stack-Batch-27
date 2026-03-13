@@ -1,0 +1,63 @@
+<div class="search-container">
+    <input type="text" placeholder="Search By Company" />
+    <button class="find-button">Find</button>
+
+</div>
+
+<div class="suggestion-container">
+    <div class="">Suggestions</div>
+    <div class="inline-div" [style.background-color]="divBackgroundColor1" (mouseover)="changeBackground(1)"
+        (mouseout)="resetBackground(1)" (click)="filter('All')">All Skill</div>
+    <div class="inline-div" [style.background-color]="divBackgroundColor2" (mouseover)="changeBackground(2)"
+        (mouseout)="resetBackground(2)" (click)="filter('programmer')">Programmer</div>
+    <div class="inline-div" [style.background-color]="divBackgroundColor3" (mouseover)="changeBackground(3)"
+        (mouseout)="resetBackground(3)" (click)="filter('SoftwareEngineer')">Software Engineer</div>
+    <div class="inline-div" [style.background-color]="divBackgroundColor4" (mouseover)="changeBackground(4)"
+        (mouseout)="resetBackground(4)" (click)="filter('photographer')">Photo Grapher</div>
+    <div class="inline-div" [style.background-color]="divBackgroundColor5" (mouseover)="changeBackground(5)"
+        (mouseout)="resetBackground(5)" (click)="filter('digitalmarketing')">Digital Marketing</div>
+</div>
+
+<div class="">
+    <h4>Showing {{totalJobs}} Jobs Results
+        <span class="align-right">
+
+            <label>
+                <input type="radio" name="employmentType" value="fullTime" class="radio-label" /> Full Time
+            </label>
+            <label>
+                <input type="radio" name="employmentType" value="partTime" /> Freelance
+            </label>
+
+
+        </span>
+    </h4>
+
+</div>
+
+<div *ngIf="tempJobs.length > 0; else noJobsFound">
+    <div class="card-container">
+        <ng-container *ngFor="let list of tempJobs">
+            <div class="card">{{list.companyName}}
+                <div class="job-title">
+                    <div class="left-content">
+                        <h4>{{list.jobTitle}}</h4>
+                    </div>
+                    <div class="right-content"></div>
+                </div>
+                <h4 class="salary">{{list.salary}}</h4>
+                <p>{{list.jobDescription}}</p>
+                <div class="job-title">
+                    <div class="remove"><b>Remove</b><br><img src="../../assets/images/background.png" height="20px"
+                            width="20px"></div>
+                    <div class="">{{list.location}}</div>
+                </div>
+            </div>
+
+        </ng-container>
+    </div>
+</div>
+
+<ng-template #noJobsFound>
+    <p>No jobs found.</p>
+</ng-template>

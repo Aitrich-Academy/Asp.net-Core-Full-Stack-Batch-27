@@ -1,0 +1,55 @@
+.action-btn
+{
+    text-align: center;
+}
+
+.col
+{
+    border-radius: 90px;
+    margin: 0 90px;
+    padding: 40px;
+    border: 1px solid black;
+    background-color: rgb(254, 254, 255);
+}
+
+.col h2{
+    text-align: center;
+}
+
+.grid-form
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-row
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 65px;
+}
+
+.form-row input
+{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.form-row label
+{
+    font-weight: bold;
+}
+
+.btn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button
+{
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(211, 212, 212);
+}

@@ -1,0 +1,18 @@
+.space {
+    height: 150px;
+}
+ul {
+    list-style: none;
+    line-height: 50px;
+
+}
+li:hover{background-color: rgb(114, 114, 247);}
+li img {
+    padding-right: 10px;
+}
+
+.addNew img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

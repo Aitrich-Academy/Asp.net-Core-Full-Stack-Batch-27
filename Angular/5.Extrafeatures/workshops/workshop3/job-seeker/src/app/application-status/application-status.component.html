@@ -1,0 +1,34 @@
+<div *ngIf="status">
+    <!-- <div class="timeline">
+        <div *ngFor="let point of timelineData; let i = index" (click)="navigateTo(i)" class="timeline-point">
+          <div class="timeline-image">
+             <img [src]="point.image" alt="Timeline Image">
+          </div>
+          <div class="timeline-content">
+          <div *ngIf="point.applied" class="tick-mark"> Applied✓</div>
+            <div *ngIf="point.applicationSent" class="tick-mark"> Applied✓</div>
+            <div *ngIf="point.accepted" class="tick-mark"> Accepted✓</div>
+          </div>
+        </div>
+      </div>
+       -->
+       <h2>Application Status</h2>
+       <div class="timeline">
+        <div  *ngFor="let item of value" class="timeline-event">
+         
+            <div class="timeline-point-track-container">
+              <div class="timeline-point" [ngClass]=" applicationStatus === 'R' ? 'heighlight':'' ">
+
+              </div>
+              <div class="timeline-track" [ngClass]=" applicationStatus === 'R' ? 'heighlight':'' "></div>
+              </div>
+              <div class="timeline-content">
+                <span>{{item.content}}</span>
+                <span></span>
+              </div>
+           
+        </div>
+       </div>
+      
+      
+</div>

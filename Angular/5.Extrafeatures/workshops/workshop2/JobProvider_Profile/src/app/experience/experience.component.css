@@ -1,0 +1,11 @@
+.experience p{
+    padding-left: 7%;
+    color: rgb(131, 127, 127);
+}
+
+  .experience{
+    border: 1px solid rgb(180, 176, 176) ;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    padding: 3% 3% 5% 3%;   
+}     

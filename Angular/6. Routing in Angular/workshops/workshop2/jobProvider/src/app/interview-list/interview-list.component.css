@@ -1,0 +1,70 @@
+.header {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 78%;
+        height: 25%;
+        padding-bottom: 25px;
+        padding-left: 20px;
+}
+
+.search {
+    height: 75%;
+    width: 85%;
+    padding: 3px;
+}
+#searchBox{outline: none;}
+.searchContainer {
+    height: 30%;
+    width: 95%;
+    padding: 3px;
+    padding-top: 2%;
+    border: 1px solid gray;
+    border-radius: 15px;
+
+}
+
+.bellIcons {
+    position: absolute;
+    left: 85%;
+    top: 32%;
+}
+
+.logIcon {
+    position: absolute;
+    left: 90%;
+    top: 30%;
+}
+
+.searchIcon {
+    color: royalblue;
+}
+.content-container {
+    position: absolute;
+    top: 31%;
+    left: 24%;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 4%;
+    height: 65%;
+    width:60%;
+    overflow-y: scroll;
+}
+#view {
+    float: right;
+    padding: 2% 10%;
+    background-color: cornflowerblue;
+    border-radius: 20%;
+}
+
+.card_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    width: 40%;
+    font-size: 1.4rem;
+    padding: 4%;
+}

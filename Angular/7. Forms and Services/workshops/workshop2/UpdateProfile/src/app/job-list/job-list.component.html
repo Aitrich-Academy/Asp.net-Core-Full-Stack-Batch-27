@@ -1,0 +1,58 @@
+<div class="sidebar">
+    <app-sidebar></app-sidebar>
+</div>
+<div class="jobs">
+    <div class="header">
+        <div class="search">
+            <h2>Find Jobs</h2>
+            <div class="searchContainer">
+                <input type="text"  id="searchBox"
+                    placeholder="Search by Name Member ID,Designation" style="border:none; width: 90%;">
+                <button id="filter"><img src="../../assets/images/icon filter (1).png"></button>
+            </div>
+        </div>
+        <div class="bellIcons">
+            <img src="../../assets/images/Group 5689.png">
+        </div>
+        <div class="logIcon">
+            <img src="../../assets/images/mi_log-out.png">
+        </div>
+             <div class="postJobs" [routerLink]="['/postJobs']" routerLinkActive="active">
+            Post Jobs
+        </div>
+        <div class="updateJobs">
+            Update Jobs
+        </div>
+    </div>
+    <div class="job">
+        <div class="heading-info">
+            <h5>Showing 106 Applicants</h5>
+
+        </div>
+        <div class="card" *ngFor="let list of JobService.getJobList()">
+            <img [src]="list.companyLogo" alt="Logo" style="float: left; padding-bottom: 6px;">
+            <div class="company">
+                <h4>{{list.job_post}}<br><small style="color: dodgerblue;">{{list.company_name}}
+                    </small><small>&#8226;{{list.location}}</small></h4>
+            </div>
+
+            <p style="font-size: 1.2em;">{{list.description}}</p>
+            <div class="button_row">
+                <div class="button"> {{list.time_schedule}}</div>
+                <div class="button">{{list.salary_range}}</div>
+                <div class="button">{{list.location}}</div>
+                <div class="button">Onsite</div>
+                <div class="button">Remove</div>
+            </div>
+        </div>
+    </div>
+    <div class="article">
+        <img src="../assets/images/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space 1.png" height="100%">
+    </div>
+</div>
+<div class="footer">
+    <app-footer></app-footer>
+</div>
+
+
+

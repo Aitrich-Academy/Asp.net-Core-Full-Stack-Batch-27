@@ -1,0 +1,27 @@
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: #117EBD;
+    color: white;
+}
+.header{
+    width: 80%;
+    height: 8%;
+   position: absolute;
+   top: 2%;
+   right: 2%;
+}
+.content
+{
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    padding: 3%;
+}
+.footer
+{
+    background-color: #117EBD;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+}

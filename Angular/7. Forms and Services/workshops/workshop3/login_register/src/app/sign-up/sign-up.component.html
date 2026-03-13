@@ -1,0 +1,115 @@
+<div class="all">
+    <div class="left">
+
+        <img src="../../assets/images/register.png">
+
+    </div>
+    <div class="right">
+        <div class="right-inner-main">
+            <div class="right-inner">
+                <h1>Registration</h1>
+                <div class="line"></div>
+                <form (ngSubmit)="registerUser()" #registrationForm="ngForm">
+                <div class="all-inputs">
+                    
+                        <div class="inputs-and-labels">
+                            <label>First Name</label>
+                            <input type="text" id="firstName" name="firstName" ngModel required placeholder="Please enter your First name">
+                        </div>
+
+                        <div class="inputs-and-labels">
+                            <label>Last Name</label>
+                            <input type="text" id="lastName" name="lastName" ngModel required placeholder="Please enter your Last name">
+                        </div>
+
+                        <div class="inputs-and-labels">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" ngModel required  placeholder="Email">
+                        </div>
+
+                        <div class="inputs-and-labels">
+                            <label>PhoneNumber</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" ngModel required placeholder="PhoneNumber">
+               
+                        </div>
+
+                        <div class="inputs-and-labels">
+                            <label>Password</label>
+                            <input type="password" id="password" name="password" ngModel required placeholder="Password">
+                        </div>
+
+                        <div class="inputs-and-labels">
+                            <label>Confirm Password</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" ngModel requiredplaceholder="Confirm Password">
+                         
+                        </div>
+
+                </div>
+
+                <div class="gender-container">
+                    <h3>Gender</h3>
+                    <div class="radio-container">
+
+                        <input type="radio" name="gender" value="male" ngModel required>
+                        
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" value="female" ngModel required>
+                        <label for="female">Female</label>
+
+                        <input type="radio" name="gender" value="other" ngModel required>
+                        <label for="other">Other</label>
+
+                    </div>
+                </div>
+
+
+
+                <div class="btn"><button type="submit">Register</button></div>
+                </form>
+                <div class="sign-in">
+                    <p>Already have an account? <a [routerLink]="['/login']">Sign In</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <form (ngSubmit)="registerUser()" #registrationForm="ngForm">
+    <div>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" ngModel required>
+    </div>
+    <div>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" ngModel required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" ngModel required>
+    </div>
+    <div>
+      <label for="phonenumber">Phone Number:</label>
+      <input type="tel" id="phonenumber" name="phonenumber" ngModel required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" ngModel required>
+    </div>
+    <div>
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" name="confirmpassword" ngModel required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <label><input type="radio" name="gender" value="male" ngModel required> Male</label>
+      <label><input type="radio" name="gender" value="female" ngModel required> Female</label>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <button routerLink="/login">Go to Login</button> -->
+  

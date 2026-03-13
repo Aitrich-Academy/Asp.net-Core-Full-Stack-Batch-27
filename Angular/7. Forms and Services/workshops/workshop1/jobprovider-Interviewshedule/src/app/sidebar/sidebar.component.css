@@ -1,0 +1,43 @@
+.space {
+    padding: 50px 0;
+ }
+ 
+ .photo {
+ 
+     height: 30%;
+     width: 30%;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 10px;
+     background-color: rgb(250, 249, 249);
+     border-radius: 50%;
+ }
+ 
+ .photo img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     height: 75%;
+     width: 75%;
+ }
+ 
+ .name {
+     text-align: center;
+ }
+ 
+ ul {
+     list-style: none;
+     line-height: 50px;
+     margin-top: 80px;
+ }
+ 
+ li img {
+     padding-right: 10px;
+ }
+ 
+ .addNew img {
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+ }

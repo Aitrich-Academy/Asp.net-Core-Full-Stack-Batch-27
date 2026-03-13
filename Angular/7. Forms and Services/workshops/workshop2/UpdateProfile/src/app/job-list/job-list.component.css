@@ -1,0 +1,116 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #117EBD;
+    color: white;
+    padding-bottom: 15%;
+}
+.header {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 78%;
+    height: 25%;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    }
+.job {
+    padding: 3%;
+    width: 45%;
+    position: absolute;
+    top: 31%;
+    left: 21%;
+    background-color: #f7f9fa;
+    flex-wrap: wrap;
+    height: 87%;
+    overflow-y: scroll;
+}
+.search
+{
+    height: 75%;
+    width: 85%;
+   padding: 3px; 
+}
+.searchContainer
+{
+    height: 30%;
+    width: 90%;
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+#searchBox{outline: none;}
+.bellIcons
+{
+    position: absolute;
+    left:85%;
+    top: 32%;
+}
+.logIcon
+{
+    position: absolute;
+    left: 90%;
+    top: 30%;
+}
+.listJobs
+{
+    position: absolute;
+    left:9%;
+    top: 72%;
+    font-size: 1.8em;
+ }
+.postJobs
+{
+    position: absolute;
+    left:25%;
+    top: 72%;
+    font-size: 1.8em;
+}
+.updateJobs
+{
+    position: absolute;
+    left:41%;
+     top: 72%;
+     font-size: 1.8em;
+}
+.postJobs:hover ,.listJobs:hover, .updateJobs:hover
+{
+    width: 14%;
+    background-color:  #f7f9fa;
+    text-align: center;
+    cursor: pointer;
+}
+.button_row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.button{
+    border-radius: 25px;
+    padding:10px;
+    background-color: #CAC3AA; 
+}
+.button:hover{
+    background-color: rgb(228, 237, 245);
+    cursor: pointer;
+}
+.card
+{
+    padding-bottom: 5%;
+}
+.article {
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 31%;
+/* padding-bottom: 10%; */
+}
+.footer
+{
+   
+     position: absolute;
+    left: 0%; 
+    top:130%;
+    width: 100%;
+} 

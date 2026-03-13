@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="findjobseeker">
+        <h2>Find Jobseeker</h2>
+    </div>
+    <div class="search">
+        <div class="left">
+            <img src="../../assets/images/search copy 2.png">
+            <input class="keywordsearch" type="search" placeholder="Search by Job Title, Qualification, Industry">
+        </div>
+        <div class="right">
+            <img class="filterimg" src="../../assets/images/icon filter.png">
+        </div>
+    </div>
+    <div class="select">
+        <div id="location" class="selected">
+            <h3>Location</h3>
+        </div>
+        <div id="experience" class="selected">
+            <h3>Experience</h3>
+        </div>
+        <div id="category" class="selected">
+            <h3>Category</h3>
+        </div>
+        <div id="skills" class="selected">
+            <h3>Skills</h3>
+        </div>
+    </div>
+    <div class="details" *ngFor="let group of detailGroups">
+
+        <div class="box">
+            <img src="../../assets/images/Group 33988.png" alt="Image 1">
+            <p>Interviews<br>
+                Scheduled</p>
+            <p>{{ group.text1 }}</p>
+        </div>
+         <div class="box">
+            <img src="../../assets/images/icon.png" alt="Image 2">
+            <p>Applications<br>Received</p>
+            <p >{{ group.text2 }}</p>
+          </div>
+          <div class="box">
+            <img src="../../assets/images/icon (1).png" alt="Image 3">
+            <p>Total Jobs<br>Posted</p>
+            <p >{{ group.text3 }}</p>
+          </div> 
+    </div>
+
+    <div class="imagesection">
+        <img src="../../assets/images/smiling.png">
+    </div>
+</div>

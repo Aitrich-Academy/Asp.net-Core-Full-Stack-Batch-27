@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="left">
+        <div class="main">
+            <div class="profile">
+                <img src="../../assets/images/smiling-confident-businesswoman-posing-with-arms-folded 2.png">
+                <h3>Job Provider/Company Member</h3>
+                Company Name<br>
+                Designation
+            </div>
+
+            <div class="profile-contact">
+                <div class="contact"><img src="../../assets/images/sms.png">
+                    <h3>Provider@gmail.com</h3>
+                </div>
+                <div class="contact"><img src="../../assets/images/call.png">
+                    <h3>12345678912</h3>
+                </div>
+                <div class="contact"><img src="../../assets/images/location.png">
+                    <h3>Location</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <h3>About Me</h3>
+            <p>Hardworking, dedicated candidate with professionsal qualification in IT, seeking an oppurtunity to work
+                with a growth oriented organization on a realtime software development project.</p>
+        </div>
+
+    </div>
+    <div class="right">
+
+        <app-language [languageLogo]="childData1.logo" [languageHead]="childData1.heading"
+            [languageDescription]="childData1.description"></app-language>
+
+
+            <app-education [educationLogo]="childData2.logo" [educationHead]="childData2.heading"
+                [educationDescription1]="childData2.description1" [educationDescription2]="childData2.description2"
+                [educationDescription3]="childData2.description3"></app-education>
+
+
+            <app-experience [experienceLogo]="childData3.logo" [experienceHead]="childData3.heading"
+                [experienceDescription1]="childData3.description1"
+                [experienceDescription2]="childData3.description2"></app-experience>
+
+    </div>
+</div>

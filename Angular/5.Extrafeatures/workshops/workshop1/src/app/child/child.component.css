@@ -1,0 +1,60 @@
+.container
+{
+    margin: 0;
+    padding: 0;
+    height: 102%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chats {
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.chat {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    align-items: center;
+
+
+    height: 12vh;
+}
+
+.chat-left {
+    display: flex;
+    align-items: center;
+}
+
+.chat-left-text {
+    margin: 20px;
+
+}
+
+.chat-left-text h3 {
+    margin-top: 12px;
+}
+
+.chat-left-text p {
+    margin-top: -15px;
+}
+
+.chat-right {
+
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.type-section {
+  background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 10px;
+  margin-bottom: 20px;
+    width: 508px;
+}
