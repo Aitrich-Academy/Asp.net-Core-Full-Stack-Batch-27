@@ -1,0 +1,84 @@
+    
+        .img1{
+            position: absolute;
+            float: right;
+            right: 0;
+        }
+        .nav{
+            margin-left: auto;
+           
+        }
+        .nav li a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            list-style: none;
+            text-align: center;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            display: inline-block;  
+            position: relative;  
+            height: 35px;  
+            
+        }
+        .nav li a:hover{
+            color: blue;
+            
+        }
+
+        li:last-child {
+            margin-right: 0;
+            }
+            li:after {
+                content: '';
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0px;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+            }
+            li:hover:after {
+                width: 100%;
+                background: blue;
+               
+            }
+
+            /* search section */
+            .custom-head{
+                font-family: unset;
+                color: #242d62;
+                font-size: 45px;
+            }
+            p{
+                color:#989eaa
+            }
+            .form-control:focus {  
+                box-shadow: none;  
+              }  
+              .form-control-underlined {  
+                border-width: 0;  
+                border-bottom-width: 1px;  
+                border-radius: 0;  
+                padding-left: 0;  
+              }  
+              body {  
+                background: black;  
+                min-height: 100vh;  
+                margin: 10px;  
+              }  
+              input {  
+               width:45%; 
+               padding:1%;
+               background-color:#f1f9fe;
+
+              }  
+             
+              button{
+                background-color: #159eec;
+                height: 40px;
+                width:60px;
+                border: 0;
+              }
+              /* end */
+
+              

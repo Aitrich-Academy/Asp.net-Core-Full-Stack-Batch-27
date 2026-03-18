@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row justify-content-center-md-center ">
+    <div class="col-md-10  d-flex justify-content-center align-items-center ml-20">
+<div class="row ">
+    <div class="col-md-5 border " style="background-color: #E5E6EA;">
+    
+        <div class="row">
+            <div class="col-md-12 border-bottom-left-pill border-top-left-pill mt-5 ml-5 mb-5">
+                <img class="img-fluid float-right g-0" src="../../assets/images/Register Img.png">
+            </div> 
+
+        </div> 
+    </div>
+    <div class="col-md-6  " style="background-color: #64B7F5;">
+    
+    <div class="row">
+            <div class="col-md-11 mt-5 mr-5 mb-5 p-3 bg-white border custom-radius  border border-bottom-right-pill border-top-right-pill " >
+                <div class="row">
+                    <div class="col-md-12 pt-4 pb-4">
+                        <h1>Registration</h1>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <form #registrationForm="ngForm" (ngSubmit)="signUp(registrationForm)">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group ">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" class="form-control" name="firstName" placeholder=" first name" width="50px" ngModel>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" name="email" placeholder="Email" ngModel>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password" ngModel>                
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group ">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" name="lastName" placeholder=" lastname" ngModel>
+                                    </div> 
+                                    <div class="form-group ">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="tel" id="phoneNumber" class="form-control" name="phoneNumber" placeholder="Phone Number" ngModel>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm Password">
+                                    </div>  
+                                </div>
+                                <label class="ml-3" for="gender">Gender</label> <br><br>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 ">
+                                    <div class="form-check  form-check-inline">
+                                        <input class="form-check-input " type="radio" name="gender" value="male"  ngModel> 
+                                        <label class="form-check-label">Male</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" value="female"  ngModel>
+                                        <label class="form-check-label">Female</label>
+                                    </div>  
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" value="other"  ngModel>
+                                        <label class="form-check-label">Other</label>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-grid gap-2 col-md-10 mx-auto mt-5 ">
+                                        <button class="btn btn-primary font-weight-bold w-75 " type="submit">Register</button><br>
+                                
+                                        <span class="font-weight-bold ">Already have an account? <a href="#">Sign in</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>

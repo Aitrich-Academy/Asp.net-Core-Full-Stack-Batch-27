@@ -1,0 +1,146 @@
+{
+  "users": [
+    {
+      "firstName": "shini",
+      "email": "shini@gmail.com",
+      "password": "shini",
+      "lastName": "parameswaran",
+      "phoneNumber": "2345671234",
+      "gender": "female",
+      "designation": "UI/UX Developer",
+      "id": "1",
+      "aboutMe": "Creative UI/UX artist and Designer with talent for developing unique custom artwork.Innovative Approach to idea and concept development.Offering 5 years of Expertise overseeing individual projects and brand development collections.",
+      "skills": [
+        "UX Research Skills",
+        "WireFraming and Prototyping Skills",
+        "UX writing Skills",
+        "Interaction Design Skills",
+        "Coding Skills",
+        "Information Architecture Skills"
+      ]
+    },
+    {
+      "id": "2",
+      "password": "password",
+      "firstName": "Brian",
+      "lastName": "Hampton",
+      "email": "brian@example.com",
+      "phone": "+91 9876543210",
+      "gender": "male",
+      "designation": "UI/UX Developer",
+      "aboutMe": "Creative UI/UX artist and Designer with talent for developing unique custom artwork.Innovative Approach to idea and concept development.Offering 5 years of Expertise overseeing individual projects and brand development collections.",
+      "skills": []
+    },
+    {
+      "id": "3",
+      "password": "password",
+      "firstName": "Frank",
+      "lastName": "Phillips",
+      "email": "frank@example.com",
+      "phone": "+91 9876543210",
+      "gender": "male",
+      "designation": "UI/UX Developer",
+      "aboutMe": "Creative UI/UX artist and Designer with talent for developing unique custom artwork.Innovative Approach to idea and concept development.Offering 5 years of Expertise overseeing individual projects and brand development collections.",
+      "skills": []
+    },
+    {
+      "firstName": "sreejith",
+      "email": "sreejith.sahadevan@aitrich.com",
+      "password": "1234",
+      "lastName": "sahadevan",
+      "phoneNumber": "78956231456",
+      "gender": "male",
+      "id": "4",
+      "designation": "Angular Developer",
+      "aboutMe": "Creative UI/UX artist and Designer with talent for developing unique custom artwork.Innovative Approach to idea and concept development.Offering 5 years of Expertise overseeing individual projects and brand development collections.",
+      "skills": []
+    },
+    {
+      "id": "5",
+      "username": "jessica",
+      "password": "password",
+      "firstName": "Jessica",
+      "lastName": "Grant",
+      "email": "jessica@example.com",
+      "phone": "+91 9876543210",
+      "gender": "female",
+      "aboutMe": "Creative UI/UX artist and Designer with talent for developing unique custom artwork.Innovative Approach to idea and concept development.Offering 5 years of Expertise overseeing individual projects and brand development collections.",
+      "skills": [],
+      "designation": "UI/UX Developer"
+    },
+    {
+      "firstName": "shini",
+      "email": "shiniupparameswaran@gmail.com",
+      "password": "123",
+      "lastName": "parameswaran",
+      "phoneNumber": "1234567895",
+      "gender": "female",
+      "id": "ZcPhuot"
+    },
+    {
+      "firstName": "hamsath",
+      "email": "hamsath@gmail.com",
+      "password": "hamsam",
+      "lastName": "sufaide",
+      "phoneNumber": "8978567896",
+      "gender": "female",
+      "id": "IJ2Hy99"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "jobTitle": "Customer Service Executive",
+      "companyName": "Teleperformance",
+      "location": "Indonesia",
+      "description": "We are looking for a UI/UX Designer to turn our software into easy-to-use products for our clients",
+      "typeOfEmployment": "Full Time",
+      "experienceLevel": "Mid Level",
+      "salaryRange": "$3000 - $5000",
+      "onsiteOrRemote": "onsite",
+      "comopanyLogo": "",
+      "applicants": 12,
+      "postedDate": ""
+    },
+    {
+      "id": 2,
+      "jobTitle": "Lead Generation Executive",
+      "companyName": "Randstad",
+      "location": "Indonesia",
+      "description": "Product Designer responsibilities include defining product specifications,  creating digital or print drawings and designing fully-functional products.",
+      "typeOfEmployment": "Full Time",
+      "experienceLevel": "Mid Level",
+      "salaryRange": "$3000 - $5000",
+      "onsiteOrRemote": "onsite",
+      "applicants": 12,
+      "postedDate": ""
+    },
+    {
+      "id": 3,
+      "jobTitle": "Juniour Angular Developer",
+      "companyName": "Aitrich Technologies",
+      "location": "India",
+      "description": "We are looking for a talented UI Designer to create amazing user experiences. The  ideal candidate should have an eye for clean and artful design, possess superior UI  skills. ",
+      "typeOfEmployment": "Full Time",
+      "experienceLevel": "Mid Level",
+      "salaryRange": "$3000 - $5000",
+      "onsiteOrRemote": "onsite",
+      "applicants": 12,
+      "postedDate": ""
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "status": "Applied",
+      "userId": 1,
+      "jobId": 1
+    },
+    {
+      "id": 2,
+      "status": "Application Sent",
+      "userId": 1,
+      "jobId": 2
+    }
+  ]
+}

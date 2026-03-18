@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="myApplications">
+        <h4 class="p-3">My Applications</h4>
+      </div>
+
+      <ng-container *ngFor="let appliedJob of appliedJobList">
+        <div class="card" style="width:100%; margin-bottom: 10px;" id="card">
+
+          <div class="card-body">
+            <div class="d-flex">
+              <img src="../assets/images/Rectangle 14.png" alt="Card image" width="50" height="50">
+              <div class="ms-4">
+                <h5 class="card-title mb-1 pl-3">{{appliedJob.job.jobTitle}}</h5>
+                <p class="card-text mb-0 pl-3"><span class="text-primary">{{appliedJob.job.companyName}}</span><span
+                    class="px-2">&bull;</span><span>{{appliedJob.job.location}}</span></p>
+              </div>
+            </div>
+            <br>
+            <p class="card-text">We are looking for a UI/UX Designer to turn our software into easy-to-use
+              products for our clients</p>
+  
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color: #CAC3AA;">{{appliedJob.job.typeOfEmployment}} </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{appliedJob.job.experienceLevel
+            }} </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{appliedJob.job.salaryRange
+            }} </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{appliedJob.job.location}} </span>
+            <span class="badge badge-pill text-light p-2 m-2" style="background-color:  #CAC3AA;">{{appliedJob.job.onsiteOrRemote}} </span>
+  
+          </div>
+  
+        </div>
+      </ng-container>
+
+      
+    </div>
+    <div class="col-md-6">
+      <div class="d-flex justify-content-center align-items-center pt-5">
+        <h1>Application Status</h1>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
