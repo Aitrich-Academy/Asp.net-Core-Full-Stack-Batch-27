@@ -1,0 +1,15 @@
+.container {
+    overflow: hidden; /* Clear floats */
+    
+  }
+  
+  .container img {
+    float: right; /* Float the images to the right */
+    margin: 0px 20px; /* Add some space between the images */
+  }
+
+  #Image1
+  {
+    margin-top: 30px;
+  }
+  
