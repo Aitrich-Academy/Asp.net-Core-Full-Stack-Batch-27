@@ -1,0 +1,97 @@
+
+<div class="main1"> 
+
+<nav class="navbar">
+    <div class="navbar-left">
+        <ul class="nav-items">
+        <h2><li><a>New-Registrations</a></li></h2> 
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <ul class="nav-items">
+        <li >
+            <a  href="#"><img src="../../assets/images/notification.png"></a>
+        </li>
+        <li><a><img src="../../assets/images/notification (1).png"></a></li>
+        </ul>
+        <div class="profile">
+            <img src="../../assets/images/profilePicture.png" alt="Profile Picture" />
+            <div class="profile-info">
+                <h2>Oda Dink</h2>
+                <p>Super Admin</p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- content -->
+
+<div class="search-container">
+    <br>
+    <br>
+   
+  </div>
+  <br>
+  <br>
+  <div class="heading-info">
+    <h5>Showing 45 Applicants</h5>
+    <p>Based Your Preferences</p>
+  </div>
+
+
+
+
+
+<div class="filterbtn">
+
+  <button id="a" (click)="setFilter('All')">All</button>
+  <button id="b" (click)="setFilter('Pending')">Pending</button>
+  <button id="c" (click)="setFilter('On-Hold')">On-Hold</button>
+  <button id="d" (click)="setFilter('Candidate')">Candidate</button>
+
+</div>
+
+
+
+
+  <div class="tabletbl">
+
+    <table class="table1">
+        <thead>
+            <th>Id</th>
+            <th>date</th>
+            <th>company</th>
+            <th>type</th>
+            <th>position</th>
+            <th>contact</th>
+            <th>status</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let n of filterRegistration" >
+
+                <td>{{n.id}}</td>
+                <td> {{n.dateApplied}} </td>
+                <td> {{n.company}} </td>
+                <td> {{n.type}} </td>
+                <td> {{n.position}} </td>
+                <td> <img src="../../assets/images/contact.png" alt=""> <img src="../../assets/images/email.png" alt=""> </td>
+                <td> {{n.status}} </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
