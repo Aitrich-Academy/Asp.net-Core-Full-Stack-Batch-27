@@ -1,0 +1,64 @@
+.navbar {
+   
+ 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:962px;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-items li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-items li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px;
+    width: 300px;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  

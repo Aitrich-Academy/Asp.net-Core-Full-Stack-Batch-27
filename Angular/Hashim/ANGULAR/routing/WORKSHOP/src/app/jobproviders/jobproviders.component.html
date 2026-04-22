@@ -1,0 +1,68 @@
+<!-- header -->
+
+<nav class="navbar">
+    <div class="navbar-left">
+        <ul class="nav-items">
+        <h2><li><a>Companies</a></li></h2> 
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <ul class="nav-items">
+        <li >
+            <a  href="#"><img src="../../assets/images/notification.png"></a>
+        </li>
+        <li><a><img src="../../assets/images/notification (1).png"></a></li>
+        </ul>
+        <div class="profile">
+            <img src="../../assets/images/profilePicture.png" alt="Profile Picture" />
+            <div class="profile-info">
+                <h2>Oda Dink</h2>
+                <p>Super Admin</p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- content -->
+
+<div class="search-container">
+    <div class="search-link">
+        <span class="search-name" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">Search Job/</span>
+        <span class="search-name">Companies</span>
+    </div>
+    <br>
+    <br>
+    <div class="search-bar">
+      <input type="text" placeholder="Search by Title, Company or any jobs keyword.." (input)="filterJobs($event)" />
+      <button class="find-button" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+        <img src="../../assets/images/Search.png" class="search-img">  Find
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="heading-info">
+    <h5>Showing 35 Applicants</h5>
+    <p>Based Your Preferences</p>
+  </div>
+  <br>
+  <div class="card-row">
+    <div class="card" *ngFor="let list of filteredJobs">
+      <img src="../../assets/images/companyLogo.png" class="logo">
+      <h5>{{list.companyName}}</h5>
+      <h6>{{list.jobRole}}</h6>
+      <br>
+      <img src="../../assets/images/background.png" class="left-image">
+      <img src="../../assets/images/background (2).png" class="right-image">
+    </div>
+  </div>
+  
+  
+  
+  
+    
+  
+  
+  
+    
+

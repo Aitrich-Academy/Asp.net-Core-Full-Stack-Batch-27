@@ -149,6 +149,11 @@ class JobProvider {
 
     auth(): any {
 
+
+
+
+
+        
         if (localStorage) {
             return true;
         }

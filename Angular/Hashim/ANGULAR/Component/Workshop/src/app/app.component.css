@@ -1,0 +1,304 @@
+/* .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+} */
+
+
+.content {
+  margin-left: 28%;    
+  max-width: 1200px;
+  padding: 20px;
+  text-align: left;
+  
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #4c02c4;
+  color: white;
+  padding: 20px;
+}
+
+
+
+
+/* .sidebar {
+  height: 100%;
+  background-color: #1c0bdb;
+  color: white;
+  padding: 20px;
+  width : 20%;
+ 
+} */
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: xx-large;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px;
+  margin: 28px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hover effect */
+.menu li:hover {
+  background-color: #8c9094;
+}
+
+/* Active (optional) */
+.menu li.active {
+  background-color: #1abc9c;
+}
+
+
+
+
+
+.aa
+{
+  position: absolute;
+  left: 26%;
+  top: 12%;
+}
+
+
+
+.bb
+{
+  position: absolute;
+  left: 33%;
+  top: 25%;
+  width: 50%;
+  height: 5%;
+  border-radius: 50px;
+  border: none;
+
+}
+
+.cc
+{
+  position: absolute;
+  left: 88%;
+  top: 5%;
+  border-radius: 50px;
+  border: 2px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.dd
+{
+    position: absolute;
+  left: 92%;
+  top: 2%;
+}
+
+
+.ee
+{
+    position: absolute;
+  left: 84%;
+  top: 5%;
+  border-radius: 50px;
+  border: 2px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+
+.ff
+{
+    position: absolute;
+  left: 80%;
+  top: 5%;
+  border-radius: 50px;
+  border: 2px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+
+
+.gg
+{
+  position: absolute;
+  left: 26%;
+  top: 35%;
+}
+
+
+.hh
+{
+  position: absolute;
+  left: 26%;
+  top: 53%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+.hh1
+{
+  background-color: #8c9094;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 15px;
+  margin-top: 11%;
+  margin-left: 30%;
+}
+
+
+.hh2
+{
+   margin-left: 38%;
+    margin-top: -9%;
+}
+
+.hh3
+{
+   margin-left: 26%;
+   margin-top: -8%;
+}
+
+
+
+
+
+.h1
+{
+  position: absolute;
+  left: 44%;
+  top: 53%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+.h2
+{
+  position: absolute;
+  left: 63%;
+  top: 53%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+.h3
+{
+  position: absolute;
+  left: 82%;
+  top: 53%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+
+.ii
+{
+  position: absolute;
+  left: 26%;
+  top: 82%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+.i1
+{
+  position: absolute;
+  left: 44%;
+  top: 82%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+.i2
+{
+  position: absolute;
+  left: 63%;
+  top: 82%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+
+.i3
+{
+  position: absolute;
+  left: 82%;
+  top: 82%;
+  background-color: white;
+  width: 28vh;
+  height: 23vh;
+  border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
