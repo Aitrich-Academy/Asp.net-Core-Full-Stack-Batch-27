@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    background-color: rgb(244, 244, 244);
+   
+}
+.main-content{
+    flex-grow: 1;
+  margin-left: 350px; 
+}
