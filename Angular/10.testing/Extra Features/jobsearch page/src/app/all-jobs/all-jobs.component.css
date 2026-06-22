@@ -1,0 +1,281 @@
+.container-fluid
+{
+    display: flex;
+}
+
+.left,.right
+{
+    flex-basis: 50%;
+}
+
+.right.container {
+    margin: 0;
+    padding: 0;
+    height: 132vh;
+    width: 100%;
+
+}
+
+.main-image {
+    width: 100%;
+}
+
+.circular-image {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    top: -70px;
+
+}
+
+.job-posting {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -120px;
+    z-index: 2;
+
+}
+
+.posting-details,
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+
+    /* background-color: white; */
+}
+
+.companyname-location {
+    padding: 0 30px;
+    position: relative;
+    top: -15px;
+}
+
+.feature-1 {
+    display: flex;
+    align-items: center;
+}
+
+.feature-1-deatils {
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.job-features {
+    position: relative;
+    top: -120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 3px solid rgb(207, 207, 207);
+    margin: 0 25px;
+    padding-top: 20px;
+
+}
+
+/* Navigation bar styles */
+.navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation links */
+.navbar a {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    flex: 1;
+    padding: 14px;
+    color: rgb(173, 173, 173);
+}
+
+/* Change the color of the active link */
+.navbar a.active {
+    /* background-color: red; */
+    color: rgb(196, 178, 154);
+
+}
+
+/* Add a hover effect to the navigation links */
+.navbar a:hover {
+    /* background-color: yellowgreen; */
+    color: black;
+}
+
+.nav-content {
+    margin: 0 40px;
+}
+
+.nav-group {
+    position: relative;
+    top: -100px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+    position: relative;
+    top: -100px;
+ }
+
+/* Buttons */
+.button {
+    flex: 1;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* ////Left side css */
+
+.container {
+    white-space: nowrap;
+    display: flex;
+padding-bottom: 20px;
+}
+
+.search-input {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+.dropdown-list {
+    display: inline-block;
+    width: 150px;
+    border: none;
+    padding: 10px 15px;
+  
+}
+
+.search,.location {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin: 0 10px;
+}
+
+.search img,.location img {
+    vertical-align: middle;
+}
+
+.filter img{
+    vertical-align: middle;
+}
+
+.filter{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.dropdown
+{
+    border: none;
+}
+
+.company {
+    display: flex;
+   align-items: center;
+   
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; /* Adjust the spacing between image and texts */
+    justify-content: flex-start;
+    font-weight: 1000;
+  }
+
+  .all{
+    overflow-y: scroll;
+    height: 152vh;
+  }
+
+  .job
+  {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 15px;
+
+  }
+  .job-header
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px ;
+  }
+  .job-footer
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12px ;
+  }
+
+  .job-text
+  {
+    margin: 0 15px ;
+    color: rgb(72, 71, 66);
+    font-weight: 300;
+  }
+
+  .pills
+  {
+    display: flex;
+    align-items: center;
+  }
+
+  .pills p{
+    border-radius: 25px;
+    background-color: rgb(196, 178, 154);
+    color: white;
+    padding: 5px ;
+    margin: 0 5px;
+  }
+
+  .text-container p {
+    margin: 5px; /* Remove default margin */
+  }
+
+  .save
+  {
+    padding: 5px 15px;
+  }
+
+  .save img{
+    height: 30px;
+    width: 30px;
+  }
+
+button
+{
+    background-color: deepskyblue;
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.left.left,.left.right
+{
+  flex-basis: 50%;
+}

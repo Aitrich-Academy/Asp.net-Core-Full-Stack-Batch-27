@@ -1,0 +1,129 @@
+.container {
+    margin: 0;
+    padding: 0;
+    height: 132vh;
+    width: 100%;
+
+}
+
+.main-image {
+    width: 100%;
+    height: 20%;
+}
+
+.circular-image {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    top: -70px;
+
+}
+
+.job-posting {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -120px;
+    z-index: 2;
+
+}
+
+.posting-details,
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+
+    /* background-color: white; */
+}
+
+.companyname-location {
+    padding: 0 30px;
+    position: relative;
+    top: -15px;
+}
+
+.feature-1 {
+    display: flex;
+    align-items: center;
+}
+
+.feature-1-deatils {
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.job-features {
+    position: relative;
+    top: -120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 3px solid rgb(207, 207, 207);
+    margin: 0 25px;
+    padding-top: 20px;
+
+}
+
+/* Navigation bar styles */
+.navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation links */
+.navbar a {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    flex: 1;
+    padding: 14px;
+    color: rgb(173, 173, 173);
+}
+
+/* Change the color of the active link */
+.navbar a.active {
+    /* background-color: red; */
+    color: rgb(196, 178, 154);
+
+}
+
+/* Add a hover effect to the navigation links */
+.navbar a:hover {
+    /* background-color: yellowgreen; */
+    color: black;
+}
+
+.nav-content {
+    margin: 0 40px;
+}
+
+.nav-group {
+    position: relative;
+    top: -100px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+    position: relative;
+    top: -100px;
+ }
+
+/* Buttons */
+.button {
+    flex: 1;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}

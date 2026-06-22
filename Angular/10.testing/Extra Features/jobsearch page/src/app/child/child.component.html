@@ -1,0 +1,92 @@
+<div class="container" *ngIf="selectedJob">
+    <img class="main-image"[src]="selectedJob.companyImg">
+    <div class="circular-image">
+        <img [src]="selectedJob.companyLogo" height="70" width="70">
+    </div>
+    <br>
+    <br>
+    <div class="job-posting">
+        <div class="posting-details">
+            <p>12 Applicants</p>
+            <p>Posted 6 days ago.</p>
+        </div>
+        <div class="job-details">
+            <h2>{{ selectedJob.designation }}</h2>
+            <img class="save-image" [src]="selectedJob.save"  height="45px" width="45px">
+        </div>
+        <div class="companyname-location">
+            <p><span style="color: deepskyblue;">{{ selectedJob.companyName }}</span> &bull; Location</p>
+        </div>
+    </div>
+    <div class="job-features">
+        <div class="feature-1">
+            <div class="feature-1-img">
+                <img src="assets\images\Group 1 (5).png">
+            </div>
+            <div class="feature-1-deatils">
+                <p>Type of Employment</p>
+                <p>{{ selectedJob.text1 }}</p>
+            </div>
+        </div>
+
+        <div class="feature-1">
+            <div class="feature-1-img">
+                <img src="assets\images\Group 1 (5).png">
+            </div>
+            <div class="feature-1-deatils">
+                <p>Location</p>
+                <p>{{ selectedJob.text4 }}</p>
+            </div>
+        </div>
+
+        <div class="feature-1">
+            <div class="feature-1-img">
+                <img src="assets\images\Group 1 (5).png">
+            </div>
+            <div class="feature-1-deatils">
+                <p>Experience Level</p>
+                <p>{{ selectedJob.text2 }}</p>
+            </div>
+        </div>
+
+        <div class="feature-1">
+            <div class="feature-1-img">
+                <img src="assets\images\Group 1 (5).png">
+            </div>
+            <div class="feature-1-deatils">
+                <p>Onsite/ Remote</p>
+                <p>{{ selectedJob.text5 }}</p>
+            </div>
+        </div>
+        <div class="feature-1">
+            <div class="feature-1-img">
+                <img src="assets\images\Group 1 (5).png">
+            </div>
+            <div class="feature-1-deatils">
+                <p>Salary Range</p>
+                <p>{{ selectedJob.text3 }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <div class="navbar">
+            <a href="#" [class.active]="activeTab === 'company'" (click)="changeTab('company')">Company</a>
+            <a href="#" [class.active]="activeTab === 'jobDesc'" (click)="changeTab('jobDesc')">Job Desc</a>
+            <a href="#" [class.active]="activeTab === 'responsibilities'" (click)="changeTab('responsibilities')">Responsibilities</a>
+          </div>
+    
+          <div class="nav-content">
+            <p *ngIf="activeTab === 'company'">{{ selectedJob.companyContent }}</p>
+
+            <p *ngIf="activeTab === 'jobDesc'">{{ selectedJob.jobDesc }}</p>
+           
+            <p *ngIf="activeTab === 'responsibilities'">{{ selectedJob.responsibilities }}</p>
+          </div>
+    </div>
+
+    <div class="button-container">
+        <a href="#" class="button">Apply Job</a>
+        <a href="#" class="button" style="background-color:gray;">Message</a>
+      </div>
+</div>

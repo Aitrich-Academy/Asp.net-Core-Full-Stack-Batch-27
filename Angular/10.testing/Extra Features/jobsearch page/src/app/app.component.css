@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    height:180vh;
+  }
+  
+  .col-3 {
+    flex-basis: 20%; /* Adjust the width as needed */
+    height:160vh;
+    background-color: #20a6fc;
+  }
+  
+  .col-9 {
+    flex-basis: 80%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+   
+    padding: 20px;
+    background-color: white;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f2efef;
+    display: flex;
+    height: 100%;
+}
+
+.left,.right
+{
+  flex-basis: 50%;
+}
+
+.left
+{
+  padding : 20px 20px 0 20px;
+}

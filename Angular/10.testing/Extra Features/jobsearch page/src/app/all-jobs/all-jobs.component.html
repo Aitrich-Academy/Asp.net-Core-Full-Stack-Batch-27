@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="left">
+        <div class="container">
+            <div class="search">
+                <img src="assets\images\search-normal.png">
+                <input type="search" class="search-input" placeholder="Search for Jobs">
+            </div>
+        </div>
+        
+        
+        <div class="all">
+            <div class="jobs" *ngFor="let job of jobs">
+                <div class="job" *ngIf="job.isFeatured" (click)="showJobDetails(job)">
+                    <div class="job-header">
+                        <div class="company">
+                            <img [src]="job.companyLogo" alt="Company Logo" height="50" width="50">
+                            <div class="text-container">
+                                <p>{{ job.designation }}</p>
+                                <p><span style="color: deepskyblue;">{{ job.companyName }}</span> &bull;<span
+                                        style=" color: gray;">Location</span></p>
+                            </div>
+                        </div>
+                        <div class="save">
+                            <img [src]="job.save" height="30" width="30"alt="save button">
+                        </div>
+                    </div>
+                    <div class="job-text">
+                        <p>{{ job.jobtext }}</p>
+                    </div>
+                    <br>
+                    <div class="job-footer">
+                        <div class="pills">
+                            <p>{{ job.text1 }}</p>
+                            <p>{{ job.text2 }}</p>
+                            <p>{{ job.text3 }}</p>
+                            <p>{{ job.text4 }}</p>
+                            <p>{{ job.text5 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="right">
+        <app-child [selectedJob]="selectedJob"></app-child>
+    </div>
+</div>

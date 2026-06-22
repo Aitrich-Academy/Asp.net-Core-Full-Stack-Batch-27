@@ -1,0 +1,93 @@
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+input[type="text"] {
+    padding-right: 40px;
+    width: 875px;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.find-button {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    top: 50%;
+    left: 800px;
+    background-color: rgb(41, 41, 111);
+    color: white;
+    transform: translateY(-50%);
+}
+
+.suggestion-container {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.inline-div {
+
+
+    border-radius: 20px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.align-right {
+    float: right;
+
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 calc(30.33% - 10px);
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.job-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-content {
+    height: 40px;
+    width: 50px;
+    background-color: grey;
+    border: 1px solid grey
+}
+
+.salary {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.remove {
+    border: 1px solid grey;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(211, 189, 233);
+}
